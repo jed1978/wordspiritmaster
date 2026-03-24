@@ -1,11 +1,11 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React from "react";
+import { View, StyleSheet } from "react-native";
 import Animated, {
   useAnimatedStyle,
   withTiming,
-} from 'react-native-reanimated';
-import { THEME } from '@/utils/colors';
-import { ThemedText } from '@/components/ui/ThemedText';
+} from "react-native-reanimated";
+import { COLORS } from "@/utils/colors";
+import { ThemedText } from "@/components/ui/ThemedText";
 
 interface ProgressBarProps {
   readonly progress: number; // 0-1
@@ -15,13 +15,15 @@ interface ProgressBarProps {
 
 export function ProgressBar({
   progress,
-  color = THEME.accent,
+  color = COLORS.accent,
   label,
 }: ProgressBarProps): React.JSX.Element {
   const clamped = Math.max(0, Math.min(1, progress));
 
   const fillStyle = useAnimatedStyle(() => ({
-    width: withTiming(`${clamped * 100}%` as unknown as number, { duration: 300 }),
+    width: withTiming(`${clamped * 100}%` as unknown as number, {
+      duration: 300,
+    }),
   }));
 
   return (
@@ -32,20 +34,22 @@ export function ProgressBar({
         </ThemedText>
       ) : null}
       <View style={styles.track}>
-        <Animated.View style={[styles.fill, { backgroundColor: color }, fillStyle]} />
+        <Animated.View
+          style={[styles.fill, { backgroundColor: color }, fillStyle]}
+        />
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { width: '100%' },
+  container: { width: "100%" },
   label: { marginBottom: 4 },
   track: {
     height: 8,
     borderRadius: 4,
-    backgroundColor: THEME.bgButton,
-    overflow: 'hidden',
+    backgroundColor: COLORS.bgButton,
+    overflow: "hidden",
   },
-  fill: { height: '100%', borderRadius: 4 },
+  fill: { height: "100%", borderRadius: 4 },
 });

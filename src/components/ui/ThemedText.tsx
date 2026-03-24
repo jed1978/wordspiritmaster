@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, type TextProps, StyleSheet } from "react-native";
-import { THEME } from "@/utils/colors";
+import { COLORS } from "@/utils/colors";
 
 type TextVariant = "primary" | "secondary" | "hint" | "correct" | "wrong";
 
@@ -10,11 +10,11 @@ interface ThemedTextProps extends TextProps {
 }
 
 const VARIANT_COLORS: Record<TextVariant, string> = {
-  primary: THEME.textPrimary,
-  secondary: THEME.textSecondary,
-  hint: THEME.textHint,
-  correct: THEME.correct,
-  wrong: THEME.wrong,
+  primary: COLORS.textPrimary,
+  secondary: COLORS.textSecondary,
+  hint: COLORS.textHint,
+  correct: COLORS.correct,
+  wrong: COLORS.wrong,
 };
 
 const SIZE_MAP: Record<string, number> = {

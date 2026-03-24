@@ -16,8 +16,10 @@ function makeSpirit(overrides: Partial<CapturedSpirit> = {}): CapturedSpirit {
     consecutiveCorrect: 0,
     nextReviewAt: 0,
     capturedAt: 1000,
+    lastReviewedAt: 1000,
     totalReviews: 0,
     totalCorrect: 0,
+    isShiny: false,
     ...overrides,
   };
 }

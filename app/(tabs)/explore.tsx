@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import { View, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { THEME } from "@/utils/colors";
+import { COLORS } from "@/utils/colors";
 import { STRINGS } from "@/utils/strings";
 import {
   CORRECT_ANSWER_DELAY_MS,
@@ -133,7 +133,7 @@ export default function ExploreScreen(): React.JSX.Element {
   if (!isLoaded) {
     return (
       <ThemedView style={styles.center}>
-        <ThemedText variant="secondary">載入中...</ThemedText>
+        <ThemedText variant="secondary">{STRINGS.loadingText}</ThemedText>
       </ThemedView>
     );
   }
@@ -150,7 +150,7 @@ export default function ExploreScreen(): React.JSX.Element {
       <ThemedView>
         <View style={styles.header}>
           <ThemedText size="lg" style={styles.title}>
-            {mode === "idle" ? "今天的冒險結束了！" : modeTitle}
+            {mode === "idle" ? STRINGS.idleTitle : modeTitle}
           </ThemedText>
           {mode === "review" ? (
             <ProgressBar
@@ -159,7 +159,7 @@ export default function ExploreScreen(): React.JSX.Element {
                 session.reviewsDone,
                 session.reviewsDone + dueCount,
               )}
-              color={THEME.accent}
+              color={COLORS.accent}
             />
           ) : mode === "capture" ? (
             <ThemedText variant="secondary" size="sm">
@@ -171,7 +171,7 @@ export default function ExploreScreen(): React.JSX.Element {
         <View style={styles.body}>
           {mode === "idle" && !showWelcome ? (
             <ThemedText variant="secondary" style={styles.idleText}>
-              所有精靈都複習完了，明天再來吧！
+              {STRINGS.idleMessage}
             </ThemedText>
           ) : null}
 
@@ -191,6 +191,8 @@ export default function ExploreScreen(): React.JSX.Element {
                 posCategory={currentWord.posCategory}
                 correctAnswer={currentWord.meaning}
                 hint={currentWord.hint}
+                word={currentWord.word}
+                pos={currentWord.pos}
               />
             ) : lastCorrect ? (
               <View style={styles.center}>
@@ -207,6 +209,8 @@ export default function ExploreScreen(): React.JSX.Element {
                       : currentWord.word
                   }
                   hint={currentWord.hint}
+                  word={currentWord.word}
+                  pos={currentWord.pos}
                 />
               </View>
             )
@@ -234,7 +238,7 @@ export default function ExploreScreen(): React.JSX.Element {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: THEME.bgPrimary },
+  safe: { flex: 1, backgroundColor: COLORS.bgPrimary },
   header: { paddingHorizontal: 20, paddingTop: 16, gap: 8 },
   title: { fontWeight: "700" },
   body: { flex: 1, justifyContent: "center", paddingVertical: 24 },

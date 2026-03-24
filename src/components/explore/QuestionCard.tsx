@@ -1,20 +1,20 @@
-import React, { useState, useCallback } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { useState, useCallback } from "react";
+import { View, StyleSheet } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withSpring,
   withSequence,
   withTiming,
-} from 'react-native-reanimated';
-import type { Question, WordEntry } from '@/store/types';
-import { SPIRIT_TYPE_COLORS, THEME } from '@/utils/colors';
-import { SpiritImage } from '@/components/spirits/SpiritImage';
-import { PressableButton } from '@/components/ui/PressableButton';
-import { ThemedText } from '@/components/ui/ThemedText';
-import { WrongAnswerHint } from '@/components/explore/WrongAnswerHint';
+} from "react-native-reanimated";
+import type { Question, WordEntry } from "@/store/types";
+import { SPIRIT_TYPE_COLORS } from "@/utils/colors";
+import { SpiritImage } from "@/components/spirits/SpiritImage";
+import { PressableButton } from "@/components/ui/PressableButton";
+import { ThemedText } from "@/components/ui/ThemedText";
+import { WrongAnswerHint } from "@/components/explore/WrongAnswerHint";
 
-type AnswerState = 'waiting' | 'correct' | 'wrong';
+type AnswerState = "waiting" | "correct" | "wrong";
 
 interface QuestionCardProps {
   readonly question: Question;
@@ -27,7 +27,7 @@ export function QuestionCard({
   word,
   onAnswer,
 }: QuestionCardProps): React.JSX.Element {
-  const [answerState, setAnswerState] = useState<AnswerState>('waiting');
+  const [answerState, setAnswerState] = useState<AnswerState>("waiting");
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const spiritScale = useSharedValue(1);
@@ -42,18 +42,18 @@ export function QuestionCard({
 
   const handleSelect = useCallback(
     (index: number) => {
-      if (answerState !== 'waiting') return;
+      if (answerState !== "waiting") return;
 
       setSelectedIndex(index);
       const isCorrect = index === question.correctIndex;
 
       if (isCorrect) {
-        setAnswerState('correct');
+        setAnswerState("correct");
         spiritScale.value = withSpring(1.2, { damping: 8 }, () => {
           spiritScale.value = withSpring(1, { damping: 10 });
         });
       } else {
-        setAnswerState('wrong');
+        setAnswerState("wrong");
         spiritTranslateX.value = withSequence(
           withTiming(-10, { duration: 50 }),
           withTiming(10, { duration: 50 }),
@@ -88,10 +88,10 @@ export function QuestionCard({
 
       <View style={styles.options}>
         {question.options.map((option, i) => {
-          let variant: 'default' | 'correct' | 'wrong' = 'default';
-          if (answerState !== 'waiting') {
-            if (i === question.correctIndex) variant = 'correct';
-            else if (i === selectedIndex) variant = 'wrong';
+          let variant: "default" | "correct" | "wrong" = "default";
+          if (answerState !== "waiting") {
+            if (i === question.correctIndex) variant = "correct";
+            else if (i === selectedIndex) variant = "wrong";
           }
 
           return (
@@ -100,16 +100,16 @@ export function QuestionCard({
               label={option}
               onPress={() => handleSelect(i)}
               variant={variant}
-              disabled={answerState !== 'waiting'}
+              disabled={answerState !== "waiting"}
             />
           );
         })}
       </View>
 
-      {answerState === 'wrong' ? (
+      {answerState === "wrong" ? (
         <WrongAnswerHint
           correctAnswer={
-            question.type === 'selectChinese' ? word.meaning : word.word
+            question.type === "selectChinese" ? word.meaning : word.word
           }
           hint={word.hint}
         />
@@ -119,13 +119,13 @@ export function QuestionCard({
 }
 
 const styles = StyleSheet.create({
-  container: { gap: 20, alignItems: 'center', paddingHorizontal: 16 },
+  container: { gap: 20, alignItems: "center", paddingHorizontal: 16 },
   spiritArea: {
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.6,
     shadowRadius: 16,
     elevation: 8,
   },
-  prompt: { fontWeight: '700', textAlign: 'center' },
-  options: { width: '100%', gap: 12 },
+  prompt: { fontWeight: "700", textAlign: "center" },
+  options: { width: "100%", gap: 12 },
 });

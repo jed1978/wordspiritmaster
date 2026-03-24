@@ -1,12 +1,11 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import type { SpiritType, PosCategory, SpiritStage } from '@/store/types';
-import { SPIRIT_TYPE_COLORS } from '@/utils/colors';
-import { THEME } from '@/utils/colors';
-import { SpiritImage } from '@/components/spirits/SpiritImage';
-import { EvolutionDots } from '@/components/spirits/EvolutionDots';
-import { TypeBadge } from '@/components/ui/TypeBadge';
-import { ThemedText } from '@/components/ui/ThemedText';
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import type { SpiritType, PosCategory, SpiritStage } from "@/store/types";
+import { COLORS, SPIRIT_TYPE_COLORS } from "@/utils/colors";
+import { SpiritImage } from "@/components/spirits/SpiritImage";
+import { EvolutionDots } from "@/components/spirits/EvolutionDots";
+import { TypeBadge } from "@/components/ui/TypeBadge";
+import { ThemedText } from "@/components/ui/ThemedText";
 
 interface SpiritCardProps {
   readonly word: string;
@@ -30,14 +29,24 @@ export function SpiritCard({
   if (compact) {
     return (
       <View style={[styles.compact, { shadowColor: glowColor }]}>
-        <SpiritImage type={type} posCategory={posCategory} stage={stage} size={size} />
+        <SpiritImage
+          type={type}
+          posCategory={posCategory}
+          stage={stage}
+          size={size}
+        />
       </View>
     );
   }
 
   return (
     <View style={[styles.card, { shadowColor: glowColor }]}>
-      <SpiritImage type={type} posCategory={posCategory} stage={stage} size={size} />
+      <SpiritImage
+        type={type}
+        posCategory={posCategory}
+        stage={stage}
+        size={size}
+      />
       <ThemedText size="lg" style={styles.word}>
         {word}
       </ThemedText>
@@ -49,10 +58,10 @@ export function SpiritCard({
 
 const styles = StyleSheet.create({
   card: {
-    alignItems: 'center',
+    alignItems: "center",
     gap: 8,
     padding: 16,
-    backgroundColor: THEME.bgPanel,
+    backgroundColor: COLORS.bgCard,
     borderRadius: 16,
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.6,
@@ -60,11 +69,11 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   compact: {
-    alignItems: 'center',
+    alignItems: "center",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.4,
     shadowRadius: 6,
     elevation: 4,
   },
-  word: { fontWeight: '700', marginTop: 4 },
+  word: { fontWeight: "700", marginTop: 4 },
 });

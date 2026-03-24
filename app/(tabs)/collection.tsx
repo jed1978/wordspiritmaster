@@ -1,41 +1,53 @@
-import React, { useState, useCallback, useMemo } from 'react';
-import { View, ScrollView, StyleSheet, Pressable } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import type { SpiritType, WordEntry, CapturedSpirit } from '@/store/types';
-import { THEME, SPIRIT_TYPE_COLORS, SPIRIT_TYPE_LABELS } from '@/utils/colors';
-import { STRINGS } from '@/utils/strings';
-import { MASTERED_STAGE } from '@/utils/constants';
-import { useGame } from '@/store/GameContext';
-import { ALL_WORDS, getWordById } from '@/data/words/index';
-import { ThemedView } from '@/components/ui/ThemedView';
-import { ThemedText } from '@/components/ui/ThemedText';
-import { SpiritGrid } from '@/components/spirits/SpiritGrid';
-import { SpiritDetailModal } from '@/components/spirits/SpiritDetailModal';
+import React, { useState, useCallback, useMemo } from "react";
+import { View, ScrollView, StyleSheet, Pressable } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import type { SpiritType, WordEntry, CapturedSpirit } from "@/store/types";
+import { COLORS, SPIRIT_TYPE_COLORS, SPIRIT_TYPE_LABELS } from "@/utils/colors";
+import { STRINGS } from "@/utils/strings";
+import { MASTERED_STAGE } from "@/utils/constants";
+import { useGame } from "@/store/GameContext";
+import { ALL_WORDS, getWordById } from "@/data/words/index";
+import { ThemedView } from "@/components/ui/ThemedView";
+import { ThemedText } from "@/components/ui/ThemedText";
+import { SpiritGrid } from "@/components/spirits/SpiritGrid";
+import { SpiritDetailModal } from "@/components/spirits/SpiritDetailModal";
 
 const SPIRIT_TYPES: readonly SpiritType[] = [
-  'flame', 'aqua', 'nature', 'metal', 'bloom', 'star', 'moon', 'crystal',
+  "flame",
+  "aqua",
+  "nature",
+  "metal",
+  "bloom",
+  "star",
+  "moon",
+  "crystal",
 ];
 
 export default function CollectionScreen(): React.JSX.Element {
   const { state } = useGame();
-  const [filter, setFilter] = useState<SpiritType | 'all'>('all');
+  const [filter, setFilter] = useState<SpiritType | "all">("all");
   const [selectedWordId, setSelectedWordId] = useState<string | null>(null);
 
   const filteredWords = useMemo(
     () =>
-      filter === 'all'
-        ? ALL_WORDS
-        : ALL_WORDS.filter((w) => w.type === filter),
+      filter === "all" ? ALL_WORDS : ALL_WORDS.filter((w) => w.type === filter),
     [filter],
   );
 
-  const capturedCount = Object.keys(state.spirits).length;
-  const masteredCount = Object.values(state.spirits).filter(
+  const spiritValues = Object.values(state.spirits);
+  const capturedCount = spiritValues.length;
+  const masteredCount = spiritValues.filter(
     (s) => s.stage === MASTERED_STAGE,
   ).length;
+  const shinyCount = spiritValues.filter((s) => s.isShiny).length;
+  const completionPct = `${Math.round((capturedCount / ALL_WORDS.length) * 100)}%`;
 
-  const selectedWord = selectedWordId ? getWordById(selectedWordId) ?? null : null;
-  const selectedSpirit = selectedWordId ? state.spirits[selectedWordId] ?? null : null;
+  const selectedWord = selectedWordId
+    ? (getWordById(selectedWordId) ?? null)
+    : null;
+  const selectedSpirit = selectedWordId
+    ? (state.spirits[selectedWordId] ?? null)
+    : null;
 
   const handlePress = useCallback((wordId: string) => {
     setSelectedWordId(wordId);
@@ -46,7 +58,7 @@ export default function CollectionScreen(): React.JSX.Element {
   }, []);
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top']}>
+    <SafeAreaView style={styles.safe} edges={["top"]}>
       <ThemedView>
         <View style={styles.header}>
           <ThemedText size="xl" style={styles.title}>
@@ -56,7 +68,8 @@ export default function CollectionScreen(): React.JSX.Element {
           <View style={styles.stats}>
             <StatCard label={STRINGS.statsCaptures} value={capturedCount} />
             <StatCard label={STRINGS.statsMastered} value={masteredCount} />
-            <StatCard label={STRINGS.statsTotal} value={ALL_WORDS.length} />
+            <StatCard label={STRINGS.statsShiny} value={shinyCount} />
+            <StatCard label={STRINGS.statsCompletion} value={completionPct} />
           </View>
         </View>
 
@@ -68,8 +81,8 @@ export default function CollectionScreen(): React.JSX.Element {
         >
           <FilterChip
             label={STRINGS.collectionFilterAll}
-            active={filter === 'all'}
-            onPress={() => setFilter('all')}
+            active={filter === "all"}
+            onPress={() => setFilter("all")}
           />
           {SPIRIT_TYPES.map((t) => (
             <FilterChip
@@ -84,7 +97,9 @@ export default function CollectionScreen(): React.JSX.Element {
 
         {capturedCount === 0 ? (
           <View style={styles.empty}>
-            <ThemedText variant="secondary">{STRINGS.collectionEmpty}</ThemedText>
+            <ThemedText variant="secondary">
+              {STRINGS.collectionEmpty}
+            </ThemedText>
           </View>
         ) : (
           <SpiritGrid
@@ -110,7 +125,7 @@ function StatCard({
   value,
 }: {
   readonly label: string;
-  readonly value: number;
+  readonly value: number | string;
 }): React.JSX.Element {
   return (
     <View style={styles.statCard}>
@@ -135,12 +150,15 @@ function FilterChip({
   readonly color?: string;
   readonly onPress: () => void;
 }): React.JSX.Element {
-  const bg = active ? (color ?? THEME.accent) : THEME.bgButton;
-  const textColor = active ? '#fff' : THEME.textSecondary;
+  const bg = active ? (color ?? COLORS.accent) : COLORS.bgButton;
+  const textColor = active ? COLORS.textWhite : COLORS.textSecondary;
   return (
     <Pressable
       onPress={onPress}
-      style={[styles.chip, { backgroundColor: active ? `${bg}33` : bg, borderColor: bg }]}
+      style={[
+        styles.chip,
+        { backgroundColor: active ? `${bg}33` : bg, borderColor: bg },
+      ]}
     >
       <ThemedText size="sm" style={{ color: active ? bg : textColor }}>
         {label}
@@ -150,18 +168,18 @@ function FilterChip({
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: THEME.bgPrimary },
+  safe: { flex: 1, backgroundColor: COLORS.bgPrimary },
   header: { paddingHorizontal: 20, paddingTop: 16, gap: 12 },
-  title: { fontWeight: '700' },
-  stats: { flexDirection: 'row', gap: 12 },
+  title: { fontWeight: "700" },
+  stats: { flexDirection: "row", gap: 12 },
   statCard: {
     flex: 1,
-    backgroundColor: THEME.bgPanel,
+    backgroundColor: COLORS.bgCard,
     borderRadius: 12,
     padding: 12,
-    alignItems: 'center',
+    alignItems: "center",
   },
-  statValue: { fontWeight: '700' },
+  statValue: { fontWeight: "700" },
   filterScroll: { maxHeight: 48, marginTop: 12 },
   filterContent: { paddingHorizontal: 16, gap: 8 },
   chip: {
@@ -170,5 +188,10 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
   },
-  empty: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 32 },
+  empty: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 32,
+  },
 });

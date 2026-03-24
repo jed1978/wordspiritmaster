@@ -1,10 +1,11 @@
-import React, { useCallback } from 'react';
-import { FlatList, Pressable, View, StyleSheet } from 'react-native';
-import Animated, { FadeInDown } from 'react-native-reanimated';
-import type { WordEntry, CapturedSpirit } from '@/store/types';
-import { THEME } from '@/utils/colors';
-import { ThemedText } from '@/components/ui/ThemedText';
-import { SpiritCard } from '@/components/spirits/SpiritCard';
+import React, { useCallback } from "react";
+import { FlatList, Pressable, View, StyleSheet } from "react-native";
+import Animated, { FadeInDown } from "react-native-reanimated";
+import type { WordEntry, CapturedSpirit } from "@/store/types";
+import { COLORS } from "@/utils/colors";
+import { MASTERED_STAGE } from "@/utils/constants";
+import { ThemedText } from "@/components/ui/ThemedText";
+import { SpiritCard } from "@/components/spirits/SpiritCard";
 
 interface SpiritGridProps {
   readonly words: readonly WordEntry[];
@@ -42,14 +43,19 @@ export function SpiritGrid({
             style={styles.pressable}
           >
             {isCaptured ? (
-              <SpiritCard
-                word={word.word}
-                type={word.type}
-                posCategory={word.posCategory}
-                stage={spirit.stage}
-                size={56}
-                compact
-              />
+              <View>
+                <SpiritCard
+                  word={word.word}
+                  type={word.type}
+                  posCategory={word.posCategory}
+                  stage={spirit.stage}
+                  size={56}
+                  compact
+                />
+                {spirit.stage === MASTERED_STAGE ? (
+                  <ThemedText style={styles.crown}>👑</ThemedText>
+                ) : null}
+              </View>
             ) : (
               <View style={styles.unknown}>
                 <ThemedText variant="hint" size="lg">
@@ -80,14 +86,21 @@ export function SpiritGrid({
 
 const styles = StyleSheet.create({
   grid: { paddingHorizontal: 8, paddingBottom: 24 },
-  cell: { flex: 1, padding: 4, maxWidth: '25%' },
-  pressable: { alignItems: 'center', minHeight: 80 },
+  cell: { flex: 1, padding: 4, maxWidth: "25%" },
+  pressable: { alignItems: "center", minHeight: 80 },
   unknown: {
     width: 56,
     height: 56,
     borderRadius: 28,
-    backgroundColor: THEME.bgButton,
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: COLORS.bgButton,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  crown: {
+    position: "absolute",
+    top: -2,
+    right: -2,
+    fontSize: 12,
+    color: COLORS.warning,
   },
 });

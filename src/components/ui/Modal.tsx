@@ -1,11 +1,6 @@
-import React from 'react';
-import {
-  Modal as RNModal,
-  View,
-  Pressable,
-  StyleSheet,
-} from 'react-native';
-import { THEME } from '@/utils/colors';
+import React from "react";
+import { Modal as RNModal, View, Pressable, StyleSheet } from "react-native";
+import { COLORS } from "@/utils/colors";
 
 interface ModalProps {
   readonly visible: boolean;
@@ -37,17 +32,17 @@ export function Modal({
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: COLORS.overlay,
+    justifyContent: "center",
+    alignItems: "center",
     padding: 24,
   },
   card: {
-    backgroundColor: THEME.bgPanel,
+    backgroundColor: COLORS.bgCard,
     borderRadius: 16,
     padding: 24,
-    width: '100%',
+    width: "100%",
     maxWidth: 360,
-    maxHeight: '80%',
+    maxHeight: "80%",
   },
 });

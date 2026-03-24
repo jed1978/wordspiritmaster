@@ -1,14 +1,14 @@
-import React, { useCallback } from 'react';
-import { Pressable, StyleSheet, type ViewStyle } from 'react-native';
+import React, { useCallback } from "react";
+import { Pressable, StyleSheet, type ViewStyle } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
-} from 'react-native-reanimated';
-import { THEME } from '@/utils/colors';
-import { ThemedText } from '@/components/ui/ThemedText';
+} from "react-native-reanimated";
+import { COLORS } from "@/utils/colors";
+import { ThemedText } from "@/components/ui/ThemedText";
 
-type ButtonVariant = 'default' | 'correct' | 'wrong' | 'accent';
+type ButtonVariant = "default" | "correct" | "wrong" | "accent";
 
 interface PressableButtonProps {
   readonly label: string;
@@ -19,17 +19,17 @@ interface PressableButtonProps {
 }
 
 const VARIANT_BG: Record<ButtonVariant, string> = {
-  default: THEME.bgButton,
-  correct: THEME.correct,
-  wrong: THEME.wrong,
-  accent: THEME.accent,
+  default: COLORS.bgButton,
+  correct: COLORS.correct,
+  wrong: COLORS.wrong,
+  accent: COLORS.accent,
 };
 
 const VARIANT_BORDER: Record<ButtonVariant, string> = {
-  default: THEME.bgButtonBorder,
-  correct: THEME.correct,
-  wrong: THEME.wrong,
-  accent: THEME.accent,
+  default: COLORS.borderButton,
+  correct: COLORS.correct,
+  wrong: COLORS.wrong,
+  accent: COLORS.accent,
 };
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -37,7 +37,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 export function PressableButton({
   label,
   onPress,
-  variant = 'default',
+  variant = "default",
   disabled = false,
   style,
 }: PressableButtonProps): React.JSX.Element {
@@ -55,7 +55,7 @@ export function PressableButton({
     scale.value = withTiming(1, { duration: 100 });
   }, [scale]);
 
-  const textVariant = variant === 'default' ? 'primary' : 'primary';
+  const textVariant = variant === "default" ? "primary" : "primary";
 
   return (
     <AnimatedPressable
@@ -86,10 +86,10 @@ const styles = StyleSheet.create({
     minHeight: 48,
     borderRadius: 12,
     borderWidth: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 12,
   },
-  label: { textAlign: 'center', fontWeight: '600' },
+  label: { textAlign: "center", fontWeight: "600" },
 });

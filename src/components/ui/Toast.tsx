@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import { StyleSheet } from 'react-native';
+import React, { useEffect } from "react";
+import { StyleSheet } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   withDelay,
   runOnJS,
-} from 'react-native-reanimated';
-import { THEME } from '@/utils/colors';
-import { ThemedText } from '@/components/ui/ThemedText';
+} from "react-native-reanimated";
+import { COLORS } from "@/utils/colors";
+import { ThemedText } from "@/components/ui/ThemedText";
 
 interface ToastProps {
   readonly message: string;
@@ -54,15 +54,15 @@ export function Toast({
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 100,
     left: 24,
     right: 24,
-    backgroundColor: THEME.bgPanel,
+    backgroundColor: COLORS.bgCard,
     borderRadius: 12,
     padding: 14,
-    alignItems: 'center',
+    alignItems: "center",
     borderWidth: 1,
-    borderColor: THEME.bgButtonBorder,
+    borderColor: COLORS.borderButton,
   },
 });

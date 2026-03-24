@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Image, StyleSheet } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -8,7 +8,8 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import type { SpiritType, PosCategory, SpiritStage } from "@/store/types";
-import { getSpiritImage } from "@/utils/spiritImage";
+import { COLORS, SPIRIT_TYPE_COLORS } from "@/utils/colors";
+import { getSpiritImage, SPIRIT_TYPE_EMOJI } from "@/utils/spiritImage";
 
 interface SpiritImageProps {
   readonly type: SpiritType;
@@ -51,9 +52,20 @@ export function SpiritImage({
           resizeMode="contain"
         />
       ) : (
-        <Animated.View
-          style={[styles.placeholder, { width: size, height: size }]}
-        />
+        <View
+          style={[
+            styles.fallback,
+            {
+              width: size,
+              height: size,
+              borderRadius: size / 2,
+              backgroundColor: SPIRIT_TYPE_COLORS[type],
+            },
+          ]}
+        >
+          <Text style={styles.emoji}>{SPIRIT_TYPE_EMOJI[type]}</Text>
+          <Text style={styles.stageLabel}>{stage}</Text>
+        </View>
       )}
     </Animated.View>
   );
@@ -61,11 +73,20 @@ export function SpiritImage({
 
 const styles = StyleSheet.create({
   image: { borderRadius: 8 },
-  placeholder: {
-    borderRadius: 12,
-    backgroundColor: "#2a2a4a",
-    borderWidth: 2,
-    borderColor: "#4a4a7a",
-    borderStyle: "dashed",
+  fallback: {
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 0.85,
+  },
+  emoji: {
+    fontSize: 28,
+  },
+  stageLabel: {
+    position: "absolute",
+    bottom: 2,
+    right: 4,
+    fontSize: 10,
+    color: COLORS.textWhite,
+    fontWeight: "700",
   },
 });

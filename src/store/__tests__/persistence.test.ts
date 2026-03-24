@@ -1,10 +1,15 @@
-import { saveState, loadState, migrateState, CURRENT_VERSION } from '@/store/persistence';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { INITIAL_GAME_STATE } from '@/store/gameReducer';
-import { STORAGE_KEY } from '@/utils/constants';
-import type { GameState, PersistedState } from '@/store/types';
+import {
+  saveState,
+  loadState,
+  migrateState,
+  CURRENT_VERSION,
+} from "@/store/persistence";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { INITIAL_GAME_STATE } from "@/store/gameReducer";
+import { STORAGE_KEY } from "@/utils/constants";
+import type { GameState, PersistedState } from "@/store/types";
 
-jest.mock('@react-native-async-storage/async-storage', () => ({
+jest.mock("@react-native-async-storage/async-storage", () => ({
   __esModule: true,
   default: {
     setItem: jest.fn(() => Promise.resolve()),
@@ -15,19 +20,19 @@ jest.mock('@react-native-async-storage/async-storage', () => ({
 
 const mockAsyncStorage = AsyncStorage as jest.Mocked<typeof AsyncStorage>;
 
-describe('persistence', () => {
+describe("persistence", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  describe('CURRENT_VERSION', () => {
-    it('equals 1', () => {
-      expect(CURRENT_VERSION).toBe(1);
+  describe("CURRENT_VERSION", () => {
+    it("equals 2", () => {
+      expect(CURRENT_VERSION).toBe(2);
     });
   });
 
-  describe('saveState', () => {
-    it('saves state with version to AsyncStorage', async () => {
+  describe("saveState", () => {
+    it("saves state with version to AsyncStorage", async () => {
       await saveState(INITIAL_GAME_STATE);
 
       expect(mockAsyncStorage.setItem).toHaveBeenCalledTimes(1);
@@ -36,21 +41,22 @@ describe('persistence', () => {
         expect.any(String),
       );
 
-      const savedJson = (mockAsyncStorage.setItem as jest.Mock).mock.calls[0][1];
+      const savedJson = (mockAsyncStorage.setItem as jest.Mock).mock
+        .calls[0][1];
       const parsed: PersistedState = JSON.parse(savedJson);
       expect(parsed.version).toBe(CURRENT_VERSION);
       expect(parsed.gameState).toEqual(INITIAL_GAME_STATE);
     });
   });
 
-  describe('loadState', () => {
-    it('returns null when no saved state', async () => {
+  describe("loadState", () => {
+    it("returns null when no saved state", async () => {
       mockAsyncStorage.getItem.mockResolvedValue(null);
       const result = await loadState();
       expect(result).toBeNull();
     });
 
-    it('returns GameState when valid data exists', async () => {
+    it("returns GameState when valid data exists", async () => {
       const persisted: PersistedState = {
         version: CURRENT_VERSION,
         gameState: { ...INITIAL_GAME_STATE, totalXp: 42 },
@@ -62,15 +68,15 @@ describe('persistence', () => {
       expect(result!.totalXp).toBe(42);
     });
 
-    it('returns null on invalid JSON', async () => {
-      mockAsyncStorage.getItem.mockResolvedValue('not-json!!!');
+    it("returns null on invalid JSON", async () => {
+      mockAsyncStorage.getItem.mockResolvedValue("not-json!!!");
       const result = await loadState();
       expect(result).toBeNull();
     });
   });
 
-  describe('migrateState', () => {
-    it('returns gameState as-is for current version', () => {
+  describe("migrateState", () => {
+    it("returns gameState as-is for current version", () => {
       const persisted: PersistedState = {
         version: CURRENT_VERSION,
         gameState: { ...INITIAL_GAME_STATE, totalXp: 100 },
@@ -79,7 +85,7 @@ describe('persistence', () => {
       expect(result.totalXp).toBe(100);
     });
 
-    it('returns initial state for unknown/future versions gracefully', () => {
+    it("returns initial state for unknown/future versions gracefully", () => {
       const persisted: PersistedState = {
         version: 999,
         gameState: { ...INITIAL_GAME_STATE, totalXp: 100 },

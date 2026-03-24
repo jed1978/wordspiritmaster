@@ -1,8 +1,9 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { GameState, PersistedState } from '@/store/types';
-import { STORAGE_KEY } from '@/utils/constants';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import type { GameState, PersistedState } from "@/store/types";
+import { STORAGE_KEY } from "@/utils/constants";
+import { INITIAL_GAME_STATE } from "@/store/gameReducer";
 
-export const CURRENT_VERSION = 1;
+export const CURRENT_VERSION = 2;
 
 export async function saveState(state: GameState): Promise<void> {
   const persisted: PersistedState = {
@@ -25,7 +26,15 @@ export async function loadState(): Promise<GameState | null> {
 }
 
 export function migrateState(persisted: PersistedState): GameState {
-  // Version 1 is current — no migrations needed yet.
-  // Future migrations: if (persisted.version < 2) { ... }
-  return persisted.gameState;
+  let state = persisted.gameState;
+
+  if (persisted.version < 2) {
+    state = {
+      ...state,
+      gacha: state.gacha ?? INITIAL_GAME_STATE.gacha,
+      sessionFlags: state.sessionFlags ?? INITIAL_GAME_STATE.sessionFlags,
+    };
+  }
+
+  return state;
 }

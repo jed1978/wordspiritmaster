@@ -29,6 +29,11 @@ export const INITIAL_GAME_STATE: GameState = {
   level: 1,
   hasSeenWelcome: false,
   settings: { hapticEnabled: true },
+  gacha: { pityCounter: 0 },
+  sessionFlags: {
+    dailyReviewCompleted: false,
+    dailyReviewRewardClaimed: false,
+  },
 };
 
 export function gameReducer(state: GameState, action: GameAction): GameState {
@@ -45,8 +50,10 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         consecutiveCorrect: 0,
         nextReviewAt: now + SRS_INTERVALS[1],
         capturedAt: now,
+        lastReviewedAt: now,
         totalReviews: 0,
         totalCorrect: 0,
+        isShiny: false,
       };
       return {
         ...state,
