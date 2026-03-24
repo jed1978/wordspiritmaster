@@ -1,0 +1,6176 @@
+{
+  "version": 1,
+  "project": "word-spirit-master",
+  "total": 160,
+  "naming": "spirit_{type}_{pos}_{stage}.png",
+  "outputDir": "src/assets/spirits/",
+  "types": [
+    "flame",
+    "aqua",
+    "nature",
+    "thunder",
+    "bloom",
+    "star",
+    "moon",
+    "crystal"
+  ],
+  "partsOfSpeech": [
+    "noun",
+    "verb",
+    "adj",
+    "func"
+  ],
+  "stages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "items": [
+    {
+      "id": 1,
+      "key": "flame_noun_1",
+      "filename": "spirit_flame_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_flame_noun_1.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "flame_noun_1",
+      "tags": [
+        "flame",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "flame_noun_2",
+      "filename": "spirit_flame_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_flame_noun_2.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "flame_noun_2",
+      "tags": [
+        "flame",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 3,
+      "key": "flame_noun_3",
+      "filename": "spirit_flame_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_flame_noun_3.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, active flame effects visible",
+      "promptRef": "flame_noun_3",
+      "tags": [
+        "flame",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "flame_noun_4",
+      "filename": "spirit_flame_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_flame_noun_4.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "prominent flame on head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft ember aura, accessories like a small flame scarf or ember crown",
+      "promptRef": "flame_noun_4",
+      "tags": [
+        "flame",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 5,
+      "key": "flame_noun_5",
+      "filename": "spirit_flame_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_flame_noun_5.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "majestic flame crown",
+        "blazing tail",
+        "intricate fire patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body golden glow, floating crown, halo behind, sparkle particles",
+      "promptRef": "flame_noun_5",
+      "tags": [
+        "flame",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 6,
+      "key": "flame_verb_1",
+      "filename": "spirit_flame_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_flame_verb_1.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "flame_verb_1",
+      "tags": [
+        "flame",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 7,
+      "key": "flame_verb_2",
+      "filename": "spirit_flame_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_flame_verb_2.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "flame_verb_2",
+      "tags": [
+        "flame",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 8,
+      "key": "flame_verb_3",
+      "filename": "spirit_flame_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_flame_verb_3.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, active flame effects visible",
+      "promptRef": "flame_verb_3",
+      "tags": [
+        "flame",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 9,
+      "key": "flame_verb_4",
+      "filename": "spirit_flame_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_flame_verb_4.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "prominent flame on head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft ember aura, accessories like a small flame scarf or ember crown",
+      "promptRef": "flame_verb_4",
+      "tags": [
+        "flame",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 10,
+      "key": "flame_verb_5",
+      "filename": "spirit_flame_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_flame_verb_5.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "majestic flame crown",
+        "blazing tail",
+        "intricate fire patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body golden glow, floating crown, halo behind, sparkle particles",
+      "promptRef": "flame_verb_5",
+      "tags": [
+        "flame",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 11,
+      "key": "flame_adj_1",
+      "filename": "spirit_flame_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_flame_adj_1.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "flame_adj_1",
+      "tags": [
+        "flame",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 12,
+      "key": "flame_adj_2",
+      "filename": "spirit_flame_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_flame_adj_2.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "flame_adj_2",
+      "tags": [
+        "flame",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 13,
+      "key": "flame_adj_3",
+      "filename": "spirit_flame_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_flame_adj_3.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, active flame effects visible",
+      "promptRef": "flame_adj_3",
+      "tags": [
+        "flame",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 14,
+      "key": "flame_adj_4",
+      "filename": "spirit_flame_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_flame_adj_4.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "prominent flame on head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft ember aura, accessories like a small flame scarf or ember crown",
+      "promptRef": "flame_adj_4",
+      "tags": [
+        "flame",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 15,
+      "key": "flame_adj_5",
+      "filename": "spirit_flame_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_flame_adj_5.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "majestic flame crown",
+        "blazing tail",
+        "intricate fire patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body golden glow, floating crown, halo behind, sparkle particles",
+      "promptRef": "flame_adj_5",
+      "tags": [
+        "flame",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 16,
+      "key": "flame_func_1",
+      "filename": "spirit_flame_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_flame_func_1.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "flame_func_1",
+      "tags": [
+        "flame",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 17,
+      "key": "flame_func_2",
+      "filename": "spirit_flame_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_flame_func_2.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "flame_func_2",
+      "tags": [
+        "flame",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 18,
+      "key": "flame_func_3",
+      "filename": "spirit_flame_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_flame_func_3.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "small flame on top of head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, active flame effects visible",
+      "promptRef": "flame_func_3",
+      "tags": [
+        "flame",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 19,
+      "key": "flame_func_4",
+      "filename": "spirit_flame_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_flame_func_4.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "prominent flame on head",
+        "fire wisps on tail",
+        "fire patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft ember aura, accessories like a small flame scarf or ember crown",
+      "promptRef": "flame_func_4",
+      "tags": [
+        "flame",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 20,
+      "key": "flame_func_5",
+      "filename": "spirit_flame_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_flame_func_5.png",
+      "type": "flame",
+      "typeLabel": "Flame",
+      "typeLabelZh": "火焰",
+      "palette": {
+        "primary": "#ef4444",
+        "accent": "#fbbf24"
+      },
+      "motifs": [
+        "majestic flame crown",
+        "blazing tail",
+        "intricate fire patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body golden glow, floating crown, halo behind, sparkle particles",
+      "promptRef": "flame_func_5",
+      "tags": [
+        "flame",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 21,
+      "key": "aqua_noun_1",
+      "filename": "spirit_aqua_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_noun_1.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "aqua_noun_1",
+      "tags": [
+        "aqua",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 22,
+      "key": "aqua_noun_2",
+      "filename": "spirit_aqua_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_noun_2.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "aqua_noun_2",
+      "tags": [
+        "aqua",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 23,
+      "key": "aqua_noun_3",
+      "filename": "spirit_aqua_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_noun_3.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, flowing water effects visible",
+      "promptRef": "aqua_noun_3",
+      "tags": [
+        "aqua",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 24,
+      "key": "aqua_noun_4",
+      "filename": "spirit_aqua_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_noun_4.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "flowing water crest",
+        "droplet markings on body",
+        "elegant splash trails"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft mist aura, accessories like a wave scarf or bubble jewels",
+      "promptRef": "aqua_noun_4",
+      "tags": [
+        "aqua",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 25,
+      "key": "aqua_noun_5",
+      "filename": "spirit_aqua_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_noun_5.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "regal water crown",
+        "flowing splash tail",
+        "ornate wave patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body aqua glow, floating droplets, halo of ripples, sparkle particles",
+      "promptRef": "aqua_noun_5",
+      "tags": [
+        "aqua",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 26,
+      "key": "aqua_verb_1",
+      "filename": "spirit_aqua_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_verb_1.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "aqua_verb_1",
+      "tags": [
+        "aqua",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 27,
+      "key": "aqua_verb_2",
+      "filename": "spirit_aqua_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_verb_2.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "aqua_verb_2",
+      "tags": [
+        "aqua",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 28,
+      "key": "aqua_verb_3",
+      "filename": "spirit_aqua_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_verb_3.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, flowing water effects visible",
+      "promptRef": "aqua_verb_3",
+      "tags": [
+        "aqua",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 29,
+      "key": "aqua_verb_4",
+      "filename": "spirit_aqua_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_verb_4.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "flowing water crest",
+        "droplet markings on body",
+        "elegant splash trails"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft mist aura, accessories like a wave scarf or bubble jewels",
+      "promptRef": "aqua_verb_4",
+      "tags": [
+        "aqua",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 30,
+      "key": "aqua_verb_5",
+      "filename": "spirit_aqua_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_verb_5.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "regal water crown",
+        "flowing splash tail",
+        "ornate wave patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body aqua glow, floating droplets, halo of ripples, sparkle particles",
+      "promptRef": "aqua_verb_5",
+      "tags": [
+        "aqua",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 31,
+      "key": "aqua_adj_1",
+      "filename": "spirit_aqua_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_adj_1.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "aqua_adj_1",
+      "tags": [
+        "aqua",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 32,
+      "key": "aqua_adj_2",
+      "filename": "spirit_aqua_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_adj_2.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "aqua_adj_2",
+      "tags": [
+        "aqua",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 33,
+      "key": "aqua_adj_3",
+      "filename": "spirit_aqua_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_adj_3.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, flowing water effects visible",
+      "promptRef": "aqua_adj_3",
+      "tags": [
+        "aqua",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 34,
+      "key": "aqua_adj_4",
+      "filename": "spirit_aqua_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_adj_4.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "flowing water crest",
+        "droplet markings on body",
+        "elegant splash trails"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft mist aura, accessories like a wave scarf or bubble jewels",
+      "promptRef": "aqua_adj_4",
+      "tags": [
+        "aqua",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 35,
+      "key": "aqua_adj_5",
+      "filename": "spirit_aqua_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_adj_5.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "regal water crown",
+        "flowing splash tail",
+        "ornate wave patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body aqua glow, floating droplets, halo of ripples, sparkle particles",
+      "promptRef": "aqua_adj_5",
+      "tags": [
+        "aqua",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 36,
+      "key": "aqua_func_1",
+      "filename": "spirit_aqua_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_func_1.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "aqua_func_1",
+      "tags": [
+        "aqua",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 37,
+      "key": "aqua_func_2",
+      "filename": "spirit_aqua_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_func_2.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "aqua_func_2",
+      "tags": [
+        "aqua",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 38,
+      "key": "aqua_func_3",
+      "filename": "spirit_aqua_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_func_3.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "droplet markings on body",
+        "jelly-like translucent surface",
+        "small splash ornaments"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, flowing water effects visible",
+      "promptRef": "aqua_func_3",
+      "tags": [
+        "aqua",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 39,
+      "key": "aqua_func_4",
+      "filename": "spirit_aqua_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_func_4.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "flowing water crest",
+        "droplet markings on body",
+        "elegant splash trails"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft mist aura, accessories like a wave scarf or bubble jewels",
+      "promptRef": "aqua_func_4",
+      "tags": [
+        "aqua",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 40,
+      "key": "aqua_func_5",
+      "filename": "spirit_aqua_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_aqua_func_5.png",
+      "type": "aqua",
+      "typeLabel": "Aqua",
+      "typeLabelZh": "水流",
+      "palette": {
+        "primary": "#3b82f6",
+        "accent": "#93c5fd"
+      },
+      "motifs": [
+        "regal water crown",
+        "flowing splash tail",
+        "ornate wave patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body aqua glow, floating droplets, halo of ripples, sparkle particles",
+      "promptRef": "aqua_func_5",
+      "tags": [
+        "aqua",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 41,
+      "key": "nature_noun_1",
+      "filename": "spirit_nature_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_nature_noun_1.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "nature_noun_1",
+      "tags": [
+        "nature",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 42,
+      "key": "nature_noun_2",
+      "filename": "spirit_nature_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_nature_noun_2.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "nature_noun_2",
+      "tags": [
+        "nature",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 43,
+      "key": "nature_noun_3",
+      "filename": "spirit_nature_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_nature_noun_3.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, fresh leaf and vine effects visible",
+      "promptRef": "nature_noun_3",
+      "tags": [
+        "nature",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 44,
+      "key": "nature_noun_4",
+      "filename": "spirit_nature_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_nature_noun_4.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "leafy crest",
+        "vine markings on body",
+        "sprouting branch details"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft pollen aura, accessories like a vine scarf or seed pendant",
+      "promptRef": "nature_noun_4",
+      "tags": [
+        "nature",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 45,
+      "key": "nature_noun_5",
+      "filename": "spirit_nature_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_nature_noun_5.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "floral leaf crown",
+        "lush vine tail",
+        "intricate botanical patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body verdant glow, floating petals and leaves, halo of branches, sparkle particles",
+      "promptRef": "nature_noun_5",
+      "tags": [
+        "nature",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 46,
+      "key": "nature_verb_1",
+      "filename": "spirit_nature_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_nature_verb_1.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "nature_verb_1",
+      "tags": [
+        "nature",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 47,
+      "key": "nature_verb_2",
+      "filename": "spirit_nature_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_nature_verb_2.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "nature_verb_2",
+      "tags": [
+        "nature",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 48,
+      "key": "nature_verb_3",
+      "filename": "spirit_nature_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_nature_verb_3.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, fresh leaf and vine effects visible",
+      "promptRef": "nature_verb_3",
+      "tags": [
+        "nature",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 49,
+      "key": "nature_verb_4",
+      "filename": "spirit_nature_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_nature_verb_4.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "leafy crest",
+        "vine markings on body",
+        "sprouting branch details"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft pollen aura, accessories like a vine scarf or seed pendant",
+      "promptRef": "nature_verb_4",
+      "tags": [
+        "nature",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 50,
+      "key": "nature_verb_5",
+      "filename": "spirit_nature_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_nature_verb_5.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "floral leaf crown",
+        "lush vine tail",
+        "intricate botanical patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body verdant glow, floating petals and leaves, halo of branches, sparkle particles",
+      "promptRef": "nature_verb_5",
+      "tags": [
+        "nature",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 51,
+      "key": "nature_adj_1",
+      "filename": "spirit_nature_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_nature_adj_1.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "nature_adj_1",
+      "tags": [
+        "nature",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 52,
+      "key": "nature_adj_2",
+      "filename": "spirit_nature_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_nature_adj_2.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "nature_adj_2",
+      "tags": [
+        "nature",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 53,
+      "key": "nature_adj_3",
+      "filename": "spirit_nature_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_nature_adj_3.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, fresh leaf and vine effects visible",
+      "promptRef": "nature_adj_3",
+      "tags": [
+        "nature",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 54,
+      "key": "nature_adj_4",
+      "filename": "spirit_nature_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_nature_adj_4.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "leafy crest",
+        "vine markings on body",
+        "sprouting branch details"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft pollen aura, accessories like a vine scarf or seed pendant",
+      "promptRef": "nature_adj_4",
+      "tags": [
+        "nature",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 55,
+      "key": "nature_adj_5",
+      "filename": "spirit_nature_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_nature_adj_5.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "floral leaf crown",
+        "lush vine tail",
+        "intricate botanical patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body verdant glow, floating petals and leaves, halo of branches, sparkle particles",
+      "promptRef": "nature_adj_5",
+      "tags": [
+        "nature",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 56,
+      "key": "nature_func_1",
+      "filename": "spirit_nature_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_nature_func_1.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "nature_func_1",
+      "tags": [
+        "nature",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 57,
+      "key": "nature_func_2",
+      "filename": "spirit_nature_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_nature_func_2.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "nature_func_2",
+      "tags": [
+        "nature",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 58,
+      "key": "nature_func_3",
+      "filename": "spirit_nature_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_nature_func_3.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "small leaf or bud on top of head",
+        "vine markings on body",
+        "earthy freckles"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, fresh leaf and vine effects visible",
+      "promptRef": "nature_func_3",
+      "tags": [
+        "nature",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 59,
+      "key": "nature_func_4",
+      "filename": "spirit_nature_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_nature_func_4.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "leafy crest",
+        "vine markings on body",
+        "sprouting branch details"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft pollen aura, accessories like a vine scarf or seed pendant",
+      "promptRef": "nature_func_4",
+      "tags": [
+        "nature",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 60,
+      "key": "nature_func_5",
+      "filename": "spirit_nature_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_nature_func_5.png",
+      "type": "nature",
+      "typeLabel": "Nature",
+      "typeLabelZh": "草木",
+      "palette": {
+        "primary": "#22c55e",
+        "accent": "#86efac"
+      },
+      "motifs": [
+        "floral leaf crown",
+        "lush vine tail",
+        "intricate botanical patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body verdant glow, floating petals and leaves, halo of branches, sparkle particles",
+      "promptRef": "nature_func_5",
+      "tags": [
+        "nature",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 61,
+      "key": "thunder_noun_1",
+      "filename": "spirit_thunder_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_noun_1.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "thunder_noun_1",
+      "tags": [
+        "thunder",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 62,
+      "key": "thunder_noun_2",
+      "filename": "spirit_thunder_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_noun_2.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "thunder_noun_2",
+      "tags": [
+        "thunder",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 63,
+      "key": "thunder_noun_3",
+      "filename": "spirit_thunder_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_noun_3.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, gentle electric sparks visible",
+      "promptRef": "thunder_noun_3",
+      "tags": [
+        "thunder",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 64,
+      "key": "thunder_noun_4",
+      "filename": "spirit_thunder_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_noun_4.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "sharp lightning crest",
+        "zigzag tail",
+        "brighter electric circuit markings on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft electric aura, accessories like a charged scarf or spark ring",
+      "promptRef": "thunder_noun_4",
+      "tags": [
+        "thunder",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 65,
+      "key": "thunder_noun_5",
+      "filename": "spirit_thunder_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_noun_5.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "royal lightning crown",
+        "crackling tail",
+        "ornate thunder markings on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body luminous glow, floating sparks, halo of lightning arcs, sparkle particles",
+      "promptRef": "thunder_noun_5",
+      "tags": [
+        "thunder",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 66,
+      "key": "thunder_verb_1",
+      "filename": "spirit_thunder_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_verb_1.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "thunder_verb_1",
+      "tags": [
+        "thunder",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 67,
+      "key": "thunder_verb_2",
+      "filename": "spirit_thunder_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_verb_2.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "thunder_verb_2",
+      "tags": [
+        "thunder",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 68,
+      "key": "thunder_verb_3",
+      "filename": "spirit_thunder_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_verb_3.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, gentle electric sparks visible",
+      "promptRef": "thunder_verb_3",
+      "tags": [
+        "thunder",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 69,
+      "key": "thunder_verb_4",
+      "filename": "spirit_thunder_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_verb_4.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "sharp lightning crest",
+        "zigzag tail",
+        "brighter electric circuit markings on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft electric aura, accessories like a charged scarf or spark ring",
+      "promptRef": "thunder_verb_4",
+      "tags": [
+        "thunder",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 70,
+      "key": "thunder_verb_5",
+      "filename": "spirit_thunder_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_verb_5.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "royal lightning crown",
+        "crackling tail",
+        "ornate thunder markings on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body luminous glow, floating sparks, halo of lightning arcs, sparkle particles",
+      "promptRef": "thunder_verb_5",
+      "tags": [
+        "thunder",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 71,
+      "key": "thunder_adj_1",
+      "filename": "spirit_thunder_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_adj_1.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "thunder_adj_1",
+      "tags": [
+        "thunder",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 72,
+      "key": "thunder_adj_2",
+      "filename": "spirit_thunder_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_adj_2.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "thunder_adj_2",
+      "tags": [
+        "thunder",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 73,
+      "key": "thunder_adj_3",
+      "filename": "spirit_thunder_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_adj_3.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, gentle electric sparks visible",
+      "promptRef": "thunder_adj_3",
+      "tags": [
+        "thunder",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 74,
+      "key": "thunder_adj_4",
+      "filename": "spirit_thunder_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_adj_4.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "sharp lightning crest",
+        "zigzag tail",
+        "brighter electric circuit markings on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft electric aura, accessories like a charged scarf or spark ring",
+      "promptRef": "thunder_adj_4",
+      "tags": [
+        "thunder",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 75,
+      "key": "thunder_adj_5",
+      "filename": "spirit_thunder_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_adj_5.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "royal lightning crown",
+        "crackling tail",
+        "ornate thunder markings on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body luminous glow, floating sparks, halo of lightning arcs, sparkle particles",
+      "promptRef": "thunder_adj_5",
+      "tags": [
+        "thunder",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 76,
+      "key": "thunder_func_1",
+      "filename": "spirit_thunder_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_func_1.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "thunder_func_1",
+      "tags": [
+        "thunder",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 77,
+      "key": "thunder_func_2",
+      "filename": "spirit_thunder_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_func_2.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "thunder_func_2",
+      "tags": [
+        "thunder",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 78,
+      "key": "thunder_func_3",
+      "filename": "spirit_thunder_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_func_3.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "small lightning antenna",
+        "zigzag tail",
+        "electric circuit markings on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, gentle electric sparks visible",
+      "promptRef": "thunder_func_3",
+      "tags": [
+        "thunder",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 79,
+      "key": "thunder_func_4",
+      "filename": "spirit_thunder_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_func_4.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "sharp lightning crest",
+        "zigzag tail",
+        "brighter electric circuit markings on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft electric aura, accessories like a charged scarf or spark ring",
+      "promptRef": "thunder_func_4",
+      "tags": [
+        "thunder",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 80,
+      "key": "thunder_func_5",
+      "filename": "spirit_thunder_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_thunder_func_5.png",
+      "type": "thunder",
+      "typeLabel": "Thunder",
+      "typeLabelZh": "雷電",
+      "palette": {
+        "primary": "#eab308",
+        "accent": "#fde047"
+      },
+      "motifs": [
+        "royal lightning crown",
+        "crackling tail",
+        "ornate thunder markings on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body luminous glow, floating sparks, halo of lightning arcs, sparkle particles",
+      "promptRef": "thunder_func_5",
+      "tags": [
+        "thunder",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 81,
+      "key": "bloom_noun_1",
+      "filename": "spirit_bloom_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_noun_1.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "bloom_noun_1",
+      "tags": [
+        "bloom",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 82,
+      "key": "bloom_noun_2",
+      "filename": "spirit_bloom_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_noun_2.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "bloom_noun_2",
+      "tags": [
+        "bloom",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 83,
+      "key": "bloom_noun_3",
+      "filename": "spirit_bloom_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_noun_3.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, drifting petals visible",
+      "promptRef": "bloom_noun_3",
+      "tags": [
+        "bloom",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 84,
+      "key": "bloom_noun_4",
+      "filename": "spirit_bloom_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_noun_4.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "larger flower crown",
+        "layered petals",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft floral aura, accessories like a petal cape or blossom jewelry",
+      "promptRef": "bloom_noun_4",
+      "tags": [
+        "bloom",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 85,
+      "key": "bloom_noun_5",
+      "filename": "spirit_bloom_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_noun_5.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "majestic flower crown",
+        "flowing petal tail",
+        "ornate blossom patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body rosy glow, floating petals and ribbons, halo of blossoms, sparkle particles",
+      "promptRef": "bloom_noun_5",
+      "tags": [
+        "bloom",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 86,
+      "key": "bloom_verb_1",
+      "filename": "spirit_bloom_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_verb_1.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "bloom_verb_1",
+      "tags": [
+        "bloom",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 87,
+      "key": "bloom_verb_2",
+      "filename": "spirit_bloom_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_verb_2.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "bloom_verb_2",
+      "tags": [
+        "bloom",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 88,
+      "key": "bloom_verb_3",
+      "filename": "spirit_bloom_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_verb_3.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, drifting petals visible",
+      "promptRef": "bloom_verb_3",
+      "tags": [
+        "bloom",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 89,
+      "key": "bloom_verb_4",
+      "filename": "spirit_bloom_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_verb_4.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "larger flower crown",
+        "layered petals",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft floral aura, accessories like a petal cape or blossom jewelry",
+      "promptRef": "bloom_verb_4",
+      "tags": [
+        "bloom",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 90,
+      "key": "bloom_verb_5",
+      "filename": "spirit_bloom_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_verb_5.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "majestic flower crown",
+        "flowing petal tail",
+        "ornate blossom patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body rosy glow, floating petals and ribbons, halo of blossoms, sparkle particles",
+      "promptRef": "bloom_verb_5",
+      "tags": [
+        "bloom",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 91,
+      "key": "bloom_adj_1",
+      "filename": "spirit_bloom_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_adj_1.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "bloom_adj_1",
+      "tags": [
+        "bloom",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 92,
+      "key": "bloom_adj_2",
+      "filename": "spirit_bloom_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_adj_2.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "bloom_adj_2",
+      "tags": [
+        "bloom",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 93,
+      "key": "bloom_adj_3",
+      "filename": "spirit_bloom_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_adj_3.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, drifting petals visible",
+      "promptRef": "bloom_adj_3",
+      "tags": [
+        "bloom",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 94,
+      "key": "bloom_adj_4",
+      "filename": "spirit_bloom_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_adj_4.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "larger flower crown",
+        "layered petals",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft floral aura, accessories like a petal cape or blossom jewelry",
+      "promptRef": "bloom_adj_4",
+      "tags": [
+        "bloom",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 95,
+      "key": "bloom_adj_5",
+      "filename": "spirit_bloom_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_adj_5.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "majestic flower crown",
+        "flowing petal tail",
+        "ornate blossom patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body rosy glow, floating petals and ribbons, halo of blossoms, sparkle particles",
+      "promptRef": "bloom_adj_5",
+      "tags": [
+        "bloom",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 96,
+      "key": "bloom_func_1",
+      "filename": "spirit_bloom_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_func_1.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "bloom_func_1",
+      "tags": [
+        "bloom",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 97,
+      "key": "bloom_func_2",
+      "filename": "spirit_bloom_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_func_2.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "bloom_func_2",
+      "tags": [
+        "bloom",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 98,
+      "key": "bloom_func_3",
+      "filename": "spirit_bloom_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_func_3.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "petal ornaments",
+        "tiny flower crown",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, drifting petals visible",
+      "promptRef": "bloom_func_3",
+      "tags": [
+        "bloom",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 99,
+      "key": "bloom_func_4",
+      "filename": "spirit_bloom_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_func_4.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "larger flower crown",
+        "layered petals",
+        "floral patterns on body",
+        "ribbon accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft floral aura, accessories like a petal cape or blossom jewelry",
+      "promptRef": "bloom_func_4",
+      "tags": [
+        "bloom",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 100,
+      "key": "bloom_func_5",
+      "filename": "spirit_bloom_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_bloom_func_5.png",
+      "type": "bloom",
+      "typeLabel": "Bloom",
+      "typeLabelZh": "花語",
+      "palette": {
+        "primary": "#ec4899",
+        "accent": "#f9a8d4"
+      },
+      "motifs": [
+        "majestic flower crown",
+        "flowing petal tail",
+        "ornate blossom patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body rosy glow, floating petals and ribbons, halo of blossoms, sparkle particles",
+      "promptRef": "bloom_func_5",
+      "tags": [
+        "bloom",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 101,
+      "key": "star_noun_1",
+      "filename": "spirit_star_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_star_noun_1.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "star_noun_1",
+      "tags": [
+        "star",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 102,
+      "key": "star_noun_2",
+      "filename": "spirit_star_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_star_noun_2.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "star_noun_2",
+      "tags": [
+        "star",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 103,
+      "key": "star_noun_3",
+      "filename": "spirit_star_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_star_noun_3.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, twinkling star effects visible",
+      "promptRef": "star_noun_3",
+      "tags": [
+        "star",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 104,
+      "key": "star_noun_4",
+      "filename": "spirit_star_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_star_noun_4.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "bright star crest",
+        "richer stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft cosmic aura, accessories like a star scarf or magical charm",
+      "promptRef": "star_noun_4",
+      "tags": [
+        "star",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 105,
+      "key": "star_noun_5",
+      "filename": "spirit_star_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_star_noun_5.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "celestial star crown",
+        "comet-like tail",
+        "ornate constellations on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body violet glow, floating stars, halo of constellations, sparkle particles",
+      "promptRef": "star_noun_5",
+      "tags": [
+        "star",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 106,
+      "key": "star_verb_1",
+      "filename": "spirit_star_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_star_verb_1.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "star_verb_1",
+      "tags": [
+        "star",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 107,
+      "key": "star_verb_2",
+      "filename": "spirit_star_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_star_verb_2.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "star_verb_2",
+      "tags": [
+        "star",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 108,
+      "key": "star_verb_3",
+      "filename": "spirit_star_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_star_verb_3.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, twinkling star effects visible",
+      "promptRef": "star_verb_3",
+      "tags": [
+        "star",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 109,
+      "key": "star_verb_4",
+      "filename": "spirit_star_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_star_verb_4.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "bright star crest",
+        "richer stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft cosmic aura, accessories like a star scarf or magical charm",
+      "promptRef": "star_verb_4",
+      "tags": [
+        "star",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 110,
+      "key": "star_verb_5",
+      "filename": "spirit_star_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_star_verb_5.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "celestial star crown",
+        "comet-like tail",
+        "ornate constellations on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body violet glow, floating stars, halo of constellations, sparkle particles",
+      "promptRef": "star_verb_5",
+      "tags": [
+        "star",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 111,
+      "key": "star_adj_1",
+      "filename": "spirit_star_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_star_adj_1.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "star_adj_1",
+      "tags": [
+        "star",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 112,
+      "key": "star_adj_2",
+      "filename": "spirit_star_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_star_adj_2.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "star_adj_2",
+      "tags": [
+        "star",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 113,
+      "key": "star_adj_3",
+      "filename": "spirit_star_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_star_adj_3.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, twinkling star effects visible",
+      "promptRef": "star_adj_3",
+      "tags": [
+        "star",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 114,
+      "key": "star_adj_4",
+      "filename": "spirit_star_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_star_adj_4.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "bright star crest",
+        "richer stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft cosmic aura, accessories like a star scarf or magical charm",
+      "promptRef": "star_adj_4",
+      "tags": [
+        "star",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 115,
+      "key": "star_adj_5",
+      "filename": "spirit_star_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_star_adj_5.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "celestial star crown",
+        "comet-like tail",
+        "ornate constellations on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body violet glow, floating stars, halo of constellations, sparkle particles",
+      "promptRef": "star_adj_5",
+      "tags": [
+        "star",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 116,
+      "key": "star_func_1",
+      "filename": "spirit_star_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_star_func_1.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "star_func_1",
+      "tags": [
+        "star",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 117,
+      "key": "star_func_2",
+      "filename": "spirit_star_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_star_func_2.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "star_func_2",
+      "tags": [
+        "star",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 118,
+      "key": "star_func_3",
+      "filename": "spirit_star_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_star_func_3.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "star-shaped eye highlights",
+        "stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, twinkling star effects visible",
+      "promptRef": "star_func_3",
+      "tags": [
+        "star",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 119,
+      "key": "star_func_4",
+      "filename": "spirit_star_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_star_func_4.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "bright star crest",
+        "richer stardust on body",
+        "tiny floating stars",
+        "magic motif"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft cosmic aura, accessories like a star scarf or magical charm",
+      "promptRef": "star_func_4",
+      "tags": [
+        "star",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 120,
+      "key": "star_func_5",
+      "filename": "spirit_star_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_star_func_5.png",
+      "type": "star",
+      "typeLabel": "Star",
+      "typeLabelZh": "星光",
+      "palette": {
+        "primary": "#a855f7",
+        "accent": "#c4b5fd"
+      },
+      "motifs": [
+        "celestial star crown",
+        "comet-like tail",
+        "ornate constellations on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body violet glow, floating stars, halo of constellations, sparkle particles",
+      "promptRef": "star_func_5",
+      "tags": [
+        "star",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 121,
+      "key": "moon_noun_1",
+      "filename": "spirit_moon_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_moon_noun_1.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "moon_noun_1",
+      "tags": [
+        "moon",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 122,
+      "key": "moon_noun_2",
+      "filename": "spirit_moon_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_moon_noun_2.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "moon_noun_2",
+      "tags": [
+        "moon",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 123,
+      "key": "moon_noun_3",
+      "filename": "spirit_moon_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_moon_noun_3.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, moonlight shimmer visible",
+      "promptRef": "moon_noun_3",
+      "tags": [
+        "moon",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 124,
+      "key": "moon_noun_4",
+      "filename": "spirit_moon_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_moon_noun_4.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "larger crescent crest",
+        "semi-transparent body",
+        "night-sky patterns",
+        "drifting lights"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft nocturnal aura, accessories like a moon scarf or glowing charm",
+      "promptRef": "moon_noun_4",
+      "tags": [
+        "moon",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 125,
+      "key": "moon_noun_5",
+      "filename": "spirit_moon_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_moon_noun_5.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "lunar crown",
+        "moonlit tail",
+        "ornate crescent patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body moonlit glow, floating crescents, halo of stars, sparkle particles",
+      "promptRef": "moon_noun_5",
+      "tags": [
+        "moon",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 126,
+      "key": "moon_verb_1",
+      "filename": "spirit_moon_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_moon_verb_1.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "moon_verb_1",
+      "tags": [
+        "moon",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 127,
+      "key": "moon_verb_2",
+      "filename": "spirit_moon_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_moon_verb_2.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "moon_verb_2",
+      "tags": [
+        "moon",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 128,
+      "key": "moon_verb_3",
+      "filename": "spirit_moon_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_moon_verb_3.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, moonlight shimmer visible",
+      "promptRef": "moon_verb_3",
+      "tags": [
+        "moon",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 129,
+      "key": "moon_verb_4",
+      "filename": "spirit_moon_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_moon_verb_4.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "larger crescent crest",
+        "semi-transparent body",
+        "night-sky patterns",
+        "drifting lights"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft nocturnal aura, accessories like a moon scarf or glowing charm",
+      "promptRef": "moon_verb_4",
+      "tags": [
+        "moon",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 130,
+      "key": "moon_verb_5",
+      "filename": "spirit_moon_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_moon_verb_5.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "lunar crown",
+        "moonlit tail",
+        "ornate crescent patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body moonlit glow, floating crescents, halo of stars, sparkle particles",
+      "promptRef": "moon_verb_5",
+      "tags": [
+        "moon",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 131,
+      "key": "moon_adj_1",
+      "filename": "spirit_moon_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_moon_adj_1.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "moon_adj_1",
+      "tags": [
+        "moon",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 132,
+      "key": "moon_adj_2",
+      "filename": "spirit_moon_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_moon_adj_2.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "moon_adj_2",
+      "tags": [
+        "moon",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 133,
+      "key": "moon_adj_3",
+      "filename": "spirit_moon_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_moon_adj_3.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, moonlight shimmer visible",
+      "promptRef": "moon_adj_3",
+      "tags": [
+        "moon",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 134,
+      "key": "moon_adj_4",
+      "filename": "spirit_moon_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_moon_adj_4.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "larger crescent crest",
+        "semi-transparent body",
+        "night-sky patterns",
+        "drifting lights"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft nocturnal aura, accessories like a moon scarf or glowing charm",
+      "promptRef": "moon_adj_4",
+      "tags": [
+        "moon",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 135,
+      "key": "moon_adj_5",
+      "filename": "spirit_moon_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_moon_adj_5.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "lunar crown",
+        "moonlit tail",
+        "ornate crescent patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body moonlit glow, floating crescents, halo of stars, sparkle particles",
+      "promptRef": "moon_adj_5",
+      "tags": [
+        "moon",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 136,
+      "key": "moon_func_1",
+      "filename": "spirit_moon_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_moon_func_1.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "moon_func_1",
+      "tags": [
+        "moon",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 137,
+      "key": "moon_func_2",
+      "filename": "spirit_moon_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_moon_func_2.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "moon_func_2",
+      "tags": [
+        "moon",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 138,
+      "key": "moon_func_3",
+      "filename": "spirit_moon_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_moon_func_3.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "crescent ornament",
+        "semi-transparent body",
+        "night-sky patterns",
+        "tiny firefly lights"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, moonlight shimmer visible",
+      "promptRef": "moon_func_3",
+      "tags": [
+        "moon",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 139,
+      "key": "moon_func_4",
+      "filename": "spirit_moon_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_moon_func_4.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "larger crescent crest",
+        "semi-transparent body",
+        "night-sky patterns",
+        "drifting lights"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft nocturnal aura, accessories like a moon scarf or glowing charm",
+      "promptRef": "moon_func_4",
+      "tags": [
+        "moon",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 140,
+      "key": "moon_func_5",
+      "filename": "spirit_moon_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_moon_func_5.png",
+      "type": "moon",
+      "typeLabel": "Moon",
+      "typeLabelZh": "月影",
+      "palette": {
+        "primary": "#6366f1",
+        "accent": "#a5b4fc"
+      },
+      "motifs": [
+        "lunar crown",
+        "moonlit tail",
+        "ornate crescent patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body moonlit glow, floating crescents, halo of stars, sparkle particles",
+      "promptRef": "moon_func_5",
+      "tags": [
+        "moon",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 141,
+      "key": "crystal_noun_1",
+      "filename": "spirit_crystal_noun_1.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_noun_1.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "crystal_noun_1",
+      "tags": [
+        "crystal",
+        "noun",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 142,
+      "key": "crystal_noun_2",
+      "filename": "spirit_crystal_noun_2.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_noun_2.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "crystal_noun_2",
+      "tags": [
+        "crystal",
+        "noun",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 143,
+      "key": "crystal_noun_3",
+      "filename": "spirit_crystal_noun_3.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_noun_3.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, prismatic reflections visible",
+      "promptRef": "crystal_noun_3",
+      "tags": [
+        "crystal",
+        "noun",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 144,
+      "key": "crystal_noun_4",
+      "filename": "spirit_crystal_noun_4.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_noun_4.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "larger crystal crest",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft prism aura, accessories like a crystal collar or gem ring",
+      "promptRef": "crystal_noun_4",
+      "tags": [
+        "crystal",
+        "noun",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 145,
+      "key": "crystal_noun_5",
+      "filename": "spirit_crystal_noun_5.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_noun_5.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "jeweled crystal crown",
+        "radiant shard tail",
+        "ornate faceted patterns on body"
+      ],
+      "pos": "noun",
+      "posLabel": "Noun-class",
+      "posLabelZh": "名詞",
+      "bodyPrompt": "round, chubby, small animal-like body with stubby limbs, big eyes, cute ears or antennae, cuddly and squishy",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body cyan glow, floating crystal shards, halo of refractions, sparkle particles",
+      "promptRef": "crystal_noun_5",
+      "tags": [
+        "crystal",
+        "noun",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 146,
+      "key": "crystal_verb_1",
+      "filename": "spirit_crystal_verb_1.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_verb_1.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "crystal_verb_1",
+      "tags": [
+        "crystal",
+        "verb",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 147,
+      "key": "crystal_verb_2",
+      "filename": "spirit_crystal_verb_2.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_verb_2.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "crystal_verb_2",
+      "tags": [
+        "crystal",
+        "verb",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 148,
+      "key": "crystal_verb_3",
+      "filename": "spirit_crystal_verb_3.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_verb_3.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, prismatic reflections visible",
+      "promptRef": "crystal_verb_3",
+      "tags": [
+        "crystal",
+        "verb",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 149,
+      "key": "crystal_verb_4",
+      "filename": "spirit_crystal_verb_4.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_verb_4.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "larger crystal crest",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft prism aura, accessories like a crystal collar or gem ring",
+      "promptRef": "crystal_verb_4",
+      "tags": [
+        "crystal",
+        "verb",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 150,
+      "key": "crystal_verb_5",
+      "filename": "spirit_crystal_verb_5.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_verb_5.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "jeweled crystal crown",
+        "radiant shard tail",
+        "ornate faceted patterns on body"
+      ],
+      "pos": "verb",
+      "posLabel": "Verb-class",
+      "posLabelZh": "動詞",
+      "bodyPrompt": "clear arms and legs, energetic body, dynamic motion-ready pose, a tail or mini cape, lively and action-oriented",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body cyan glow, floating crystal shards, halo of refractions, sparkle particles",
+      "promptRef": "crystal_verb_5",
+      "tags": [
+        "crystal",
+        "verb",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 151,
+      "key": "crystal_adj_1",
+      "filename": "spirit_crystal_adj_1.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_adj_1.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "crystal_adj_1",
+      "tags": [
+        "crystal",
+        "adj",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 152,
+      "key": "crystal_adj_2",
+      "filename": "spirit_crystal_adj_2.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_adj_2.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "crystal_adj_2",
+      "tags": [
+        "crystal",
+        "adj",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 153,
+      "key": "crystal_adj_3",
+      "filename": "spirit_crystal_adj_3.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_adj_3.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, prismatic reflections visible",
+      "promptRef": "crystal_adj_3",
+      "tags": [
+        "crystal",
+        "adj",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 154,
+      "key": "crystal_adj_4",
+      "filename": "spirit_crystal_adj_4.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_adj_4.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "larger crystal crest",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft prism aura, accessories like a crystal collar or gem ring",
+      "promptRef": "crystal_adj_4",
+      "tags": [
+        "crystal",
+        "adj",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 155,
+      "key": "crystal_adj_5",
+      "filename": "spirit_crystal_adj_5.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_adj_5.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "jeweled crystal crown",
+        "radiant shard tail",
+        "ornate faceted patterns on body"
+      ],
+      "pos": "adj",
+      "posLabel": "Adjective-class",
+      "posLabelZh": "形容詞",
+      "bodyPrompt": "light floating body, tiny wings or halo, elegant silhouette, airy and graceful feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body cyan glow, floating crystal shards, halo of refractions, sparkle particles",
+      "promptRef": "crystal_adj_5",
+      "tags": [
+        "crystal",
+        "adj",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 156,
+      "key": "crystal_func_1",
+      "filename": "spirit_crystal_func_1.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_func_1.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 1,
+      "stageName": "Egg",
+      "sizePct": 60,
+      "sizeDescription": "Very small (60%), still has eggshell fragments on body",
+      "complexity": "Minimal — barely formed, simple shape",
+      "expression": "Half-closed sleepy eyes, shy",
+      "effects": "Semi-transparent body, cracked eggshell pieces",
+      "promptRef": "crystal_func_1",
+      "tags": [
+        "crystal",
+        "func",
+        "stage-1",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 157,
+      "key": "crystal_func_2",
+      "filename": "spirit_crystal_func_2.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_func_2.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 2,
+      "stageName": "Baby",
+      "sizePct": 75,
+      "sizeDescription": "Small (75%), fully hatched",
+      "complexity": "Simple — basic features emerging",
+      "expression": "Wide curious eyes, excited mouth",
+      "effects": "Clean body, colors becoming more vibrant",
+      "promptRef": "crystal_func_2",
+      "tags": [
+        "crystal",
+        "func",
+        "stage-2",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 158,
+      "key": "crystal_func_3",
+      "filename": "spirit_crystal_func_3.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_func_3.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "small crystal shard ornaments",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 3,
+      "stageName": "Teen",
+      "sizePct": 100,
+      "sizeDescription": "Normal (100%), well-proportioned",
+      "complexity": "Medium — all core features fully formed",
+      "expression": "Confident smile",
+      "effects": "Saturated colors, prismatic reflections visible",
+      "promptRef": "crystal_func_3",
+      "tags": [
+        "crystal",
+        "func",
+        "stage-3",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 159,
+      "key": "crystal_func_4",
+      "filename": "spirit_crystal_func_4.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_func_4.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "larger crystal crest",
+        "faceted edges",
+        "refracted light details",
+        "gem accents"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 4,
+      "stageName": "Adult",
+      "sizePct": 115,
+      "sizeDescription": "Larger (115%), more imposing",
+      "complexity": "Detailed — accessories, refined silhouette, sharper visual identity",
+      "expression": "Cool, confident smirk",
+      "effects": "Soft prism aura, accessories like a crystal collar or gem ring",
+      "promptRef": "crystal_func_4",
+      "tags": [
+        "crystal",
+        "func",
+        "stage-4",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    },
+    {
+      "id": 160,
+      "key": "crystal_func_5",
+      "filename": "spirit_crystal_func_5.png",
+      "outputPath": "src/assets/spirits/spirit_crystal_func_5.png",
+      "type": "crystal",
+      "typeLabel": "Crystal",
+      "typeLabelZh": "結晶",
+      "palette": {
+        "primary": "#06b6d4",
+        "accent": "#67e8f9"
+      },
+      "motifs": [
+        "jeweled crystal crown",
+        "radiant shard tail",
+        "ornate faceted patterns on body"
+      ],
+      "pos": "func",
+      "posLabel": "Function-word class",
+      "posLabelZh": "功能詞",
+      "bodyPrompt": "geometric spirit-like body, rhombus or hexagon silhouette, glowing lines, mystical and magical feeling",
+      "stage": 5,
+      "stageName": "Ultimate",
+      "sizePct": 130,
+      "sizeDescription": "Largest (130%), majestic presence",
+      "complexity": "Elaborate — crown, upgraded features, ornate markings, full glow",
+      "expression": "Regal, powerful but still cute",
+      "effects": "Full-body cyan glow, floating crystal shards, halo of refractions, sparkle particles",
+      "promptRef": "crystal_func_5",
+      "tags": [
+        "crystal",
+        "func",
+        "stage-5",
+        "spirit",
+        "chibi",
+        "transparent-png"
+      ]
+    }
+  ]
+}
