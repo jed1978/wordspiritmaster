@@ -27,8 +27,8 @@ export function TypeBadge({ type }: TypeBadgeProps): React.JSX.Element {
 const styles = StyleSheet.create({
   badge: {
     paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
     borderWidth: 1,
     alignSelf: "flex-start",
   },

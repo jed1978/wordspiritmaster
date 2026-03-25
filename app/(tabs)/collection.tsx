@@ -168,9 +168,9 @@ const styles = StyleSheet.create({
   filterScroll: { marginTop: 12 },
   filterContent: { paddingHorizontal: 16, gap: 8 },
   chip: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 20,
     borderWidth: 1,
   },
   empty: {

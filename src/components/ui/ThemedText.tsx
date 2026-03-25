@@ -24,12 +24,12 @@ const SIZE_MAP: Record<string, number> = {
   xl: 28,
 };
 
-// CJK characters need generous lineHeight; Android also needs includeFontPadding:false
+// CJK characters need ~1.5× lineHeight; Android needs includeFontPadding:false
 const LINE_HEIGHT_MAP: Record<string, number> = {
-  sm: 22,
-  md: 28,
-  lg: 34,
-  xl: 48,
+  sm: 18,
+  md: 24,
+  lg: 30,
+  xl: 42,
 };
 
 export function ThemedText({
@@ -45,8 +45,8 @@ export function ThemedText({
           color: VARIANT_COLORS[variant],
           fontSize: SIZE_MAP[size],
           lineHeight: LINE_HEIGHT_MAP[size],
-          // Android: remove hidden font padding that pushes CJK chars up into clip zone
           includeFontPadding: false,
+          textAlignVertical: "center",
         },
         style,
       ]}
