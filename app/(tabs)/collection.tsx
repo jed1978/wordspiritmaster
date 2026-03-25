@@ -87,19 +87,21 @@ export default function CollectionScreen(): React.JSX.Element {
           ))}
         </ScrollView>
 
-        {capturedCount === 0 ? (
-          <View style={styles.empty}>
-            <ThemedText variant="secondary">
-              {STRINGS.collectionEmpty}
-            </ThemedText>
-          </View>
-        ) : (
-          <SpiritGrid
-            words={filteredWords}
-            spirits={state.spirits}
-            onPress={handlePress}
-          />
-        )}
+        <View style={styles.gridContainer}>
+          {capturedCount === 0 ? (
+            <View style={styles.empty}>
+              <ThemedText variant="secondary">
+                {STRINGS.collectionEmpty}
+              </ThemedText>
+            </View>
+          ) : (
+            <SpiritGrid
+              words={filteredWords}
+              spirits={state.spirits}
+              onPress={handlePress}
+            />
+          )}
+        </View>
       </ThemedView>
     </SafeAreaView>
   );
@@ -173,6 +175,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 1,
   },
+  gridContainer: { flex: 1, marginTop: 8 },
   empty: {
     flex: 1,
     justifyContent: "center",
