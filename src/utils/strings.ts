@@ -6,7 +6,9 @@ export const STRINGS = {
 
   // Tab bar
   tabExplore: "探索",
+  tabBattle: "戰鬥",
   tabCollection: "圖鑑",
+  tabProfile: "我的",
 
   // Explore screen — review mode
   reviewModeTitle: "精靈回來找你了！",
@@ -78,6 +80,50 @@ export const STRINGS = {
     "別氣餒，精靈大師都是這樣練出來的！",
   ] as const,
 
+  // Boss battle
+  bossOpening: "開場！",
+  bossDefeat: "贏了！",
+  bossHpLabel: "HP",
+  battleSkip: "跳過",
+  battleNext: "下一題",
+  battleResult: "戰鬥結果",
+  battleVictory: "擊敗了！🎉",
+  battleExplanation: "解析：",
+  passageHidden: "???",
+
+  // Gacha
+  gachaTitle: "召喚精靈",
+  gachaTap: "點擊水晶召喚！",
+  gachaNew: "新夥伴！✨",
+  gachaDuplicate: "覺醒石 ×1",
+  gachaAgain: "再抽一次",
+  gachaClose: "返回",
+  gachaNoFree: "今日已無免費召喚",
+  gachaFreeRemaining: (n: number) => `剩餘免費召喚 ×${n}`,
+  rarityLabels: ["★", "★★", "★★★", "★★★★", "★★★★★"] as const,
+
+  // Spell
+  spellPrompt: "請拼出這個單字：",
+  spellHint: "點擊字母拼出單字",
+  spellCorrect: "拼對了！🎉",
+  spellWrong: "答案是：",
+
+  // Profile
+  profileTitle: "我的精靈師",
+  levelLabel: "等級",
+  titleLabel: "頭銜",
+  streakLabel: "連續天數",
+  soundToggleLabel: "音效",
+  hapticToggleLabel: "觸覺回饋",
+  notifToggleLabel: "每日提醒",
+  totalReviewsLabel: "總複習次數",
+  accuracyLabel: "正確率",
+  captureRateLabel: "捕獲率",
+
+  // Review reward
+  reviewRewardBanner: "複習完畢！🎁 獎勵召喚 ×1",
+  reviewRewardClaimed: "已領取今日獎勵",
+
   // Actions
   continueButton: "繼續 →",
 
@@ -85,6 +131,24 @@ export const STRINGS = {
   loadingText: "載入中...",
   idleTitle: "今天的冒險結束了！",
   idleMessage: "所有精靈都複習完了，明天再來吧！",
+
+  // Battle tab
+  battleTabTitle: "⚔️ Boss 戰鬥",
+  areaLocked: "未解鎖",
+  areaDefeated: "已打敗",
+  areaLabel: (id: number) => `區域 ${id}`,
+  totalSpiritsLabel: "已收集精靈",
+
+  // Player titles
+  titleMaster: "精靈大師",
+  titleExpert: "精靈達人",
+  titleExplorer: "探索家",
+  titleCatcher: "捕獲師",
+  titleNovice: "精靈見習生",
+
+  // Notification
+  notifTitle: "你的精靈們想你了！🌟",
+  notifBody: (dueCount: number) => `${dueCount} 隻精靈等著你複習！`,
 
   // Time labels
   nextReviewSoon: "馬上就到！",

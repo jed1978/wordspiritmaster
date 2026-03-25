@@ -12,7 +12,7 @@ export const SRS_INTERVALS: Record<SpiritStage, number> = {
 
 export const MAX_STAGE: SpiritStage = 5;
 export const MASTERED_STAGE: SpiritStage = 6;
-export const PERSIST_VERSION = 2;
+export const PERSIST_VERSION = 4;
 export const PERSIST_DEBOUNCE_MS = 500;
 export const STORAGE_KEY = "wordspiritmaster_state";
 
@@ -33,3 +33,9 @@ export const XP_LEVEL_MULTIPLIER = 1.5;
 export const DAILY_CAPTURE_TARGET = 10;
 export const WRONG_ANSWER_DELAY_MS = 2500;
 export const CORRECT_ANSWER_DELAY_MS = 1200;
+
+export const XP_PER_BOSS = 50;
+export const PITY_THRESHOLD = 10;
+export const GACHA_RARITY_RATES = [0.6, 0.25, 0.1, 0.04, 0.01] as const; // ★~★★★★★
+export const STREAK_MILESTONES = [3, 7, 14, 30] as const;
+export const STREAK_BONUS_PULLS = [1, 2, 3, 5] as const;

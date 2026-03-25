@@ -1,4 +1,9 @@
-import type { WordEntry, SpiritStage, Question, QuestionType } from '@/store/types';
+import type {
+  WordEntry,
+  SpiritStage,
+  Question,
+  QuestionType,
+} from "@/store/types";
 
 export function shuffleArray<T>(arr: readonly T[]): T[] {
   const copy = [...arr];
@@ -10,14 +15,15 @@ export function shuffleArray<T>(arr: readonly T[]): T[] {
 }
 
 function getQuestionType(stage: SpiritStage): QuestionType {
-  if (stage <= 1) return 'selectChinese';
-  return 'selectEnglish';
-  // Stage 3+ types handled in Phase 2-3
+  if (stage <= 1) return "selectChinese";
+  if (stage === 2) return "selectEnglish";
+  return "spellWord"; // Stage 3+
 }
 
-function buildSelectChineseOptions(
-  word: WordEntry,
-): { options: string[]; correctIndex: number } {
+function buildSelectChineseOptions(word: WordEntry): {
+  options: string[];
+  correctIndex: number;
+} {
   const wrong = shuffleArray(word.confusers).slice(0, 3);
   const all = [...wrong, word.meaning];
   const shuffled = shuffleArray(all);
@@ -58,6 +64,16 @@ function buildSelectEnglishOptions(
   };
 }
 
+function buildSpellWordOptions(word: WordEntry): {
+  options: string[];
+  correctAnswer: string;
+} {
+  return {
+    options: shuffleArray([...word.word]),
+    correctAnswer: word.word,
+  };
+}
+
 export function generateQuestion(
   word: WordEntry,
   allWords: readonly WordEntry[],
@@ -65,15 +81,30 @@ export function generateQuestion(
 ): Question {
   const type = getQuestionType(stage);
 
+  if (type === "spellWord") {
+    const { options, correctAnswer } = buildSpellWordOptions(word);
+    return {
+      type,
+      wordId: word.id,
+      prompt: word.meaning,
+      options,
+      correctIndex: -1,
+      correctAnswer,
+      spiritType: word.type,
+      posCategory: word.posCategory,
+      stage,
+    };
+  }
+
   const { options, correctIndex } =
-    type === 'selectChinese'
+    type === "selectChinese"
       ? buildSelectChineseOptions(word)
       : buildSelectEnglishOptions(word, allWords);
 
   return {
     type,
     wordId: word.id,
-    prompt: type === 'selectChinese' ? word.word : word.meaning,
+    prompt: type === "selectChinese" ? word.word : word.meaning,
     options,
     correctIndex,
     spiritType: word.type,

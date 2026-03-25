@@ -12,6 +12,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['飛翔', '跳躍', '游泳'],
     hint: 'run 是跑步，jump 才是跳，別搞混了！',
+    example: 'I run to school every morning because I am late.',
   },
   {
     id: 'jump',
@@ -23,6 +24,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['跑步', '走路', '爬行'],
     hint: 'jump 是往上跳，想像跳躍的感覺！',
+    example: 'The little cat can jump very high onto the {書架}.',
   },
   {
     id: 'eat',
@@ -34,6 +36,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['喝', '煮', '切'],
     hint: 'eat 是吃東西，drink 才是喝東西喔！',
+    example: 'We eat lunch together at school every day.',
   },
   {
     id: 'drink',
@@ -45,6 +48,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['吃', '倒', '煮'],
     hint: 'drink 是喝，think 是想，長得像但意思不同！',
+    example: 'She likes to drink warm milk before she goes to bed.',
   },
   {
     id: 'sleep',
@@ -56,6 +60,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['醒來', '休息', '做夢'],
     hint: 'sleep 是睡覺，wake 才是醒來！',
+    example: 'Children need to sleep at least eight hours every night.',
   },
   {
     id: 'walk',
@@ -67,6 +72,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['跑步', '站立', '坐下'],
     hint: 'walk 是慢慢走，run 才是跑喔！',
+    example: 'My dad and I walk to the park every Sunday morning.',
   },
   {
     id: 'swim',
@@ -78,6 +84,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['潛水', '划船', '衝浪'],
     hint: 'swim 是游泳，在水裡游的動作！',
+    example: 'She learned to swim in the {游泳池} last summer.',
   },
   {
     id: 'play',
@@ -89,6 +96,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['工作', '學習', '休息'],
     hint: 'play 可以是玩遊戲，也可以是播放音樂！',
+    example: 'The kids play outside in the {院子} after school.',
   },
   {
     id: 'read',
@@ -100,6 +108,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['寫', '聽', '說'],
     hint: 'read 是用眼睛看文字，write 才是寫！',
+    example: 'I like to read books about animals before I sleep.',
   },
   {
     id: 'write',
@@ -111,6 +120,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['閱讀', '畫畫', '打字'],
     hint: 'write 的 w 不發音喔，跟 right（正確）同音！',
+    example: 'Please write your name at the top of the paper.',
   },
   {
     id: 'speak',
@@ -122,6 +132,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['聽', '唱歌', '喊叫'],
     hint: 'speak 是說話，listen 才是聽！',
+    example: 'Can you speak more slowly so I can understand you?',
   },
   {
     id: 'listen',
@@ -133,6 +144,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['說話', '看', '聞'],
     hint: 'listen 的 t 不發音，是用耳朵聽的意思！',
+    example: 'Please listen carefully when the teacher is speaking.',
   },
   {
     id: 'watch',
@@ -144,6 +156,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['聽', '觸摸', '聞'],
     hint: 'watch 是專注地看，比 look 更仔細！',
+    example: 'We watch a movie together every Friday night.',
   },
   {
     id: 'help',
@@ -155,6 +168,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['傷害', '阻止', '忽略'],
     hint: 'help 是幫忙別人，很溫暖的字！',
+    example: 'My brother always helps me with my homework after dinner.',
   },
   {
     id: 'work',
@@ -166,6 +180,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['玩耍', '休息', '睡覺'],
     hint: 'work 是工作，跟 walk（走路）長得像但不同！',
+    example: 'My mom works at a hospital and comes home late.',
   },
   {
     id: 'study',
@@ -177,6 +192,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['教導', '玩耍', '工作'],
     hint: 'study 是認真學習，teach 才是教別人！',
+    example: 'I study English for one hour every evening at home.',
   },
   {
     id: 'cook',
@@ -188,6 +204,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['吃', '切', '洗'],
     hint: 'cook 是煮東西，也可以當名詞指廚師！',
+    example: 'Dad loves to cook {義大利麵} for the family on weekends.',
   },
   {
     id: 'dance',
@@ -199,6 +216,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['唱歌', '畫畫', '演戲'],
     hint: 'dance 是跳舞，sing 才是唱歌！',
+    example: 'She loves to dance to her favorite songs in her room.',
   },
   {
     id: 'sing',
@@ -210,6 +228,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['跳舞', '說話', '彈奏'],
     hint: 'sing 是唱歌，用嘴巴唱出旋律！',
+    example: 'The students sing a birthday song for their teacher today.',
   },
   {
     id: 'draw',
@@ -221,6 +240,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['寫字', '塗色', '拍照'],
     hint: 'draw 是畫畫，paint 是用顏料畫！',
+    example: 'My little sister can draw beautiful animals very well.',
   },
   {
     id: 'buy',
@@ -232,6 +252,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['賣', '借', '換'],
     hint: 'buy 是買，sell 是賣，剛好相反！',
+    example: 'Can we buy some snacks at the store on the way home?',
   },
   {
     id: 'sell',
@@ -243,6 +264,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['買', '送', '借'],
     hint: 'sell 是賣東西，buy 是買東西！',
+    example: 'This {攤販} sells fresh fruit every morning near our school.',
   },
   {
     id: 'drive',
@@ -254,6 +276,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['騎車', '走路', '飛行'],
     hint: 'drive 是開車，ride 是騎車或搭車！',
+    example: 'My uncle drives us to school when it rains heavily outside.',
   },
   {
     id: 'fly',
@@ -265,6 +288,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['跑步', '游泳', '爬行'],
     hint: 'fly 是在天上飛，鳥和飛機都會 fly！',
+    example: 'Birds fly south to stay warm during the cold winter months.',
   },
   {
     id: 'open',
@@ -276,6 +300,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['關閉', '鎖上', '推動'],
     hint: 'open 是打開，close 是關上，相反的一對！',
+    example: 'Please open the window because the room is too hot today.',
   },
   // ===== aqua 水流系：情感形容詞 =====
   {
@@ -288,6 +313,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['飢餓的', '困倦的', '忙碌的'],
     hint: 'happy 跟 hungry 長得像，但 happy 是快樂，hungry 是飢餓！',
+    example: 'She feels happy when she gets a good score on the test.',
   },
   {
     id: 'sad',
@@ -299,6 +325,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['快樂的', '生氣的', '害怕的'],
     hint: 'sad 是難過，跟 bad（壞的）押韻，心情不好！',
+    example: 'Tom felt very sad when his best friend moved to another city.',
   },
   {
     id: 'angry',
@@ -310,6 +337,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['飢餓的', '開心的', '擔心的'],
     hint: 'angry 跟 hungry 長得像！angry 是生氣，hungry 是餓！',
+    example: 'My mom got angry because I forgot to clean my room again.',
   },
   {
     id: 'scared',
@@ -321,6 +349,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['勇敢的', '興奮的', '驕傲的'],
     hint: 'scared 是害怕的，brave 才是勇敢的！',
+    example: 'The little boy was scared of the loud thunder last night.',
   },
   {
     id: 'surprised',
@@ -332,6 +361,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['無聊的', '疲累的', '緊張的'],
     hint: 'surprised 是驚訝的，像收到意外禮物的感覺！',
+    example: 'I was surprised to see my old friend at the bus stop today.',
   },
   {
     id: 'excited',
@@ -343,6 +373,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['無聊的', '疲累的', '難過的'],
     hint: 'excited 是超級期待的興奮感，像要去遊樂園！',
+    example: 'The children are excited about the school trip next Friday.',
   },
   {
     id: 'bored',
@@ -354,6 +385,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['興奮的', '忙碌的', '開心的'],
     hint: 'bored 是覺得無聊，boring 是令人無聊的！',
+    example: 'I felt bored at home because all my friends were busy today.',
   },
   {
     id: 'tired',
@@ -365,6 +397,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['精力充沛的', '興奮的', '快樂的'],
     hint: 'tired 是累了想休息，tried 是嘗試的過去式，別搞混！',
+    example: 'After running in the rain, we were all very tired and wet.',
   },
   {
     id: 'hungry',
@@ -376,6 +409,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['口渴的', '飽的', '噁心的'],
     hint: 'hungry 是肚子餓，thirsty 是口渴！',
+    example: 'I am so hungry right now because I did not eat breakfast.',
   },
   {
     id: 'thirsty',
@@ -387,6 +421,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['飢餓的', '疲累的', '生病的'],
     hint: 'thirsty 是口渴想喝水，thirty 是數字 30，別搞混！',
+    example: 'Playing outside in summer always makes me feel very thirsty.',
   },
   {
     id: 'sick',
@@ -398,6 +433,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['健康的', '強壯的', '疲累的'],
     hint: 'sick 是生病不舒服，well 才是健康的！',
+    example: 'She stayed home because she was sick with a bad cold.',
   },
   {
     id: 'well',
@@ -409,6 +445,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['生病的', '虛弱的', '疲累的'],
     hint: 'well 當形容詞是身體好的，也可以當副詞「好地」！',
+    example: 'I hope you feel well again very soon after your rest.',
   },
   {
     id: 'great',
@@ -420,6 +457,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['糟糕的', '普通的', '微小的'],
     hint: 'great 是很棒，比 good 還要更好的感覺！',
+    example: 'You did a great job on your English test this week!',
   },
   {
     id: 'terrible',
@@ -431,6 +469,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['很棒的', '普通的', '有趣的'],
     hint: 'terrible 是非常糟糕，比 bad 更嚴重！',
+    example: 'The weather was terrible, so we stayed inside all afternoon.',
   },
   {
     id: 'nervous',
@@ -442,6 +481,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['放鬆的', '勇敢的', '開心的'],
     hint: 'nervous 是緊張兮兮的，像考試前的感覺！',
+    example: 'I always feel nervous before I give a speech in front of class.',
   },
   {
     id: 'proud',
@@ -453,6 +493,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['丟臉的', '害羞的', '難過的'],
     hint: 'proud 是感到驕傲，I am proud of you 是我以你為榮！',
+    example: 'Her parents were very proud when she won the school award.',
   },
   {
     id: 'shy',
@@ -464,6 +505,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['勇敢的', '友善的', '驕傲的'],
     hint: 'shy 是害羞不敢說話的樣子！',
+    example: 'The new student was shy and did not talk to anyone at first.',
   },
   {
     id: 'worried',
@@ -475,6 +517,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['放鬆的', '開心的', '興奮的'],
     hint: 'worried 是心裡一直擔心，hurried 是匆忙的，別搞混！',
+    example: 'Mom looked worried when I came home late from school today.',
   },
   {
     id: 'lonely',
@@ -486,6 +529,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['熱鬧的', '友善的', '快樂的'],
     hint: 'lonely 是一個人覺得寂寞，lovely 是可愛的，差一個字母！',
+    example: 'She felt lonely because all her friends were away on holiday.',
   },
   {
     id: 'brave',
@@ -497,6 +541,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['害怕的', '害羞的', '緊張的'],
     hint: 'brave 是勇敢的，不怕困難！',
+    example: 'It was brave of him to speak up for his friend in class.',
   },
   {
     id: 'kind',
@@ -508,6 +553,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['兇惡的', '自私的', '冷漠的'],
     hint: 'kind 是善良的，也可以當名詞「種類」！',
+    example: 'She is always kind to everyone and never says mean things.',
   },
   {
     id: 'mean',
@@ -519,6 +565,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['善良的', '溫柔的', '友善的'],
     hint: 'mean 當形容詞是刻薄的，當動詞是「意思是」！',
+    example: 'It is mean to laugh at someone when they make a mistake.',
   },
   {
     id: 'gentle',
@@ -530,6 +577,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['粗暴的', '嚴厲的', '兇猛的'],
     hint: 'gentle 是很溫柔，gentleman 就是紳士！',
+    example: 'Be gentle with the baby rabbit so you do not scare it.',
   },
   {
     id: 'friendly',
@@ -541,6 +589,7 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['冷漠的', '害羞的', '嚴格的'],
     hint: 'friendly 是友善的，friend（朋友）加 ly！',
+    example: 'Everyone likes her because she is friendly and always smiles.',
   },
   {
     id: 'polite',
@@ -552,5 +601,6 @@ export const pack01: WordEntry[] = [
     pack: 1,
     confusers: ['粗魯的', '吵鬧的', '懶惰的'],
     hint: 'polite 是有禮貌的，police 是警察，別搞混！',
+    example: 'It is polite to say thank you when someone helps you out.',
   },
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Pressable, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { COLORS } from "@/utils/colors";
@@ -7,6 +7,7 @@ import { STRINGS } from "@/utils/strings";
 import { ThemedText } from "@/components/ui/ThemedText";
 import { ReviewBadge } from "@/components/explore/ReviewBadge";
 import { useReviewQueue } from "@/hooks/useReviewQueue";
+import { useGame } from "@/store/GameContext";
 
 interface TabItemProps {
   readonly label: string;
@@ -52,7 +53,12 @@ const tabStyles = StyleSheet.create({
 
 export default function TabLayout(): React.JSX.Element {
   const { dueCount } = useReviewQueue();
+  const { state } = useGame();
   const insets = useSafeAreaInsets();
+
+  const battleBadge = state.progress.unlockedAreas.filter(
+    (id) => !state.progress.defeatedAreas.includes(id),
+  ).length;
 
   return (
     <Tabs
@@ -83,6 +89,19 @@ export default function TabLayout(): React.JSX.Element {
         }}
       />
       <Tabs.Screen
+        name="battle"
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <TabItem
+              icon="⚔️"
+              label={STRINGS.tabBattle}
+              focused={focused}
+              badge={battleBadge}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="collection"
         options={{
           tabBarIcon: ({ focused }) => (
@@ -91,6 +110,14 @@ export default function TabLayout(): React.JSX.Element {
               label={STRINGS.tabCollection}
               focused={focused}
             />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <TabItem icon="👤" label={STRINGS.tabProfile} focused={focused} />
           ),
         }}
       />

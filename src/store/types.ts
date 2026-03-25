@@ -23,6 +23,8 @@ export interface WordEntry {
   pack: number; // 1-4 in Phase 1
   confusers: [string, string, string]; // 3 wrong Chinese meanings
   hint?: string; // explanation shown after wrong answer
+  example?: string; // example sentence (Phase 2+)
+  phonetic?: string; // KK phonetic (Phase 2+)
 }
 
 export interface CapturedSpirit {
@@ -46,6 +48,33 @@ export interface DailySession {
 
 export interface GameSettings {
   hapticEnabled: boolean;
+  soundEnabled: boolean;
+}
+
+export interface GameProgress {
+  unlockedAreas: number[];
+  defeatedAreas: number[];
+}
+
+export interface ReadingQuestion {
+  question: string;
+  questionZh: string;
+  options: { text: string; textZh: string }[];
+  correctIndex: number;
+  explanation: string;
+}
+
+export interface ReadingPassage {
+  areaId: number;
+  boss: {
+    name: string;
+    emoji: string;
+    personality: string;
+    openingLine: string;
+    defeatLine: string;
+  };
+  passage: string;
+  questions: ReadingQuestion[];
 }
 
 export interface SessionFlags {
@@ -55,6 +84,7 @@ export interface SessionFlags {
 
 export interface GachaState {
   pityCounter: number;
+  freeRemainingToday: number;
 }
 
 export interface GameState {
@@ -70,6 +100,7 @@ export interface GameState {
   settings: GameSettings;
   gacha: GachaState;
   sessionFlags: SessionFlags;
+  progress: GameProgress;
 }
 
 export interface PersistedState {
@@ -86,7 +117,18 @@ export type GameAction =
   | { type: "DISMISS_WELCOME" }
   | { type: "TOGGLE_HAPTIC" }
   | { type: "RESET_DAILY_SESSION"; date: string }
-  | { type: "UPDATE_STREAK"; date: string };
+  | { type: "UPDATE_STREAK"; date: string }
+  | { type: "GACHA_PULL"; wordId: string; rarity: number }
+  | { type: "CLAIM_REVIEW_REWARD" }
+  | {
+      type: "BATTLE_ANSWER";
+      areaId: number;
+      questionIndex: number;
+      isCorrect: boolean;
+    }
+  | { type: "DEFEAT_BOSS"; areaId: number }
+  | { type: "UNLOCK_AREA"; areaId: number }
+  | { type: "TOGGLE_SOUND" };
 
 // Question types for Phase 1
 export type QuestionType =
@@ -100,8 +142,9 @@ export interface Question {
   type: QuestionType;
   wordId: string;
   prompt: string; // English word (stage1) or Chinese meaning (stage2)
-  options: string[]; // 4 shuffled options
-  correctIndex: number;
+  options: string[]; // 4 shuffled options (or shuffled letters for spellWord)
+  correctIndex: number; // -1 for spellWord (use correctAnswer instead)
+  correctAnswer?: string; // correct spelling for spellWord type
   spiritType: SpiritType;
   posCategory: PosCategory;
   stage: SpiritStage;

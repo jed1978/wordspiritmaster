@@ -12,6 +12,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['貓', '鳥', '魚'],
     hint: 'dog 是狗，人類最好的朋友！',
+    example: 'My dog runs fast and loves to play in the park.',
   },
   {
     id: 'cat',
@@ -23,6 +24,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['狗', '老鼠', '兔子'],
     hint: 'cat 是貓咪，跟 hat（帽子）押韻！',
+    example: 'The cat sits on the chair and watches the birds outside.',
   },
   {
     id: 'bird',
@@ -34,6 +36,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['蟲', '蝴蝶', '魚'],
     hint: 'bird 是鳥，會在天上飛的動物！',
+    example: 'A small bird is singing a{美妙的} song in the tall tree.',
   },
   {
     id: 'fish',
@@ -45,6 +48,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['蝦', '螃蟹', '蛇'],
     hint: 'fish 是魚，住在水裡的動物！',
+    example: 'We saw many colorful{五彩繽紛的} fish in the sea today.',
   },
   {
     id: 'tree',
@@ -56,6 +60,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['花', '草', '葉子'],
     hint: 'tree 是大樹，three 是數字 3，多一個 h！',
+    example: 'There is a big tree in front of our school gate.',
   },
   {
     id: 'flower',
@@ -67,6 +72,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['草', '樹', '種子'],
     hint: 'flower 是花，flour 是麵粉，發音一樣但意思不同！',
+    example: 'Mom planted a beautiful{美麗的} flower in the garden last spring.',
   },
   {
     id: 'water',
@@ -78,6 +84,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['牛奶', '果汁', '茶'],
     hint: 'water 是水，生活中最重要的東西！',
+    example: 'Please drink enough water every day to stay healthy.',
   },
   {
     id: 'rain',
@@ -89,6 +96,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['雪', '風', '雲'],
     hint: 'rain 是雨，train 是火車，就差一個 t！',
+    example: 'The rain came down hard while we were walking home.',
   },
   {
     id: 'sun',
@@ -100,6 +108,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['月亮', '星星', '雲'],
     hint: 'sun 是太陽，son 是兒子，發音一樣！',
+    example: 'The sun shines brightly and makes everyone feel warm today.',
   },
   {
     id: 'moon_n',
@@ -111,6 +120,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['太陽', '星星', '地球'],
     hint: 'moon 是月亮，noon 是中午，長得很像！',
+    example: 'The moon looks very round and bright in the night sky.',
   },
   {
     id: 'star_n',
@@ -122,6 +132,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['太陽', '月亮', '雲'],
     hint: 'star 是天上的星星，也可以指明星！',
+    example: 'I can see every star clearly on this cold winter night.',
   },
   {
     id: 'cloud',
@@ -133,6 +144,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['霧', '雨', '風'],
     hint: 'cloud 是雲朵，cloudy 就是多雲的天氣！',
+    example: 'A big white cloud is floating slowly across the blue sky.',
   },
   {
     id: 'river',
@@ -144,6 +156,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['湖泊', '海洋', '池塘'],
     hint: 'river 是河流，會流動的水！',
+    example: 'Children love to catch fish in the river near our village{村莊}.',
   },
   {
     id: 'mountain',
@@ -155,6 +168,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['河流', '湖泊', '平原'],
     hint: 'mountain 是大山，比 hill（小山丘）還大！',
+    example: 'We hiked{健行} up the mountain and saw a great view.',
   },
   {
     id: 'sea',
@@ -166,6 +180,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['湖泊', '河流', '池塘'],
     hint: 'sea 是海，see 是看見，發音一樣！',
+    example: 'We swam in the sea and collected shells{貝殼} on the beach.',
   },
   {
     id: 'grass',
@@ -177,6 +192,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['花', '樹', '葉子'],
     hint: 'grass 是草地上的草，glass 是玻璃，差一個字母！',
+    example: 'The rabbit is eating green grass near the garden fence{圍欄}.',
   },
   {
     id: 'animal',
@@ -188,6 +204,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['植物', '人類', '昆蟲'],
     hint: 'animal 是動物的總稱，包含所有有生命的動物！',
+    example: 'My favorite animal is the dog because it is so friendly.',
   },
   {
     id: 'rabbit',
@@ -199,6 +216,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['松鼠', '老鼠', '貓'],
     hint: 'rabbit 是兔子，有長長的耳朵！',
+    example: 'The white rabbit jumped quickly and hid behind the big tree.',
   },
   {
     id: 'horse',
@@ -210,6 +228,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['牛', '羊', '驢'],
     hint: 'horse 是馬，house 是房子，別看錯了！',
+    example: 'The girl rode a brown horse slowly along the river path.',
   },
   {
     id: 'cow',
@@ -221,6 +240,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['馬', '豬', '羊'],
     hint: 'cow 是牛，會發出 moo 的聲音！',
+    example: 'The cow on that farm gives fresh milk every single morning.',
   },
   {
     id: 'pig',
@@ -232,6 +252,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['牛', '狗', '雞'],
     hint: 'pig 是豬，big 是大的，就差第一個字母！',
+    example: 'The pink pig rolled around happily in the mud{泥巴} all day.',
   },
   {
     id: 'chicken',
@@ -243,6 +264,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['鴨', '鵝', '火雞'],
     hint: 'chicken 是雞，也可以指雞肉！',
+    example: 'We had fried{炸的} chicken and rice for lunch at school today.',
   },
   {
     id: 'snake',
@@ -254,6 +276,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['蟲', '蜥蜴', '青蛙'],
     hint: 'snake 是蛇，snack 是點心，差一個字母！',
+    example: 'A long green snake was hiding quietly under the wet leaves{落葉}.',
   },
   {
     id: 'lion',
@@ -265,6 +288,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['老虎', '豹', '熊'],
     hint: 'lion 是獅子，萬獸之王！',
+    example: 'The lion roared{吼叫} loudly and all the other animals ran away.',
   },
   {
     id: 'bear_n',
@@ -276,6 +300,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['獅子', '老虎', '猴子'],
     hint: 'bear 當名詞是熊，當動詞是忍受！',
+    example: 'A big bear was looking for food near the river this morning.',
   },
   // ===== metal 金屬系：學校學習名詞 =====
   {
@@ -288,6 +313,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['筆記本', '報紙', '雜誌'],
     hint: 'book 是書本，cook 是煮飯，差一個字母！',
+    example: 'I read a book about animals every night before going to sleep.',
   },
   {
     id: 'pen',
@@ -299,6 +325,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['鉛筆', '橡皮擦', '尺'],
     hint: 'pen 是原子筆，pencil 是鉛筆！',
+    example: 'Please use a blue pen to sign your name on this form{表格}.',
   },
   {
     id: 'pencil',
@@ -310,6 +337,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['原子筆', '蠟筆', '彩色筆'],
     hint: 'pencil 是鉛筆，pen 是原子筆！',
+    example: 'She drew a picture of a cat with her new yellow pencil.',
   },
   {
     id: 'desk',
@@ -321,6 +349,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['椅子', '書櫃', '桌子'],
     hint: 'desk 是書桌，通常在學校或辦公室用！',
+    example: 'Keep your desk clean so you can study without any distraction{干擾}.',
   },
   {
     id: 'chair_school',
@@ -332,6 +361,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['書桌', '沙發', '板凳'],
     hint: 'chair 是椅子，hair 是頭髮，前面加個 c！',
+    example: 'Please pull up a chair and sit down with us at the table.',
   },
   {
     id: 'class',
@@ -343,6 +373,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['學校', '教室', '操場'],
     hint: 'class 是班級或一堂課，glass 是玻璃！',
+    example: 'Our English class starts at eight and ends at nine every day.',
   },
   {
     id: 'school',
@@ -354,6 +385,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['教室', '圖書館', '操場'],
     hint: 'school 是學校，每天去上學的地方！',
+    example: 'I walk to school every morning with my best friend Lisa.',
   },
   {
     id: 'teacher_metal',
@@ -365,6 +397,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['學生', '校長', '教授'],
     hint: 'teacher 是老師，teach（教）加 er！',
+    example: 'Our science teacher explained{解釋} the experiment very clearly today.',
   },
   {
     id: 'student',
@@ -376,6 +409,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['老師', '校長', '家長'],
     hint: 'student 是學生，study（學習）變化來的！',
+    example: 'Every student in our class must finish the homework by Friday.',
   },
   {
     id: 'test',
@@ -387,6 +421,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['作業', '報告', '成績'],
     hint: 'test 是小考，exam 是大考！',
+    example: 'We have a math test tomorrow so I need to study hard tonight.',
   },
   {
     id: 'exam',
@@ -398,6 +433,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['作業', '測驗', '報告'],
     hint: 'exam 是正式的大考試，像期中考期末考！',
+    example: 'She studied for two hours before the big English exam on Monday.',
   },
   {
     id: 'homework',
@@ -409,6 +445,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['考試', '課本', '筆記'],
     hint: 'homework = home（家）+ work（工作），在家做的工作！',
+    example: 'I finished all my homework before dinner so I could watch TV.',
   },
   {
     id: 'library',
@@ -420,6 +457,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['教室', '書店', '辦公室'],
     hint: 'library 是圖書館，可以借書的地方！',
+    example: 'We went to the library to borrow books for our science project.',
   },
   {
     id: 'classroom',
@@ -431,6 +469,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['圖書館', '操場', '辦公室'],
     hint: 'classroom = class（課）+ room（房間），上課的房間！',
+    example: 'The classroom is very quiet because everyone is reading their books.',
   },
   {
     id: 'blackboard',
@@ -442,6 +481,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['白板', '佈告欄', '螢幕'],
     hint: 'blackboard = black（黑）+ board（板），黑色的板子！',
+    example: 'The teacher wrote new vocabulary{字彙} words on the blackboard for us.',
   },
   {
     id: 'notebook',
@@ -453,6 +493,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['課本', '日記', '字典'],
     hint: 'notebook = note（筆記）+ book（書），寫筆記的本子！',
+    example: 'I always write important notes in my notebook during English class.',
   },
   {
     id: 'eraser',
@@ -464,6 +505,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['鉛筆', '尺', '膠水'],
     hint: 'eraser 是橡皮擦，erase（擦掉）加 r！',
+    example: 'Can I borrow your eraser? I made a mistake on this answer.',
   },
   {
     id: 'ruler',
@@ -475,6 +517,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['橡皮擦', '剪刀', '圓規'],
     hint: 'ruler 是尺，也可以指統治者！',
+    example: 'Use a ruler to draw a straight line under each sentence.',
   },
   {
     id: 'dictionary',
@@ -486,6 +529,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['課本', '百科全書', '雜誌'],
     hint: 'dictionary 是字典，查不懂的字就靠它！',
+    example: 'Look up the word in a dictionary if you do not know its meaning.',
   },
   {
     id: 'subject',
@@ -497,6 +541,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['課程', '學期', '成績'],
     hint: 'subject 是科目，像數學、英文都是 subject！',
+    example: 'My favorite subject is English because I enjoy reading stories.',
   },
   {
     id: 'math',
@@ -508,6 +553,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['科學', '英文', '歷史'],
     hint: 'math 是數學，是 mathematics 的縮寫！',
+    example: 'I got a perfect score{滿分} on my math test last week.',
   },
   {
     id: 'english',
@@ -519,6 +565,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['數學', '國文', '日語'],
     hint: 'English 是英文，E 要大寫因為是語言名稱！',
+    example: 'She practices English every day by reading books and watching videos.',
   },
   {
     id: 'science',
@@ -530,6 +577,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['數學', '歷史', '美術'],
     hint: 'science 是科學，scientist 是科學家！',
+    example: 'In science class we learned how plants grow toward the sunlight.',
   },
   {
     id: 'history',
@@ -541,6 +589,7 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['地理', '科學', '數學'],
     hint: 'history 是歷史，story 是故事，長得很像！',
+    example: 'Our history teacher told us an interesting story about ancient{古代的} Taiwan.',
   },
   {
     id: 'art',
@@ -552,5 +601,6 @@ export const pack02: WordEntry[] = [
     pack: 2,
     confusers: ['音樂', '體育', '數學'],
     hint: 'art 是藝術，畫畫、雕塑都是 art！',
+    example: 'She painted{畫} a beautiful picture of the sea in her art class.',
   },
 ];

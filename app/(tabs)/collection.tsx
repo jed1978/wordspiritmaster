@@ -1,16 +1,16 @@
 import React, { useState, useCallback, useMemo } from "react";
 import { View, ScrollView, StyleSheet, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import type { SpiritType, WordEntry, CapturedSpirit } from "@/store/types";
+import { useRouter } from "expo-router";
+import type { SpiritType } from "@/store/types";
 import { COLORS, SPIRIT_TYPE_COLORS, SPIRIT_TYPE_LABELS } from "@/utils/colors";
 import { STRINGS } from "@/utils/strings";
 import { MASTERED_STAGE } from "@/utils/constants";
 import { useGame } from "@/store/GameContext";
-import { ALL_WORDS, getWordById } from "@/data/words/index";
+import { ALL_WORDS } from "@/data/words/index";
 import { ThemedView } from "@/components/ui/ThemedView";
 import { ThemedText } from "@/components/ui/ThemedText";
 import { SpiritGrid } from "@/components/spirits/SpiritGrid";
-import { SpiritDetailModal } from "@/components/spirits/SpiritDetailModal";
 
 const SPIRIT_TYPES: readonly SpiritType[] = [
   "flame",
@@ -25,8 +25,8 @@ const SPIRIT_TYPES: readonly SpiritType[] = [
 
 export default function CollectionScreen(): React.JSX.Element {
   const { state } = useGame();
+  const router = useRouter();
   const [filter, setFilter] = useState<SpiritType | "all">("all");
-  const [selectedWordId, setSelectedWordId] = useState<string | null>(null);
 
   const filteredWords = useMemo(
     () =>
@@ -42,20 +42,12 @@ export default function CollectionScreen(): React.JSX.Element {
   const shinyCount = spiritValues.filter((s) => s.isShiny).length;
   const completionPct = `${Math.round((capturedCount / ALL_WORDS.length) * 100)}%`;
 
-  const selectedWord = selectedWordId
-    ? (getWordById(selectedWordId) ?? null)
-    : null;
-  const selectedSpirit = selectedWordId
-    ? (state.spirits[selectedWordId] ?? null)
-    : null;
-
-  const handlePress = useCallback((wordId: string) => {
-    setSelectedWordId(wordId);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setSelectedWordId(null);
-  }, []);
+  const handlePress = useCallback(
+    (wordId: string) => {
+      router.push(`/spirit/${wordId}`);
+    },
+    [router],
+  );
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
@@ -108,13 +100,6 @@ export default function CollectionScreen(): React.JSX.Element {
             onPress={handlePress}
           />
         )}
-
-        <SpiritDetailModal
-          visible={selectedWordId !== null}
-          onClose={handleClose}
-          word={selectedWord}
-          spirit={selectedSpirit}
-        />
       </ThemedView>
     </SafeAreaView>
   );

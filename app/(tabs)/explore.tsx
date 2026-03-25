@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import { View, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
 import { COLORS } from "@/utils/colors";
 import { STRINGS } from "@/utils/strings";
 import {
@@ -28,6 +29,7 @@ import { PressableButton } from "@/components/ui/PressableButton";
 import { QuestionCard } from "@/components/explore/QuestionCard";
 import { CaptureResult } from "@/components/explore/CaptureResult";
 import { WrongAnswerHint } from "@/components/explore/WrongAnswerHint";
+import { SpellInput } from "@/components/questions/SpellInput";
 
 type ExploreMode = "review" | "capture" | "idle";
 type AnswerPhase = "question" | "result";
@@ -38,6 +40,7 @@ export default function ExploreScreen(): React.JSX.Element {
   const { session } = useDailySession();
   const lightHaptic = useLightHaptic();
   const warningHaptic = useWarningHaptic();
+  const router = useRouter();
 
   const [answerPhase, setAnswerPhase] = useState<AnswerPhase>("question");
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -176,11 +179,22 @@ export default function ExploreScreen(): React.JSX.Element {
           ) : null}
 
           {currentQuestion && currentWord && answerPhase === "question" ? (
-            <QuestionCard
-              question={currentQuestion}
-              word={currentWord}
-              onAnswer={handleAnswer}
-            />
+            currentQuestion.type === "spellWord" ? (
+              <SpellInput
+                word={currentWord.word}
+                meaning={currentWord.meaning}
+                spiritType={currentWord.type}
+                onComplete={(isCorrect) =>
+                  handleAnswer(isCorrect, currentWord.id)
+                }
+              />
+            ) : (
+              <QuestionCard
+                question={currentQuestion}
+                word={currentWord}
+                onAnswer={handleAnswer}
+              />
+            )
           ) : null}
 
           {answerPhase === "result" && currentWord ? (
@@ -217,6 +231,21 @@ export default function ExploreScreen(): React.JSX.Element {
           ) : null}
         </View>
 
+        {/* Review reward banner */}
+        {mode === "capture" &&
+        session.reviewsDone > 0 &&
+        !state.sessionFlags.dailyReviewRewardClaimed ? (
+          <PressableButton
+            label={STRINGS.reviewRewardBanner}
+            variant="accent"
+            onPress={() => {
+              dispatch({ type: "CLAIM_REVIEW_REWARD" });
+              router.push("/gacha");
+            }}
+            style={styles.rewardBanner}
+          />
+        ) : null}
+
         <Modal visible={showWelcome} onClose={handleDismissWelcome}>
           <View style={styles.welcomeContent}>
             <ThemedText size="xl" style={styles.welcomeTitle}>
@@ -247,4 +276,5 @@ const styles = StyleSheet.create({
   welcomeContent: { alignItems: "center", gap: 16 },
   welcomeTitle: { fontWeight: "700", textAlign: "center" },
   welcomeSub: { textAlign: "center" },
+  rewardBanner: { marginHorizontal: 20, marginBottom: 8 },
 });

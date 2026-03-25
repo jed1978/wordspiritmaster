@@ -29,6 +29,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     "expo-router",
     "expo-font",
     "expo-asset",
+    "expo-audio",
+    "expo-notifications",
     [
       "expo-splash-screen",
       {

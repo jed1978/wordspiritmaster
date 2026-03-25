@@ -12,6 +12,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["父親", "姊妹", "阿姨"],
     hint: "mother 是媽媽，也可以說 mom！",
+    example: "My mother always makes delicious {美味的} food for our family.",
   },
   {
     id: "father",
@@ -23,6 +24,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["母親", "兄弟", "叔叔"],
     hint: "father 是爸爸，也可以說 dad！",
+    example: "Her father takes her to school every morning by car.",
   },
   {
     id: "sister",
@@ -34,6 +36,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["兄弟", "母親", "女兒"],
     hint: "sister 是姊姊或妹妹，brother 是兄弟！",
+    example: "My sister and I like to watch movies together on weekends.",
   },
   {
     id: "brother",
@@ -45,6 +48,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["姊妹", "父親", "兒子"],
     hint: "brother 是哥哥或弟弟！",
+    example: "His older brother taught him how to ride a bike.",
   },
   {
     id: "family",
@@ -56,6 +60,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["朋友", "鄰居", "同學"],
     hint: "family 是家人的總稱，很溫暖的字！",
+    example: "Our family goes on a trip together every summer {夏天}.",
   },
   {
     id: "friend",
@@ -67,6 +72,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["敵人", "鄰居", "陌生人"],
     hint: "friend 是朋友，i 在 e 前面，先 i 後 e！",
+    example: "She is my best friend and we tell each other everything.",
   },
   {
     id: "boy",
@@ -78,6 +84,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["女孩", "男人", "嬰兒"],
     hint: "boy 是男孩，girl 是女孩！",
+    example: "The little boy smiled and waved at his teacher.",
   },
   {
     id: "girl",
@@ -89,6 +96,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["男孩", "女人", "嬰兒"],
     hint: "girl 是女孩，boy 是男孩！",
+    example: "The girl in the red dress is my neighbor {鄰居}.",
   },
   {
     id: "baby",
@@ -100,6 +108,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["小孩", "男孩", "女孩"],
     hint: "baby 是小嬰兒，很可愛的寶寶！",
+    example: "The baby started to cry when she felt hungry.",
   },
   {
     id: "man",
@@ -111,6 +120,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["女人", "男孩", "老人"],
     hint: "man 是男人，men 是複數（男人們）！",
+    example: "The tall man in the blue shirt is my uncle {叔叔}.",
   },
   {
     id: "woman",
@@ -122,6 +132,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["男人", "女孩", "小姐"],
     hint: "woman 是女人，women 是複數！",
+    example: "The kind woman helped me find the right bus stop.",
   },
   {
     id: "child",
@@ -133,6 +144,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["大人", "嬰兒", "青少年"],
     hint: "child 是小孩，children 是複數！",
+    example: "Every child in the class got a {獎品} prize for trying hard.",
   },
   {
     id: "teacher_bloom",
@@ -144,6 +156,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["學生", "醫生", "護士"],
     hint: "teacher 是老師，teach（教）加 er 變成教的人！",
+    example: "Our teacher always explains the lesson in a clear way.",
   },
   {
     id: "doctor",
@@ -155,6 +168,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["護士", "老師", "警察"],
     hint: "doctor 是醫生，生病了就要看 doctor！",
+    example: "The doctor told him to rest and drink plenty of water.",
   },
   {
     id: "nurse",
@@ -166,6 +180,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["醫生", "病人", "藥劑師"],
     hint: "nurse 是護士，在醫院照顧病人的人！",
+    example: "The nurse checked his temperature {體溫} and gave him medicine.",
   },
   {
     id: "police",
@@ -177,6 +192,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["消防員", "軍人", "偵探"],
     hint: "police 是警察，polite 是有禮貌的，別搞混！",
+    example: "The police helped the lost child find her parents.",
   },
   {
     id: "cook_n",
@@ -188,6 +204,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["服務生", "老闆", "醫生"],
     hint: "cook 當名詞是廚師，當動詞是煮飯！",
+    example: "The cook at the restaurant {餐廳} makes the best noodles.",
   },
   {
     id: "driver",
@@ -199,6 +216,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["乘客", "警察", "老師"],
     hint: "driver 是司機，drive（開車）加 r！",
+    example: "The bus driver waited for everyone to sit down safely.",
   },
   {
     id: "farmer",
@@ -210,6 +228,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["漁夫", "工人", "商人"],
     hint: "farmer 是農夫，farm（農場）加 er！",
+    example: "The farmer wakes up early every day to water his crops {農作物}.",
   },
   {
     id: "soldier",
@@ -221,6 +240,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["警察", "消防員", "船長"],
     hint: "soldier 是軍人，保衛國家的人！",
+    example: "The brave {勇敢的} soldier stood guard outside the building all night.",
   },
   {
     id: "president",
@@ -232,6 +252,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["國王", "市長", "老闆"],
     hint: "president 是總統，present 是禮物/現在，多了幾個字母！",
+    example: "The president gave a speech {演講} to the whole country on TV.",
   },
   {
     id: "queen",
@@ -243,6 +264,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["國王", "公主", "王子"],
     hint: "queen 是女王，king 是國王！",
+    example: "The queen waved to the crowd {人群} from the castle window.",
   },
   {
     id: "king",
@@ -254,6 +276,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["女王", "王子", "公主"],
     hint: "king 是國王，kind（善良）多一個 d！",
+    example: "The wise {智慧的} king ruled his kingdom with kindness and fairness.",
   },
   {
     id: "princess",
@@ -265,6 +288,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["王子", "女王", "皇后"],
     hint: "princess 是公主，prince 是王子！",
+    example: "The princess learned to ride a horse in the royal {皇家的} garden.",
   },
   {
     id: "prince",
@@ -276,6 +300,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["公主", "國王", "騎士"],
     hint: "prince 是王子，princess 是公主！",
+    example: "The young prince practiced sword {劍} fighting every afternoon.",
   },
   // ===== star 星光系：日常物品名詞 =====
   {
@@ -288,6 +313,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["公寓", "學校", "商店"],
     hint: "house 是房子，mouse 是老鼠，就差第一個字母！",
+    example: "There is a big garden {花園} in front of their house.",
   },
   {
     id: "room",
@@ -299,6 +325,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["房子", "大廳", "走廊"],
     hint: "room 是房間，bedroom 是臥室，bathroom 是浴室！",
+    example: "Please clean your room before our guests {客人} arrive tonight.",
   },
   {
     id: "door",
@@ -310,6 +337,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["窗戶", "牆壁", "樓梯"],
     hint: "door 是門，floor 是地板！",
+    example: "He knocked {敲} on the door and waited for someone to answer.",
   },
   {
     id: "window",
@@ -321,6 +349,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["門", "牆壁", "屋頂"],
     hint: "window 是窗戶，可以看到外面的世界！",
+    example: "She opened the window to let in some fresh {新鮮的} air.",
   },
   {
     id: "bed",
@@ -332,6 +361,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["沙發", "椅子", "桌子"],
     hint: "bed 是床，bad 是壞的，母音不同！",
+    example: "I like to read a book in bed before going to sleep.",
   },
   {
     id: "table",
@@ -343,6 +373,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["椅子", "書桌", "櫃子"],
     hint: "table 是一般的桌子，desk 是書桌或辦公桌！",
+    example: "We put all the dishes {餐具} on the table before dinner.",
   },
   {
     id: "phone",
@@ -354,6 +385,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["電腦", "電視", "收音機"],
     hint: "phone 的 ph 發 f 的音喔！",
+    example: "Can I use your phone to call my mother right now?",
   },
   {
     id: "computer",
@@ -365,6 +397,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["手機", "電視", "平板"],
     hint: "computer 是電腦，compute（計算）加 r！",
+    example: "She uses the computer to do her homework and watch videos.",
   },
   {
     id: "tv",
@@ -376,6 +409,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["收音機", "電腦", "手機"],
     hint: "TV 是 television 的縮寫，就是電視！",
+    example: "My family watches TV together after dinner every evening {傍晚}.",
   },
   {
     id: "food",
@@ -387,6 +421,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["飲料", "水果", "甜點"],
     hint: "food 是食物的總稱，foot 是腳，別搞混！",
+    example: "There is so much delicious {美味的} food at the night market.",
   },
   {
     id: "rice",
@@ -398,6 +433,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["麵條", "麵包", "蛋糕"],
     hint: "rice 是米飯，nice 是好的，差第一個字母！",
+    example: "We eat rice with vegetables {蔬菜} and soup for lunch every day.",
   },
   {
     id: "bread",
@@ -409,6 +445,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["蛋糕", "餅乾", "米飯"],
     hint: "bread 是麵包，break 是打破，拼法很像！",
+    example: "I eat two slices {片} of bread with butter every morning.",
   },
   {
     id: "egg",
@@ -420,6 +457,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["牛奶", "肉", "起司"],
     hint: "egg 是蛋，早餐常常會吃到！",
+    example: "My father cooked a fried egg for my breakfast this morning.",
   },
   {
     id: "milk",
@@ -431,6 +469,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["果汁", "水", "茶"],
     hint: "milk 是牛奶，silk 是絲綢，差第一個字母！",
+    example: "She drinks a glass of warm milk before going to bed.",
   },
   {
     id: "juice",
@@ -442,6 +481,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["牛奶", "汽水", "茶"],
     hint: "juice 是果汁，orange juice 是柳橙汁！",
+    example: "He ordered {點了} a large orange juice at the breakfast shop.",
   },
   {
     id: "bag",
@@ -453,6 +493,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["盒子", "箱子", "錢包"],
     hint: "bag 是袋子或書包，big 是大的！",
+    example: "She put all her books and pens into her school bag.",
   },
   {
     id: "hat",
@@ -464,6 +505,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["圍巾", "手套", "鞋子"],
     hint: "hat 是帽子，cat 是貓，hot 是熱的！",
+    example: "He wore a red hat to keep his head warm in winter.",
   },
   {
     id: "shirt",
@@ -475,6 +517,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["褲子", "裙子", "外套"],
     hint: "shirt 是上衣，short 是短的/短褲！",
+    example: "He wore a white shirt and black pants {褲子} to the party.",
   },
   {
     id: "shoes",
@@ -486,6 +529,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["襪子", "靴子", "拖鞋"],
     hint: "shoes 是鞋子，通常用複數因為有兩隻！",
+    example: "She bought a new pair of shoes for the sports {運動} day.",
   },
   {
     id: "pants",
@@ -497,6 +541,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["裙子", "襯衫", "外套"],
     hint: "pants 是褲子，也是用複數因為有兩條褲管！",
+    example: "These blue pants are too big for me and keep falling down.",
   },
   {
     id: "clock",
@@ -508,6 +553,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["手錶", "鬧鐘", "日曆"],
     hint: "clock 是掛在牆上的時鐘，watch 是手錶！",
+    example: "The old clock on the wall has not worked for two years.",
   },
   {
     id: "key",
@@ -519,6 +565,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["鎖", "門把", "按鈕"],
     hint: "key 是鑰匙，也可以指關鍵或鍵盤的鍵！",
+    example: "I forgot my key inside and could not open the front door.",
   },
   {
     id: "money",
@@ -530,6 +577,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["銀行", "錢包", "信用卡"],
     hint: "money 是錢，monkey 是猴子，差一個字母！",
+    example: "She saved enough money to buy a new backpack {後背包} for school.",
   },
   {
     id: "cup",
@@ -541,6 +589,7 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["碗", "盤子", "瓶子"],
     hint: "cup 是杯子，a cup of tea 是一杯茶！",
+    example: "She holds a cup of hot tea and looks out the window.",
   },
   {
     id: "paper",
@@ -552,5 +601,6 @@ export const pack03: WordEntry[] = [
     pack: 3,
     confusers: ["書本", "筆記本", "信封"],
     hint: "paper 是紙，也可以指報紙（newspaper）！",
+    example: "Please write your name and class number on the paper first.",
   },
 ];

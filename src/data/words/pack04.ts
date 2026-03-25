@@ -12,6 +12,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['昨天', '明天', '現在'],
     hint: 'today 是今天，to + day！',
+    example: 'Today is a great day to study English with your friends.',
   },
   {
     id: 'tomorrow',
@@ -23,6 +24,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['今天', '昨天', '後天'],
     hint: 'tomorrow 是明天，有兩個 r 喔！',
+    example: 'We have a big test tomorrow, so I need to study tonight.',
   },
   {
     id: 'yesterday',
@@ -34,6 +36,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['今天', '明天', '前天'],
     hint: 'yesterday 是昨天，比較長的字，慢慢拼！',
+    example: 'Yesterday I went to the park and played with my dog.',
   },
   {
     id: 'morning',
@@ -45,6 +48,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['下午', '晚上', '中午'],
     hint: 'morning 是早上，Good morning 是早安！',
+    example: 'Every morning she wakes up early and eats a big breakfast.',
   },
   {
     id: 'afternoon',
@@ -56,6 +60,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['早上', '晚上', '傍晚'],
     hint: 'afternoon = after（之後）+ noon（中午），中午之後就是下午！',
+    example: 'In the afternoon we played basketball at the school {球場}.',
   },
   {
     id: 'evening',
@@ -67,6 +72,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['早上', '下午', '深夜'],
     hint: 'evening 是傍晚到晚上，比 night 早一點！',
+    example: 'The sky turns orange and pink every evening before sunset.',
   },
   {
     id: 'night',
@@ -78,6 +84,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['白天', '傍晚', '清晨'],
     hint: 'night 是夜晚，Good night 是晚安！',
+    example: 'Last night I could see many stars in the dark sky.',
   },
   {
     id: 'week',
@@ -89,6 +96,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['月', '天', '年'],
     hint: 'week 是一週七天，weak 是虛弱的，發音一樣！',
+    example: 'There are seven days in a week, from Monday to Sunday.',
   },
   {
     id: 'month',
@@ -100,6 +108,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['年', '週', '天'],
     hint: 'month 是月份，一年有 12 個 months！',
+    example: 'My birthday is next month, so I am very excited.',
   },
   {
     id: 'year',
@@ -111,6 +120,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['月', '週', '天'],
     hint: 'year 是一年，ear 是耳朵，前面加 y！',
+    example: 'This year I want to learn one hundred new English words.',
   },
   {
     id: 'spring',
@@ -122,6 +132,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['夏天', '秋天', '冬天'],
     hint: 'spring 是春天，花開的季節！也可以指彈簧！',
+    example: 'In spring, the flowers bloom and the weather becomes warm.',
   },
   {
     id: 'summer',
@@ -133,6 +144,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['春天', '秋天', '冬天'],
     hint: 'summer 是夏天，放暑假的季節！',
+    example: 'Summer is the best time to swim in the pool every day.',
   },
   {
     id: 'fall',
@@ -144,6 +156,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['春天', '夏天', '冬天'],
     hint: 'fall 是秋天（美式），也可以指掉落！autumn 也是秋天（英式）。',
+    example: 'In fall, the leaves turn red and yellow and drop from trees.',
   },
   {
     id: 'winter',
@@ -155,6 +168,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['春天', '夏天', '秋天'],
     hint: 'winter 是冬天，冷冷的季節！',
+    example: 'Winter in Taipei is cold, but it rarely snows in the city.',
   },
   {
     id: 'hot',
@@ -166,6 +180,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['冷的', '溫暖的', '涼爽的'],
     hint: 'hot 是熱的，cold 是冷的，完全相反！',
+    example: 'It is so hot today that I want to drink cold water all day.',
   },
   {
     id: 'cold',
@@ -177,6 +192,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['熱的', '溫暖的', '涼爽的'],
     hint: 'cold 是冷的，也可以指感冒 (catch a cold)！',
+    example: 'The cold wind made me put on my {外套} before going outside.',
   },
   {
     id: 'sunny',
@@ -188,6 +204,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['多雲的', '下雨的', '起霧的'],
     hint: 'sunny 是晴天，sun（太陽）加 ny！',
+    example: 'It was a sunny day, so we had a picnic in the park together.',
   },
   {
     id: 'rainy',
@@ -199,6 +216,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['晴朗的', '多雲的', '刮風的'],
     hint: 'rainy 是下雨的天氣，rain（雨）加 y！',
+    example: 'On rainy days, I love to stay home and read a good book.',
   },
   {
     id: 'windy',
@@ -210,6 +228,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['晴朗的', '下雨的', '炎熱的'],
     hint: 'windy 是有風的，wind（風）加 y！',
+    example: 'It was so windy that my hat flew off my head outside.',
   },
   {
     id: 'cloudy',
@@ -221,6 +240,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['晴朗的', '下雨的', '下雪的'],
     hint: 'cloudy 是多雲的，cloud（雲）加 y！',
+    example: 'The sky is cloudy today, so we might not see the sun.',
   },
   {
     id: 'snowy',
@@ -232,6 +252,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['晴朗的', '下雨的', '炎熱的'],
     hint: 'snowy 是下雪的，snow（雪）加 y！',
+    example: 'On a snowy morning, the whole street was covered in white.',
   },
   {
     id: 'early',
@@ -243,6 +264,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['遲到的', '快速的', '準時的'],
     hint: 'early 是早的，late 是遲到的，相反！',
+    example: 'She woke up early to finish her homework before school started.',
   },
   {
     id: 'late',
@@ -254,6 +276,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['早的', '準時的', '快速的'],
     hint: 'late 是遲到的，Don\'t be late 是別遲到！',
+    example: 'He was late for school because he missed the morning bus.',
   },
   {
     id: 'soon',
@@ -265,6 +288,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['慢慢地', '永遠', '已經'],
     hint: 'soon 是很快就會，See you soon 是很快再見！',
+    example: 'The teacher said the exam results will be ready very soon.',
   },
   {
     id: 'always',
@@ -276,6 +300,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['從不', '有時候', '很少'],
     hint: 'always 是總是，never 是從不，完全相反！',
+    example: 'My grandmother always makes me feel warm and loved at home.',
   },
   // ===== crystal 結晶系：描述性形容詞 =====
   {
@@ -288,6 +313,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['小的', '中等的', '巨大的'],
     hint: 'big 是大的，small 是小的！',
+    example: 'The big elephant at the zoo {動物園} made everyone scream.',
   },
   {
     id: 'small',
@@ -299,6 +325,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['大的', '高的', '寬的'],
     hint: 'small 是小的，big 是大的！',
+    example: 'She keeps a small notebook in her bag to write new words.',
   },
   {
     id: 'tall',
@@ -310,6 +337,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['矮的', '胖的', '瘦的'],
     hint: 'tall 是身高很高，short 是矮的！',
+    example: 'My brother is very tall and can reach the top shelf easily.',
   },
   {
     id: 'short',
@@ -321,6 +349,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['高的', '長的', '大的'],
     hint: 'short 是矮的或短的，shirt 是襯衫，差一個字母！',
+    example: 'The short girl stood on a chair to see over the tall fence.',
   },
   {
     id: 'fat',
@@ -332,6 +361,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['瘦的', '高的', '矮的'],
     hint: 'fat 是胖的，thin 是瘦的！',
+    example: 'The fat cat sat on the couch and refused to move all day.',
   },
   {
     id: 'thin',
@@ -343,6 +373,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['胖的', '厚的', '寬的'],
     hint: 'thin 是瘦的或薄的，think 是想，多一個 k！',
+    example: 'The book is so thin that I finished reading it in one hour.',
   },
   {
     id: 'fast',
@@ -354,6 +385,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['慢的', '強壯的', '弱的'],
     hint: 'fast 是快速的，slow 是慢的！',
+    example: 'The fast runner crossed the finish line before anyone else.',
   },
   {
     id: 'slow',
@@ -365,6 +397,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['快的', '輕的', '重的'],
     hint: 'slow 是慢慢的，跟 fast（快的）相反！',
+    example: 'The slow turtle finally reached the end after a long time.',
   },
   {
     id: 'strong',
@@ -376,6 +409,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['虛弱的', '瘦小的', '疲累的'],
     hint: 'strong 是強壯有力的，weak 是虛弱的！',
+    example: 'He is strong enough to carry two heavy bags at the same time.',
   },
   {
     id: 'weak',
@@ -387,6 +421,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['強壯的', '勇敢的', '健康的'],
     hint: 'weak 是虛弱的，week 是星期，發音一樣！',
+    example: 'She felt weak after being sick for three days without eating.',
   },
   {
     id: 'old',
@@ -398,6 +433,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['年輕的', '新的', '小的'],
     hint: 'old 可以指年紀大，也可以指東西舊！',
+    example: 'The old man told us stories about his life many years ago.',
   },
   {
     id: 'young',
@@ -409,6 +445,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['年老的', '成熟的', '矮的'],
     hint: 'young 是年輕的，跟 old（老的）相反！',
+    example: 'Young students should read as many books as possible every day.',
   },
   {
     id: 'new',
@@ -420,6 +457,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['舊的', '壞的', '髒的'],
     hint: 'new 是新的，knew 是 know 的過去式，發音一樣！',
+    example: 'I got a new phone as a birthday gift and I love it so much.',
   },
   {
     id: 'long',
@@ -431,6 +469,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['短的', '寬的', '高的'],
     hint: 'long 是長的，short 是短的！',
+    example: 'She has long hair that reaches all the way down to her waist.',
   },
   {
     id: 'wide',
@@ -442,6 +481,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['窄的', '長的', '高的'],
     hint: 'wide 是寬的，wise 是聰明的，差一個字母！',
+    example: 'The wide road allowed four cars to drive side by side safely.',
   },
   {
     id: 'bright',
@@ -453,6 +493,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['黑暗的', '模糊的', '暗淡的'],
     hint: 'bright 是明亮的，也可以形容人很聰明！',
+    example: 'The bright light from the sun made it hard to open my eyes.',
   },
   {
     id: 'dark',
@@ -464,6 +505,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['明亮的', '白色的', '淺色的'],
     hint: 'dark 是黑暗的，跟 bright（明亮）相反！',
+    example: 'The room was dark because nobody turned on the lights inside.',
   },
   {
     id: 'clean',
@@ -475,6 +517,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['髒的', '亂的', '舊的'],
     hint: 'clean 是乾淨的，dirty 是髒的！',
+    example: 'Please keep your desk clean so you can study more easily.',
   },
   {
     id: 'dirty',
@@ -486,6 +529,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['乾淨的', '新的', '整齊的'],
     hint: 'dirty 是髒兮兮的，clean 是乾淨的！',
+    example: 'His shoes were dirty after he played soccer in the mud.',
   },
   {
     id: 'heavy',
@@ -497,6 +541,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['輕的', '小的', '薄的'],
     hint: 'heavy 是很重的，light 是輕的！',
+    example: 'The heavy box was too hard for one person to carry alone.',
   },
   {
     id: 'light_adj',
@@ -508,6 +553,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['重的', '黑暗的', '厚的'],
     hint: 'light 當形容詞是輕的或明亮的，當名詞是光或燈！',
+    example: 'This bag is very light, so you can carry it all day long.',
   },
   {
     id: 'hard',
@@ -519,6 +565,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['軟的', '容易的', '輕鬆的'],
     hint: 'hard 可以是硬的，也可以是困難的！',
+    example: 'The math test was so hard that I could not finish all the questions.',
   },
   {
     id: 'soft',
@@ -530,6 +577,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['硬的', '粗糙的', '重的'],
     hint: 'soft 是軟的，枕頭和棉花都是 soft！',
+    example: 'The soft pillow made it easy for her to fall asleep quickly.',
   },
   {
     id: 'sweet',
@@ -541,6 +589,7 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['酸的', '苦的', '辣的'],
     hint: 'sweet 是甜的，sweat 是汗水，字母順序不同！',
+    example: 'The sweet cake my mom made for my birthday was absolutely delicious.',
   },
   {
     id: 'sour',
@@ -552,5 +601,6 @@ export const pack04: WordEntry[] = [
     pack: 4,
     confusers: ['甜的', '苦的', '鹹的'],
     hint: 'sour 是酸的，像檸檬的味道！',
+    example: 'The lemon was so sour that I made a funny face after eating it.',
   },
 ];

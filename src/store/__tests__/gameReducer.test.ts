@@ -254,4 +254,190 @@ describe("gameReducer", () => {
       expect(result.settings).not.toBe(initialGameState.settings);
     });
   });
+
+  describe("TOGGLE_SOUND", () => {
+    it("toggles sound setting", () => {
+      const result = gameReducer(initialGameState, { type: "TOGGLE_SOUND" });
+      expect(result.settings.soundEnabled).toBe(false);
+
+      const result2 = gameReducer(result, { type: "TOGGLE_SOUND" });
+      expect(result2.settings.soundEnabled).toBe(true);
+    });
+  });
+
+  describe("GACHA_PULL", () => {
+    it("captures a new spirit and increments pityCounter for low rarity", () => {
+      const result = gameReducer(initialGameState, {
+        type: "GACHA_PULL",
+        wordId: "happy",
+        rarity: 1,
+      });
+      expect(result.spirits["happy"]).toBeDefined();
+      expect(result.spirits["happy"].stage).toBe(1);
+      expect(result.gacha.pityCounter).toBe(1);
+    });
+
+    it("resets pityCounter when rarity >= 3", () => {
+      const state: GameState = {
+        ...initialGameState,
+        gacha: { pityCounter: 8, freeRemainingToday: 1 },
+      };
+      const result = gameReducer(state, {
+        type: "GACHA_PULL",
+        wordId: "happy",
+        rarity: 3,
+      });
+      expect(result.gacha.pityCounter).toBe(0);
+    });
+
+    it("increments pityCounter for duplicate pull (already captured)", () => {
+      const state: GameState = {
+        ...initialGameState,
+        spirits: { happy: makeSpirit() },
+      };
+      const result = gameReducer(state, {
+        type: "GACHA_PULL",
+        wordId: "happy",
+        rarity: 1,
+      });
+      // Duplicate — spirit unchanged, pity still increments
+      expect(result.gacha.pityCounter).toBe(1);
+    });
+
+    it("decrements freeRemainingToday when > 0", () => {
+      const result = gameReducer(initialGameState, {
+        type: "GACHA_PULL",
+        wordId: "happy",
+        rarity: 1,
+      });
+      expect(result.gacha.freeRemainingToday).toBe(0);
+    });
+
+    it("does not go below 0 for freeRemainingToday", () => {
+      const state: GameState = {
+        ...initialGameState,
+        gacha: { pityCounter: 0, freeRemainingToday: 0 },
+      };
+      const result = gameReducer(state, {
+        type: "GACHA_PULL",
+        wordId: "happy",
+        rarity: 1,
+      });
+      expect(result.gacha.freeRemainingToday).toBe(0);
+    });
+  });
+
+  describe("COMPLETE_SESSION", () => {
+    it("sets dailyReviewCompleted to true", () => {
+      const result = gameReducer(initialGameState, {
+        type: "COMPLETE_SESSION",
+      });
+      expect(result.sessionFlags.dailyReviewCompleted).toBe(true);
+    });
+  });
+
+  describe("CLAIM_REVIEW_REWARD", () => {
+    it("sets dailyReviewRewardClaimed to true", () => {
+      const result = gameReducer(initialGameState, {
+        type: "CLAIM_REVIEW_REWARD",
+      });
+      expect(result.sessionFlags.dailyReviewRewardClaimed).toBe(true);
+    });
+  });
+
+  describe("BATTLE_ANSWER", () => {
+    it("grants XP on correct answer", () => {
+      const result = gameReducer(initialGameState, {
+        type: "BATTLE_ANSWER",
+        areaId: 1,
+        questionIndex: 0,
+        isCorrect: true,
+      });
+      expect(result.totalXp).toBe(5);
+      expect(result.level).toBe(1);
+    });
+
+    it("grants no XP on wrong answer", () => {
+      const result = gameReducer(initialGameState, {
+        type: "BATTLE_ANSWER",
+        areaId: 1,
+        questionIndex: 0,
+        isCorrect: false,
+      });
+      expect(result.totalXp).toBe(0);
+    });
+  });
+
+  describe("DEFEAT_BOSS", () => {
+    it("adds areaId to defeatedAreas and grants XP", () => {
+      const result = gameReducer(initialGameState, {
+        type: "DEFEAT_BOSS",
+        areaId: 1,
+      });
+      expect(result.progress.defeatedAreas).toContain(1);
+      expect(result.totalXp).toBe(50);
+    });
+
+    it("does not duplicate defeatedAreas", () => {
+      const state: GameState = {
+        ...initialGameState,
+        progress: { unlockedAreas: [1], defeatedAreas: [1] },
+      };
+      const result = gameReducer(state, {
+        type: "DEFEAT_BOSS",
+        areaId: 1,
+      });
+      expect(result.progress.defeatedAreas).toEqual([1]);
+    });
+  });
+
+  describe("UNLOCK_AREA", () => {
+    it("adds areaId to unlockedAreas", () => {
+      const result = gameReducer(initialGameState, {
+        type: "UNLOCK_AREA",
+        areaId: 2,
+      });
+      expect(result.progress.unlockedAreas).toContain(2);
+    });
+
+    it("does not duplicate unlockedAreas", () => {
+      const result = gameReducer(initialGameState, {
+        type: "UNLOCK_AREA",
+        areaId: 1,
+      });
+      // 1 is already in initial state
+      expect(result.progress.unlockedAreas).toEqual([1]);
+    });
+  });
+
+  describe("initialGameState Phase 2 fields", () => {
+    it("has progress with unlockedAreas and defeatedAreas", () => {
+      expect(initialGameState.progress).toEqual({
+        unlockedAreas: [1],
+        defeatedAreas: [],
+      });
+    });
+
+    it("has soundEnabled in settings", () => {
+      expect(initialGameState.settings.soundEnabled).toBe(true);
+    });
+
+    it("has freeRemainingToday in gacha", () => {
+      expect(initialGameState.gacha.freeRemainingToday).toBe(1);
+    });
+  });
+
+  describe("RESET_DAILY_SESSION", () => {
+    it("resets freeRemainingToday to 1", () => {
+      const state: GameState = {
+        ...initialGameState,
+        gacha: { pityCounter: 3, freeRemainingToday: 0 },
+      };
+      const result = gameReducer(state, {
+        type: "RESET_DAILY_SESSION",
+        date: "2026-03-26",
+      });
+      expect(result.gacha.freeRemainingToday).toBe(1);
+    });
+  });
 });

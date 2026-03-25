@@ -40,3 +40,12 @@ export function useMediumHaptic(): () => void {
     ),
   );
 }
+
+export function useHeavyHaptic(): () => void {
+  return useHapticCallback(
+    useCallback(
+      () => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy),
+      [],
+    ),
+  );
+}

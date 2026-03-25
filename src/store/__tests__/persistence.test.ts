@@ -26,8 +26,8 @@ describe("persistence", () => {
   });
 
   describe("CURRENT_VERSION", () => {
-    it("equals 2", () => {
-      expect(CURRENT_VERSION).toBe(2);
+    it("equals 4", () => {
+      expect(CURRENT_VERSION).toBe(4);
     });
   });
 
@@ -91,8 +91,67 @@ describe("persistence", () => {
         gameState: { ...INITIAL_GAME_STATE, totalXp: 100 },
       };
       const result = migrateState(persisted);
-      // Should still return the gameState (no migration needed for v1)
       expect(result).toBeDefined();
+    });
+
+    it("migrates v2 → v3: adds progress and soundEnabled", () => {
+      // Simulate a v2 state missing progress and soundEnabled
+      const v2State = { ...INITIAL_GAME_STATE } as unknown as Record<
+        string,
+        unknown
+      >;
+      delete v2State.progress;
+      const v2Settings = { hapticEnabled: true };
+      v2State.settings = v2Settings;
+
+      const persisted: PersistedState = {
+        version: 2,
+        gameState: v2State as unknown as GameState,
+      };
+      const result = migrateState(persisted);
+
+      expect(result.progress).toEqual({
+        unlockedAreas: [1],
+        defeatedAreas: [],
+      });
+      expect(result.settings.soundEnabled).toBe(true);
+    });
+
+    it("preserves existing data during v2 → v3 migration", () => {
+      const v2State = { ...INITIAL_GAME_STATE, totalXp: 500 } as Record<
+        string,
+        unknown
+      >;
+      delete v2State.progress;
+      const v2Settings = { hapticEnabled: false };
+      v2State.settings = v2Settings;
+
+      const persisted: PersistedState = {
+        version: 2,
+        gameState: v2State as unknown as GameState,
+      };
+      const result = migrateState(persisted);
+
+      expect(result.totalXp).toBe(500);
+      expect(result.settings.hapticEnabled).toBe(false);
+      expect(result.settings.soundEnabled).toBe(true);
+    });
+
+    it("migrates v3 → v4: adds gacha.freeRemainingToday", () => {
+      const v3State = {
+        ...INITIAL_GAME_STATE,
+        gacha: { pityCounter: 5 },
+      } as unknown as Record<string, unknown>;
+      (v3State as Record<string, unknown>).gacha = { pityCounter: 5 };
+
+      const persisted: PersistedState = {
+        version: 3,
+        gameState: v3State as unknown as GameState,
+      };
+      const result = migrateState(persisted);
+
+      expect(result.gacha.freeRemainingToday).toBe(1);
+      expect(result.gacha.pityCounter).toBe(5);
     });
   });
 });
