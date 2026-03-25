@@ -4,18 +4,14 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withTiming,
-  FadeIn,
 } from "react-native-reanimated";
 import type { WordEntry } from "@/store/types";
 import { COLORS, SPIRIT_TYPE_COLORS } from "@/utils/colors";
-import { STRINGS } from "@/utils/strings";
-import { getVisiblePassage } from "@/core/combat";
 import { ThemedText } from "@/components/ui/ThemedText";
 import { Modal } from "@/components/ui/Modal";
 
 interface PassageViewProps {
   readonly passage: string;
-  readonly revealedSentences: number;
   readonly capturedWordIds: readonly string[];
   readonly words: readonly WordEntry[];
 }
@@ -48,15 +44,11 @@ function tokenize(
 
 export function PassageView({
   passage,
-  revealedSentences,
   capturedWordIds,
   words,
 }: PassageViewProps): React.JSX.Element {
   const [tooltipEntry, setTooltipEntry] = useState<WordEntry | null>(null);
   const opacity = useSharedValue(0);
-
-  const visible = getVisiblePassage(passage, revealedSentences);
-  const hasHidden = visible.length < passage.length;
 
   const capturedSet = useMemo(
     () => new Set(capturedWordIds),
@@ -72,14 +64,14 @@ export function PassageView({
   }, [words]);
 
   const tokens = useMemo(
-    () => tokenize(visible, capturedSet, wordMap),
-    [visible, capturedSet, wordMap],
+    () => tokenize(passage, capturedSet, wordMap),
+    [passage, capturedSet, wordMap],
   );
 
   React.useEffect(() => {
     opacity.value = 0;
     opacity.value = withTiming(1, { duration: 400 });
-  }, [revealedSentences, opacity]);
+  }, [opacity]);
 
   const animStyle = useAnimatedStyle(() => ({
     opacity: opacity.value,
@@ -130,13 +122,6 @@ export function PassageView({
             ),
           )}
         </View>
-        {hasHidden ? (
-          <Animated.View entering={FadeIn.duration(300)}>
-            <ThemedText variant="hint" size="sm" style={styles.hidden}>
-              {STRINGS.passageHidden}
-            </ThemedText>
-          </Animated.View>
-        ) : null}
       </Animated.View>
 
       <Modal visible={tooltipEntry !== null} onClose={handleCloseTooltip}>

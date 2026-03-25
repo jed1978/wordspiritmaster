@@ -20,7 +20,7 @@ import { BattleQuestion } from "@/components/battle/BattleQuestion";
 import { ThemedText } from "@/components/ui/ThemedText";
 import { PressableButton } from "@/components/ui/PressableButton";
 
-type ScreenPhase = "intro" | "battle" | "defeated" | "failed";
+type ScreenPhase = "intro" | "reading" | "battle" | "defeated" | "failed";
 
 export default function BattleScreen(): React.JSX.Element {
   const { areaId } = useLocalSearchParams<{ areaId: string }>();
@@ -43,19 +43,23 @@ export default function BattleScreen(): React.JSX.Element {
   const capturedWordIds = Object.keys(state.spirits);
 
   const handleIntroComplete = useCallback(() => {
-    setPhase("battle");
+    setPhase("reading");
   }, []);
 
   // Auto-transition fallback from intro
   useEffect(() => {
     if (phase !== "intro") return;
-    const timer = setTimeout(() => setPhase("battle"), 3000);
+    const timer = setTimeout(() => setPhase("reading"), 3000);
     return () => clearTimeout(timer);
   }, [phase]);
 
   const handleSkipIntro = useCallback(() => {
-    if (phase === "intro") setPhase("battle");
+    if (phase === "intro") setPhase("reading");
   }, [phase]);
+
+  const handleStartBattle = useCallback(() => {
+    setPhase("battle");
+  }, []);
 
   const handleAnswer = useCallback(
     (isCorrect: boolean) => {
@@ -147,12 +151,31 @@ export default function BattleScreen(): React.JSX.Element {
           />
         ) : null}
 
-        {/* Passage + Question */}
+        {/* Reading phase: read full passage first */}
+        {phase === "reading" ? (
+          <View style={styles.battleContent}>
+            <ThemedText variant="secondary" size="sm" style={styles.readPrompt}>
+              {STRINGS.battleReadPrompt}
+            </ThemedText>
+            <PassageView
+              passage={passage.passage}
+              capturedWordIds={capturedWordIds}
+              words={ALL_WORDS}
+            />
+            <PressableButton
+              label={STRINGS.battleReadyButton}
+              onPress={handleStartBattle}
+              variant="accent"
+              style={styles.readyButton}
+            />
+          </View>
+        ) : null}
+
+        {/* Battle phase: passage + question */}
         {phase === "battle" ? (
           <View style={styles.battleContent}>
             <PassageView
               passage={passage.passage}
-              revealedSentences={battle.revealedSentences}
               capturedWordIds={capturedWordIds}
               words={ALL_WORDS}
             />
@@ -203,7 +226,9 @@ const styles = StyleSheet.create({
   container: { flex: 1, paddingVertical: 16 },
   center: { flex: 1, textAlign: "center", padding: 32 },
   skipButton: { alignSelf: "center", marginTop: 16, paddingHorizontal: 32 },
-  battleContent: { flex: 1, gap: 16 },
+  battleContent: { flex: 1, gap: 12 },
+  readPrompt: { textAlign: "center", paddingHorizontal: 16 },
+  readyButton: { marginHorizontal: 16 },
   result: {
     flex: 1,
     justifyContent: "center",

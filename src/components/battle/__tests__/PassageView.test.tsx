@@ -11,7 +11,6 @@ jest.mock("react-native-reanimated", () => {
     useSharedValue: (init: number) => ({ value: init }),
     useAnimatedStyle: () => ({}),
     withTiming: jest.fn(),
-    FadeIn: { duration: () => ({}) },
   };
 });
 
@@ -43,13 +42,12 @@ const passage =
   "Tom goes to school every day. He likes to read books. His favorite subject is math.";
 
 describe("PassageView", () => {
-  it("renders visible portion of passage", () => {
+  it("renders full passage", () => {
     let renderer: ReactTestRenderer | undefined;
     act(() => {
       renderer = create(
         <PassageView
           passage={passage}
-          revealedSentences={1}
           capturedWordIds={[]}
           words={mockWords}
         />,
@@ -60,35 +58,19 @@ describe("PassageView", () => {
     expect(text).toContain("school");
   });
 
-  it("shows hidden indicator when not all sentences revealed", () => {
+  it("renders all sentences without hiding", () => {
     let renderer: ReactTestRenderer | undefined;
     act(() => {
       renderer = create(
         <PassageView
           passage={passage}
-          revealedSentences={1}
           capturedWordIds={[]}
           words={mockWords}
         />,
       );
     });
     const text = JSON.stringify(renderer!.toJSON());
-    expect(text).toContain("???");
-  });
-
-  it("does not show hidden indicator when all sentences revealed", () => {
-    let renderer: ReactTestRenderer | undefined;
-    act(() => {
-      renderer = create(
-        <PassageView
-          passage={passage}
-          revealedSentences={10}
-          capturedWordIds={[]}
-          words={mockWords}
-        />,
-      );
-    });
-    const text = JSON.stringify(renderer!.toJSON());
+    expect(text).toContain("math");
     expect(text).not.toContain("???");
   });
 
@@ -98,7 +80,6 @@ describe("PassageView", () => {
       renderer = create(
         <PassageView
           passage={passage}
-          revealedSentences={3}
           capturedWordIds={["school"]}
           words={mockWords}
         />,
@@ -114,7 +95,6 @@ describe("PassageView", () => {
       renderer = create(
         <PassageView
           passage={passage}
-          revealedSentences={2}
           capturedWordIds={[]}
           words={[]}
         />,

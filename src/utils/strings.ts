@@ -85,11 +85,12 @@ export const STRINGS = {
   bossDefeat: "贏了！",
   bossHpLabel: "HP",
   battleSkip: "跳過",
+  battleReadPrompt: "📖 仔細讀完文章，再來挑戰 Boss！",
+  battleReadyButton: "我讀完了！開始挑戰 ⚔️",
   battleNext: "下一題",
   battleResult: "戰鬥結果",
   battleVictory: "擊敗了！🎉",
   battleExplanation: "解析：",
-  passageHidden: "???",
 
   // Gacha
   gachaTitle: "召喚精靈",

@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   statValue: { fontWeight: "700" },
-  filterScroll: { maxHeight: 48, marginTop: 12 },
+  filterScroll: { marginTop: 12 },
   filterContent: { paddingHorizontal: 16, gap: 8 },
   chip: {
     paddingHorizontal: 12,
