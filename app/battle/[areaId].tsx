@@ -78,15 +78,13 @@ export default function BattleScreen(): React.JSX.Element {
       }
 
       const updated = processBattleAnswer(battle, isCorrect);
-      setBattle(updated);
-
-      // Check end conditions
       const isLast = updated.currentQuestionIndex >= updated.totalQuestions;
 
       setTimeout(
         () => {
           setShowExplanation(null);
           setAnswerDisabled(false);
+          setBattle(updated);
 
           if (isLast) {
             if (updated.isDefeated) {
@@ -182,6 +180,7 @@ export default function BattleScreen(): React.JSX.Element {
 
             {currentQuestion ? (
               <BattleQuestion
+                key={battle.currentQuestionIndex}
                 question={currentQuestion}
                 onAnswer={handleAnswer}
                 showExplanation={answerDisabled && showExplanation !== null}

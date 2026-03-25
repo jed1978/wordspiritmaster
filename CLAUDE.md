@@ -45,9 +45,9 @@ A gacha-style creature collection game that teaches 會考 English vocabulary an
 - 裝置：Android 手機為主，需同時支援 iOS
 
 ### Tech Stack (STRICT)
-- **Expo SDK 52+ (managed workflow)** — React Native + TypeScript
+- **Expo SDK 54+ (managed workflow)** — React Native + TypeScript
 - **Expo Router** for navigation (file-based routing)
-- **React Native Reanimated 3** for animations
+- **React Native Reanimated 4** for animations
 - **expo-audio** for sound effects — ⚠️ NOT expo-av (deprecated)
 - **AsyncStorage** for local persistence
 - **expo-notifications** for daily review reminders
@@ -219,7 +219,7 @@ Stage 5 (究極/Ultimate) → 4 consecutive correct. Next in 7 days.
 - Boss = 會考格式短文（60-150 words），HP = 題數（2-4）
 - **Boss 個性系統：** 每個 Boss 有名字、emoji、開場台詞、認輸台詞
 - **精靈提示（強化版）：** 已捕獲單字直接顯示小字中文（不需長按），長按顯示例句
-- **逐題解鎖段落：** 初始只顯示前 1-2 句，答對一題展開更多
+- **閱讀先行：** 顯示完整文章 → 學生讀完後按「我讀完了！開始挑戰」→ 開始答題
 - **答錯解析：** 附中文說明「為什麼是這個答案」
 
 ### Daily Session Structure (15-20 min)
@@ -309,7 +309,7 @@ WordSpiritMaster/
 - State migration: `PersistedState.version` check on load
 - ⚠️ Phase 3+ 如果 >500ms，評估遷移至 expo-sqlite
 
-#### Animation System (Reanimated 3)
+#### Animation System (Reanimated 4)
 
 | Animation | Technique | Notes |
 |-----------|-----------|-------|
@@ -319,7 +319,6 @@ WordSpiritMaster/
 | Wrong answer | `withSequence` (shake X-axis) | Gentle, not punishing |
 | Boss HP bar | `withTiming` (width decrease) | Smooth decrease |
 | Boss defeat | `withTiming` (opacity → 0, scale → 0) | Dramatic shrink + defeat line |
-| Boss passage expand | `withTiming` (height expand) | 逐題解鎖段落動畫 |
 | Floating damage | `withTiming` (translateY up + fade) | Boss battle |
 | Spell block drag | `withSpring` (snap to position) | 字母方塊拖拉 |
 | Sentence block drag | `withSpring` (snap to slot) | 造句方塊拖拉 |
@@ -549,7 +548,7 @@ Content: 「本 App 不收集任何個人資料。所有學習進度僅存儲在
 
 ### Phase 2: Boss Battles + Gacha + Spelling
 1. 6 個 Easy 閱讀段落（area01-06）含 Boss 個性系統
-2. Battle screen：逐題解鎖段落 + 精靈中文提示 + 答錯解析
+2. Battle screen：閱讀先行流程 + 精靈中文提示 + 答錯解析
 3. **Stage 3 題型：字母方塊拼字**（Wordle 風格）
 4. 例句資料加入 WordEntry（超出 1200 單字標中文）
 5. Area map (node graph)
