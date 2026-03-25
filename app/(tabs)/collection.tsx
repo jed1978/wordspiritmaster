@@ -65,27 +65,28 @@ export default function CollectionScreen(): React.JSX.Element {
           </View>
         </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.filterScroll}
-          contentContainerStyle={styles.filterContent}
-        >
-          <FilterChip
-            label={STRINGS.collectionFilterAll}
-            active={filter === "all"}
-            onPress={() => setFilter("all")}
-          />
-          {SPIRIT_TYPES.map((t) => (
+        <View style={styles.filterRow}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.filterContent}
+          >
             <FilterChip
-              key={t}
-              label={SPIRIT_TYPE_LABELS[t]}
-              active={filter === t}
-              color={SPIRIT_TYPE_COLORS[t]}
-              onPress={() => setFilter(t)}
+              label={STRINGS.collectionFilterAll}
+              active={filter === "all"}
+              onPress={() => setFilter("all")}
             />
-          ))}
-        </ScrollView>
+            {SPIRIT_TYPES.map((t) => (
+              <FilterChip
+                key={t}
+                label={SPIRIT_TYPE_LABELS[t]}
+                active={filter === t}
+                color={SPIRIT_TYPE_COLORS[t]}
+                onPress={() => setFilter(t)}
+              />
+            ))}
+          </ScrollView>
+        </View>
 
         <View style={styles.gridContainer}>
           {capturedCount === 0 ? (
@@ -116,7 +117,7 @@ function StatCard({
 }): React.JSX.Element {
   return (
     <View style={styles.statCard}>
-      <ThemedText size="xl" style={styles.statValue}>
+      <ThemedText size="lg" style={styles.statValue} numberOfLines={1}>
         {value}
       </ThemedText>
       <ThemedText variant="secondary" size="sm">
@@ -163,12 +164,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.bgCard,
     borderRadius: 12,
-    padding: 12,
+    paddingVertical: 8,
+    paddingHorizontal: 6,
     alignItems: "center",
   },
   statValue: { fontWeight: "700" },
-  filterScroll: { marginTop: 12, height: 44 },
-  filterContent: { paddingHorizontal: 16, gap: 8 },
+  filterRow: { height: 44, marginTop: 12 },
+  filterContent: {
+    paddingHorizontal: 16,
+    gap: 8,
+    alignItems: "center",
+    flexGrow: 1,
+  },
   chip: {
     paddingHorizontal: 14,
     paddingVertical: 10,
