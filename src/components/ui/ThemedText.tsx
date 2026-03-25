@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, type TextProps, StyleSheet, Platform } from "react-native";
+import { Text, type TextProps } from "react-native";
 import { COLORS } from "@/utils/colors";
 
 type TextVariant = "primary" | "secondary" | "hint" | "correct" | "wrong";
@@ -24,7 +24,7 @@ const SIZE_MAP: Record<string, number> = {
   xl: 28,
 };
 
-// CJK characters need ~1.5× lineHeight; Android needs includeFontPadding:false
+// CJK characters need ~1.5× lineHeight
 const LINE_HEIGHT_MAP: Record<string, number> = {
   sm: 18,
   md: 24,
@@ -45,8 +45,6 @@ export function ThemedText({
           color: VARIANT_COLORS[variant],
           fontSize: SIZE_MAP[size],
           lineHeight: LINE_HEIGHT_MAP[size],
-          includeFontPadding: false,
-          textAlignVertical: "center",
         },
         style,
       ]}
