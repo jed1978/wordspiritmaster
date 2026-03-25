@@ -7,49 +7,49 @@ export const area04: ReadingPassage = {
     emoji: "🌦️",
     personality: "神秘",
     openingLine: "你能看穿天氣的秘密嗎...？",
-    defeatLine: "了不起...你讀懂了天氣的語言。",
+    defeatLine: "了不起...你讀懂了自然的語言。",
   },
   passage:
-    "Every summer, thousands of sea turtles come to a beach in Costa Rica to lay their eggs. The eggs stay in the sand for about two months. Then the baby turtles hatch and run toward the ocean. However, lights from nearby hotels confuse them. Baby turtles use moonlight to find the sea, but bright lights make them turn the wrong way. Many get lost and die. Now, the local government asks hotels near the beach to turn off their lights during turtle season. Visitors may watch, but they must not use flashlights.",
+    "Every summer, thousands of sea turtles travel to a beach in Costa Rica to lay their eggs. The eggs stay buried in the sand for about two months. When the baby turtles hatch, they must quickly find the ocean. They do this by following the natural light of the moon and stars. However, bright lights from nearby hotels lead them in the wrong direction. Many baby turtles get lost and never reach the sea. To solve this problem, the local government now requires hotels near the beach to turn off outdoor lights during turtle season. Visitors are welcome to watch, but the use of flashlights is not allowed.",
   questions: [
     {
-      question: "How do baby turtles normally find the ocean after hatching?",
-      questionZh: "小海龜孵化後通常如何找到海洋？",
+      question: "According to the passage, how do baby turtles find the ocean after hatching?",
+      questionZh: "根據文章，小海龜孵化後如何找到海洋？",
       options: [
-        { text: "They follow their mother to the water", textZh: "牠們跟著媽媽走向海水" },
-        { text: "They smell the salt in the air", textZh: "牠們聞到空氣中的鹽味" },
-        { text: "They use moonlight as a guide", textZh: "牠們以月光作為方向指引" },
+        { text: "They follow their mother to the water", textZh: "牠們跟著母親走向海水" },
+        { text: "They are guided by the light of the moon and stars", textZh: "牠們依靠月亮和星星的光導航" },
+        { text: "They smell the salt water from the beach", textZh: "牠們從沙灘上聞到海水的鹹味" },
         { text: "They follow the sound of the waves", textZh: "牠們跟隨海浪的聲音" },
-      ],
-      correctIndex: 2,
-      explanation:
-        "文章說 Baby turtles use moonlight to find the sea，所以是用月光導航。其他選項在文章中沒有提到。",
-    },
-    {
-      question: "What problem do hotel lights cause for baby turtles?",
-      questionZh: "飯店的燈光對小海龜造成什麼問題？",
-      options: [
-        { text: "The heat from the lights destroys the eggs", textZh: "燈的熱度會破壞蛋" },
-        { text: "The lights attract birds that eat the turtles", textZh: "燈光吸引鳥類捕食海龜" },
-        { text: "The lights make the turtles go in the wrong direction", textZh: "燈光讓海龜走錯方向" },
-        { text: "The lights wake up the mother turtles", textZh: "燈光吵醒了母海龜" },
-      ],
-      correctIndex: 2,
-      explanation:
-        "文章說 bright lights make them turn the wrong way，燈光讓小海龜走錯方向，迷路後死亡。",
-    },
-    {
-      question: "What can visitors do when they come to watch the turtles?",
-      questionZh: "遊客前來觀看海龜時可以做什麼？",
-      options: [
-        { text: "They can use flashlights to see better", textZh: "他們可以用手電筒看得更清楚" },
-        { text: "They can watch but must not use flashlights", textZh: "他們可以觀看，但不能使用手電筒" },
-        { text: "They are not allowed on the beach at all", textZh: "他們完全不能進入海灘" },
-        { text: "They can take the baby turtles to the ocean", textZh: "他們可以帶小海龜去海邊" },
       ],
       correctIndex: 1,
       explanation:
-        "文章說 Visitors may watch, but they must not use flashlights — 可以觀看但不能用手電筒，避免干擾海龜。",
+        "文章說 They do this by following the natural light of the moon and stars — 靠月亮和星星的光導航。其他三個選項（跟著媽媽、聞鹽味、聽浪聲）在文章中完全沒有提到。",
+    },
+    {
+      question: "What does the word \"buried\" most likely mean in the passage?",
+      questionZh: "文章中 \"buried\" 這個字最可能是什麼意思？",
+      options: [
+        { text: "Kept warm by the sun", textZh: "被太陽保持溫暖" },
+        { text: "Hidden under the ground", textZh: "埋在地底下" },
+        { text: "Carried by the ocean water", textZh: "被海水帶走" },
+        { text: "Protected by the mother turtle", textZh: "被母海龜保護著" },
+      ],
+      correctIndex: 1,
+      explanation:
+        "buried 原意是「埋入土中」。文章說蛋 buried in the sand，結合上下文（蛋放在沙裡兩個月），可推知是「埋在沙子裡」。",
+    },
+    {
+      question: "According to the passage, what must visitors do when they come to watch the turtles?",
+      questionZh: "根據文章，遊客前來觀看海龜時必須遵守什麼規定？",
+      options: [
+        { text: "They must arrive before midnight", textZh: "他們必須在午夜前抵達" },
+        { text: "They must book a tour in advance", textZh: "他們必須事先預約導覽" },
+        { text: "They must not use flashlights", textZh: "他們不能使用手電筒" },
+        { text: "They must stay at least ten meters away", textZh: "他們必須保持至少十公尺的距離" },
+      ],
+      correctIndex: 2,
+      explanation:
+        "文章說 the use of flashlights is not allowed — 不能用手電筒。其他選項（午夜前到、預約導覽、保持距離）都是文章沒有提到的資訊，是常識干擾陷阱。",
     },
   ],
 };

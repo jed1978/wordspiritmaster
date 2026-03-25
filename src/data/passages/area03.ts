@@ -10,46 +10,46 @@ export const area03: ReadingPassage = {
     defeatLine: "太強了！你是真正的閱讀勇者！",
   },
   passage:
-    "Jason was the fastest runner in his school for three years. Before the city race, his coach warned him, \"Don't start too fast. Save your energy for the last part.\" But Jason was excited and ran hard from the beginning. After 300 meters, his legs became heavy. A boy from another school passed him. Jason pushed as hard as he could, but he finished second. His coach said, \"Now you know why I told you that.\" Jason nodded. Next year, he planned to listen more carefully.",
+    "Jason was the fastest runner in his school for three years. Before the city race, his coach warned him, \"Don't start too fast. Save your energy for the last part.\" Jason was too excited to listen. He ran hard from the very beginning. After 300 meters, his legs felt heavy and his breathing became difficult. A boy from another school passed him. Jason pushed as hard as he could, but he crossed the finish line in second place. His coach said quietly, \"Now you understand why I told you that.\" Jason nodded and said nothing. The next year, he planned to do things differently.",
   questions: [
     {
-      question: "What did Jason's coach tell him before the race?",
-      questionZh: "教練在比賽前告訴傑森什麼？",
+      question: "According to the passage, what did Jason's coach tell him before the race?",
+      questionZh: "根據文章，教練在比賽前告訴傑森什麼？",
       options: [
-        { text: "Don't worry about other runners", textZh: "不要擔心其他選手" },
-        { text: "Warm up for one hour before starting", textZh: "出發前要熱身一小時" },
-        { text: "Don't run too fast at the beginning", textZh: "開始時不要跑太快" },
-        { text: "Try to finish the race in under two minutes", textZh: "努力在兩分鐘內完賽" },
+        { text: "Try to finish the race as fast as possible", textZh: "盡可能跑得越快越好" },
+        { text: "Don't worry about runners from other schools", textZh: "不用擔心其他學校的選手" },
+        { text: "Save energy and don't run too fast at the start", textZh: "保留體力，起跑時不要太快" },
+        { text: "Warm up for at least one hour before the race", textZh: "比賽前至少熱身一小時" },
       ],
       correctIndex: 2,
       explanation:
-        "教練說 Don't start too fast. Save your energy for the last part，意思就是開始時不要跑太快。",
+        "教練說 Don't start too fast. Save your energy for the last part — 要省體力、不要起跑太猛。其他選項都是文章沒有提到的內容。",
     },
     {
       question: "Why did Jason finish second instead of first?",
-      questionZh: "傑森為什麼得了第二名而不是第一？",
+      questionZh: "傑森為什麼得了第二名而不是第一名？",
       options: [
-        { text: "He fell down during the race", textZh: "他比賽中跌倒了" },
-        { text: "He started too fast and ran out of energy", textZh: "他起跑太快，體力耗盡" },
-        { text: "The other boy had trained longer", textZh: "另一個男孩訓練了更久" },
-        { text: "He did not practice enough before the race", textZh: "他賽前練習不夠" },
+        { text: "He fell down during the race and lost time", textZh: "他比賽中跌倒損失了時間" },
+        { text: "The other runner had trained much longer than him", textZh: "另一個選手訓練時間比他長很多" },
+        { text: "He did not practice enough before the contest", textZh: "他賽前練習不夠充分" },
+        { text: "He ran too fast early on and ran out of energy", textZh: "他一開始跑太快，體力提前耗盡" },
       ],
-      correctIndex: 1,
+      correctIndex: 3,
       explanation:
-        "文章說 Jason ran hard from the beginning，然後 his legs became heavy — 他因為起跑太快體力不足，才被超越。",
+        "文章說他 ran hard from the very beginning，之後 legs felt heavy — 起跑太猛導致後段體力不足被超越。文章沒有提到他跌倒、練習不足或對手訓練更久。",
     },
     {
-      question: "What will Jason most likely do differently in the next race?",
-      questionZh: "傑森在下次比賽中最可能會有什麼不同？",
+      question: "What can we learn about Jason from this passage?",
+      questionZh: "從這篇文章我們可以得知傑森是個怎樣的人？",
       options: [
-        { text: "He will find a new coach", textZh: "他會找一位新教練" },
-        { text: "He will not join the city race again", textZh: "他不會再參加城市比賽" },
-        { text: "He will follow his coach's advice about pacing", textZh: "他會照教練的建議控制配速" },
-        { text: "He will train twice as hard every day", textZh: "他每天會加倍訓練" },
+        { text: "He never listens to anyone's advice", textZh: "他從不聽任何人的建議" },
+        { text: "He decided to give up running after losing", textZh: "他輸了之後決定放棄跑步" },
+        { text: "He learned from the experience and wanted to improve", textZh: "他從這次經驗中學到教訓並想要改進" },
+        { text: "He thought the race result was unfair", textZh: "他認為比賽結果不公平" },
       ],
       correctIndex: 2,
       explanation:
-        "文章最後說 Next year, he planned to listen more carefully，代表他會照教練建議控制配速，不再起跑太猛。",
+        "文章結尾說 The next year, he planned to do things differently — 他打算改變做法，代表他從失敗中學到了東西。選項 A 太極端：文章只說他「這次」沒聽，不代表他永遠不聽建議。",
     },
   ],
 };

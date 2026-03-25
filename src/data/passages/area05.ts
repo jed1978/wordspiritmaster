@@ -10,46 +10,46 @@ export const area05: ReadingPassage = {
     defeatLine: "哎呀～被你買走了！算你厲害！",
   },
   passage:
-    "Daniel saved his pocket money for three months to buy a new video game. When he finally had enough, he went to the store — but the game was sold out. The owner said it would arrive in two weeks. During the wait, Daniel read online reviews and found that many players thought the game was too short and not worth the price. He changed his mind and bought a different game instead. It turned out to be his favorite of the year. Sometimes, waiting gives you time to make a better choice.",
+    "Jenny: Have you heard? The AIRmax shoes are finally in stores!\nMike: I checked — NT$3,500 is way too expensive for me.\nJenny: There's a sale next weekend. Thirty percent off!\nMike: So that would be... NT$2,450. Still a lot.\nJenny: My sister works there. She says the shoes really last. More than three years.\nMike: Hmm. If I save my allowance for two months, I might just have enough.\nJenny: Don't wait too long. Last time there was a sale, everything sold out in one day.\nMike: OK. I'll think about it tonight and let you know tomorrow.",
   questions: [
     {
-      question: "Why couldn't Daniel buy the game when he first went to the store?",
-      questionZh: "丹尼爾第一次去商店時為什麼沒辦法買遊戲？",
+      question: "According to the dialogue, how much do the AIRmax shoes cost during the sale?",
+      questionZh: "根據對話，AIRmax 球鞋在特賣期間的售價是多少？",
       options: [
-        { text: "He didn't have enough money yet", textZh: "他的錢還不夠" },
-        { text: "The store was already closed", textZh: "商店已經關門了" },
-        { text: "His parents said no", textZh: "他的父母不准" },
-        { text: "The game was sold out", textZh: "遊戲賣完了" },
-      ],
-      correctIndex: 3,
-      explanation:
-        "文章說 the game was sold out，所以買不到。注意他已經存了三個月的零用錢，錢是夠的。",
-    },
-    {
-      question: "What did Daniel discover while waiting for the game to arrive?",
-      questionZh: "丹尼爾等待期間發現了什麼？",
-      options: [
-        { text: "The game would soon become cheaper", textZh: "那款遊戲即將降價" },
-        { text: "His friend already owned the same game", textZh: "他朋友已經有那款遊戲了" },
-        { text: "Many players felt the game was not worth the price", textZh: "許多玩家覺得那款遊戲不值這個價格" },
-        { text: "A newer version of the game was coming out", textZh: "遊戲即將推出新版本" },
+        { text: "NT$1,050", textZh: "新台幣 1,050 元" },
+        { text: "NT$2,100", textZh: "新台幣 2,100 元" },
+        { text: "NT$2,450", textZh: "新台幣 2,450 元" },
+        { text: "NT$3,500", textZh: "新台幣 3,500 元" },
       ],
       correctIndex: 2,
       explanation:
-        "文章說 many players thought the game was too short and not worth the price — 他看了評論，發現大家覺得不值得買。",
+        "NT$3,500 打七折（30% off）= NT$3,500 × 0.7 = NT$2,450。選項 D 是原價（陷阱），選項 B 是原價的六折（錯誤計算的陷阱）。",
     },
     {
-      question: "What is the main lesson of this story?",
-      questionZh: "這個故事的主要教訓是什麼？",
+      question: "What does Jenny mean when she says, \"Don't wait too long\"?",
+      questionZh: "珍妮說「不要等太久」是什麼意思？",
       options: [
-        { text: "Video games are a waste of money", textZh: "電玩是浪費金錢的東西" },
-        { text: "Saving money is the most important habit", textZh: "存錢是最重要的習慣" },
-        { text: "Waiting can help you make a smarter decision", textZh: "等待能幫助你做出更聰明的決定" },
-        { text: "Always buy the most popular game", textZh: "永遠買最熱門的遊戲" },
+        { text: "Mike should go to the store right now", textZh: "麥克應該馬上去商店" },
+        { text: "The sale will be over very soon", textZh: "特賣活動很快就會結束" },
+        { text: "The shoes might sell out before Mike decides", textZh: "球鞋可能在麥克決定前就賣光了" },
+        { text: "Jenny needs to tell her sister Mike is coming", textZh: "珍妮需要告訴她姐姐麥克要來" },
       ],
       correctIndex: 2,
       explanation:
-        "故事最後說 Sometimes, waiting gives you time to make a better choice — 等待讓丹尼爾有時間發現更好的選擇。",
+        "珍妮說「上次特賣一天內全賣光」，所以她警告麥克等太久可能買不到。選項 B 是陷阱 — 文章沒說特賣「快結束」，而是強調「賣完」的風險。",
+    },
+    {
+      question: "Which of the following is TRUE about Mike?",
+      questionZh: "關於麥克，下列何者正確？",
+      options: [
+        { text: "He will definitely buy the shoes tomorrow", textZh: "他明天一定會去買球鞋" },
+        { text: "He thinks the shoes are not worth any price", textZh: "他認為球鞋根本不值得買" },
+        { text: "He is thinking about saving money to buy the shoes", textZh: "他在考慮存錢買那雙球鞋" },
+        { text: "He already has enough money to buy the shoes", textZh: "他已經有足夠的錢買球鞋" },
+      ],
+      correctIndex: 2,
+      explanation:
+        "麥克說 If I save my allowance for two months, I might just have enough，代表他在考慮存錢買。選項 A 是陷阱 — 他說的是「明天告訴你」，不是「明天去買」。選項 D 錯：他說還要存兩個月才夠。",
     },
   ],
 };
