@@ -10,43 +10,46 @@ export const area01: ReadingPassage = {
     defeatLine: "不...不可能！你居然讀懂了！",
   },
   passage:
-    "Tom goes to school every day. He gets up at seven and eats breakfast with his family. Then he walks to school with his friend, Sam. They study English, math, and science. Tom likes English the best. After school, Tom runs home and does his homework.",
+    "Kevin never liked reading. His teacher asked everyone to borrow a library book and talk about it in class. Kevin picked the thinnest book — a story about a boy who trains a wild horse. He only planned to read a few pages, but he finished the whole book that night. The next morning, he went back to the library for more books. When Kevin talked about the horse story, his classmates all wanted to read it too. His teacher said, \"A good story doesn't care how many pages it has.\" Kevin now reads one book a week.",
   questions: [
     {
-      question: "What time does Tom get up?",
-      questionZh: "湯姆幾點起床？",
+      question: "Why did Kevin choose the book about the wild horse?",
+      questionZh: "凱文為什麼選了那本野馬的書？",
       options: [
-        { text: "Six o'clock", textZh: "六點" },
-        { text: "Seven o'clock", textZh: "七點" },
-        { text: "Eight o'clock", textZh: "八點" },
-        { text: "Nine o'clock", textZh: "九點" },
+        { text: "He loves horses", textZh: "他喜歡馬" },
+        { text: "His friend told him to", textZh: "朋友推薦他的" },
+        { text: "It was the thinnest book", textZh: "它是最薄的書" },
+        { text: "His teacher picked it for him", textZh: "老師幫他選的" },
+      ],
+      correctIndex: 2,
+      explanation:
+        "文章說 Kevin picked the thinnest book，他選這本是因為最薄，不是因為喜歡馬。",
+    },
+    {
+      question: "What happened after Kevin talked about the horse story in class?",
+      questionZh: "凱文在班上分享那本書後，發生了什麼事？",
+      options: [
+        { text: "His teacher gave him a prize", textZh: "老師給了他獎品" },
+        { text: "His classmates all wanted to read it", textZh: "同學們都想看那本書" },
+        { text: "He had to return the book that day", textZh: "他當天就要還書" },
+        { text: "He started a book club", textZh: "他成立了讀書社" },
       ],
       correctIndex: 1,
-      explanation: "文章說 He gets up at seven，所以是七點起床。",
+      explanation:
+        "文章說 his classmates all wanted to read it too，代表同學也想讀那本書。",
     },
     {
-      question: "What does Tom like best?",
-      questionZh: "湯姆最喜歡什麼科目？",
+      question: "What is the main message of this story?",
+      questionZh: "這個故事的主要訊息是什麼？",
       options: [
-        { text: "Math", textZh: "數學" },
-        { text: "Science", textZh: "科學" },
-        { text: "English", textZh: "英文" },
-        { text: "History", textZh: "歷史" },
+        { text: "Short books are always better than long ones", textZh: "短書永遠比長書好" },
+        { text: "Students should listen to their teachers more", textZh: "學生應該多聽老師的話" },
+        { text: "The right book can make someone enjoy reading", textZh: "對的書能讓人愛上閱讀" },
+        { text: "Library books are free and easy to get", textZh: "圖書館的書免費又方便" },
       ],
       correctIndex: 2,
-      explanation: "文章說 Tom likes English the best，所以最喜歡英文。",
-    },
-    {
-      question: "How does Tom go to school?",
-      questionZh: "湯姆怎麼去學校？",
-      options: [
-        { text: "By bus", textZh: "搭公車" },
-        { text: "By bike", textZh: "騎腳踏車" },
-        { text: "He walks", textZh: "走路" },
-        { text: "By car", textZh: "搭車" },
-      ],
-      correctIndex: 2,
-      explanation: "文章說 he walks to school，所以是走路去學校。",
+      explanation:
+        "故事說 Kevin 原本討厭讀書，但一本書改變了他 — 主旨是找到對的書能讓人愛上閱讀。老師說 A good story doesn't care how many pages it has，跟選項 A 相反。",
     },
   ],
 };
