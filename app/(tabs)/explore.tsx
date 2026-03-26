@@ -47,6 +47,15 @@ export default function ExploreScreen(): React.JSX.Element {
   const [currentWord, setCurrentWord] = useState<WordEntry | null>(null);
   const [lastCorrect, setLastCorrect] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
+  const phaseTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  );
+  // Cleanup pending phase transition timer on unmount
+  useEffect(() => {
+    return () => {
+      if (phaseTimerRef.current != null) clearTimeout(phaseTimerRef.current);
+    };
+  }, []);
 
   // Uncaptured words for capture mode (memoized by spirits reference)
   const uncapturedWords = useMemo(
@@ -95,6 +104,36 @@ export default function ExploreScreen(): React.JSX.Element {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode, reviewIndex, answerPhase]);
 
+  const handleSpellAnswer = useCallback(
+    (isCorrect: boolean, hintCount: number, wordId: string) => {
+      const preserveStreak = !isCorrect && hintCount > 0 && hintCount <= 2;
+      const effectiveCorrect = isCorrect && hintCount === 0;
+      if (mode === "review") {
+        dispatch({
+          type: "REVIEW_ANSWER",
+          wordId,
+          isCorrect: effectiveCorrect,
+          preserveStreak,
+        });
+      } else if (mode === "capture") {
+        dispatch({ type: "ENCOUNTER_WORD", wordId });
+        if (effectiveCorrect) dispatch({ type: "CAPTURE_SPIRIT", wordId });
+      }
+      setLastCorrect(effectiveCorrect);
+      if (effectiveCorrect) lightHaptic();
+      else warningHaptic();
+      setAnswerPhase("result");
+      const delay = effectiveCorrect
+        ? CORRECT_ANSWER_DELAY_MS
+        : WRONG_ANSWER_DELAY_MS;
+      phaseTimerRef.current = setTimeout(() => {
+        setAnswerPhase("question");
+        if (mode === "review") setReviewIndex((prev) => prev + 1);
+      }, delay);
+    },
+    [mode, dispatch, lightHaptic, warningHaptic],
+  );
+
   const handleAnswer = useCallback(
     (isCorrect: boolean, wordId: string) => {
       setLastCorrect(isCorrect);
@@ -119,7 +158,7 @@ export default function ExploreScreen(): React.JSX.Element {
       setAnswerPhase("result");
 
       const delay = isCorrect ? CORRECT_ANSWER_DELAY_MS : WRONG_ANSWER_DELAY_MS;
-      setTimeout(() => {
+      phaseTimerRef.current = setTimeout(() => {
         setAnswerPhase("question");
         if (mode === "review") {
           setReviewIndex((prev) => prev + 1);
@@ -181,11 +220,12 @@ export default function ExploreScreen(): React.JSX.Element {
           {currentQuestion && currentWord && answerPhase === "question" ? (
             currentQuestion.type === "spellWord" ? (
               <SpellInput
+                key={currentWord.id}
                 word={currentWord.word}
                 meaning={currentWord.meaning}
                 spiritType={currentWord.type}
-                onComplete={(isCorrect) =>
-                  handleAnswer(isCorrect, currentWord.id)
+                onComplete={(isCorrect, hintCount) =>
+                  handleSpellAnswer(isCorrect, hintCount, currentWord.id)
                 }
               />
             ) : (
@@ -270,7 +310,12 @@ const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: COLORS.bgPrimary },
   header: { paddingHorizontal: 20, paddingTop: 16, gap: 8 },
   title: { fontWeight: "700" },
-  body: { flex: 1, justifyContent: "center", paddingVertical: 24 },
+  body: {
+    flex: 1,
+    justifyContent: "flex-start",
+    paddingTop: 8,
+    paddingBottom: 16,
+  },
   center: { flex: 1, justifyContent: "center", alignItems: "center" },
   idleText: { textAlign: "center", paddingHorizontal: 32 },
   welcomeContent: { alignItems: "center", gap: 16 },

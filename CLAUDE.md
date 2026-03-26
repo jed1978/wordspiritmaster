@@ -60,9 +60,9 @@ A gacha-style creature collection game that teaches 會考 English vocabulary an
 ---
 
 ### Vocabulary Source
-**1200 不重複單字（教育部基本單字）→ 1276 隻精靈**（78 個多義字拆分為 2-3 隻）
+**2000 單字（國中單字王題庫）→ 約 1932 隻精靈**（含多義字拆分）
 
-按考試頻率排序，分為 **26 個 packs**（每 pack ~50 隻），不是按主題分類。
+分為 **40 個 packs**（每 pack ~50 隻），pack01-04 按頻率排序，pack05-40 按字母序排列。
 
 8 個 Spirit Type（精靈屬性），依單字語意類別分配：
 
@@ -88,8 +88,8 @@ interface WordEntry {
   posCategory: PosCategory; // noun / verb / adj / func（視覺分類）
   meaning: string;       // 繁體中文釋義
   type: SpiritType;      // flame / aqua / nature / metal / bloom / star / moon / crystal
-  pack: number;          // 1-26（按考試頻率排序）
-  example: string;       // 例句（Phase 2+）。超出 1200 單的字標中文。
+  pack: number;          // 1-40
+  example: string;       // 例句（Phase 2+）。超出 2000 單的字標中文。
   confusers: [string, string, string]; // 3 個中文誘答（同詞性、同語意場）
 }
 
@@ -507,7 +507,7 @@ Package Name (Android): com.clearforge.wordspiritmaster
 #### App Store Listing
 **Name:** 單字精靈大師
 **Subtitle:** 捕獲英文精靈，會考輕鬆 Level Up！
-**Description:** 把背英文單字變成抓精靈！8 種精靈屬性，超過 1200 隻精靈等你收集。24+ 個閱讀 Boss 戰，抽卡系統每天免費抽，考前衝刺模式。完全離線可用。
+**Description:** 把背英文單字變成抓精靈！8 種精靈屬性，近 2000 隻精靈等你收集。24+ 個閱讀 Boss 戰，抽卡系統每天免費抽，考前衝刺模式。完全離線可用。
 **Keywords (iOS):** 英文,單字,會考,背單字,學英文,精靈,抽卡,國中,教育,學習
 
 #### Privacy Policy
@@ -550,7 +550,7 @@ Content: 「本 App 不收集任何個人資料。所有學習進度僅存儲在
 1. 6 個 Easy 閱讀段落（area01-06）含 Boss 個性系統
 2. Battle screen：閱讀先行流程 + 精靈中文提示 + 答錯解析
 3. **Stage 3 題型：字母方塊拼字**（Wordle 風格）
-4. 例句資料加入 WordEntry（超出 1200 單字標中文）
+4. 例句資料加入 WordEntry（超出 2000 單字標中文）
 5. Area map (node graph)
 6. Gacha pull screen + 保底機制（pityCounter）
 7. 複習完畢獎勵抽
@@ -579,7 +579,7 @@ Content: 「本 App 不收集任何個人資料。所有學習進度僅存儲在
 **Deliverable:** 全 5 種題型 + 4 週內容 + 衝刺模式 + 閃光系統。
 
 ### Phase 4: Full Content + Store Preparation
-1. 完成所有 1276 隻精靈 (pack13-26)
+1. 完成所有精靈資料 (pack05-40 已完成，共約 1932 字)
 2. 全部閱讀段落 + 模擬考
 3. Onboarding tutorial (3 steps)
 4. Parent hidden panel (long press 5×)

@@ -63,8 +63,14 @@ export function SpiritImage({
             },
           ]}
         >
-          <Text style={styles.emoji}>{SPIRIT_TYPE_EMOJI[type]}</Text>
-          <Text style={styles.stageLabel}>{stage}</Text>
+          <Text style={[styles.emoji, { fontSize: Math.round(size * 0.28) }]}>
+            {SPIRIT_TYPE_EMOJI[type]}
+          </Text>
+          <Text
+            style={[styles.stageLabel, { fontSize: Math.round(size * 0.1) }]}
+          >
+            {stage}
+          </Text>
         </View>
       )}
     </Animated.View>
@@ -78,9 +84,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     opacity: 0.85,
   },
-  emoji: {
-    fontSize: 28,
-  },
+  emoji: {},
   stageLabel: {
     position: "absolute",
     bottom: 2,

@@ -23,7 +23,7 @@ describe("processAnswer", () => {
   // Threshold-based evolution: stage 2 needs 1, stage 3 needs 2, etc.
   it("stage 1 + 1 correct → stage 2 (threshold 1 met)", () => {
     const spirit = makeSpirit({ stage: 1, consecutiveCorrect: 0 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(2);
     expect(result.consecutiveCorrect).toBe(1);
@@ -34,7 +34,7 @@ describe("processAnswer", () => {
 
   it("stage 2 + 1 correct → stays stage 2 (threshold 2 not met)", () => {
     const spirit = makeSpirit({ stage: 2, consecutiveCorrect: 0 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(2);
     expect(result.consecutiveCorrect).toBe(1);
@@ -43,7 +43,7 @@ describe("processAnswer", () => {
 
   it("stage 2 + 2 consecutive correct → stage 3 (threshold 2 met)", () => {
     const spirit = makeSpirit({ stage: 2, consecutiveCorrect: 1 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(3);
     expect(result.consecutiveCorrect).toBe(2);
@@ -52,7 +52,7 @@ describe("processAnswer", () => {
 
   it("stage 3 + 3 consecutive correct → stage 4 (threshold 3 met)", () => {
     const spirit = makeSpirit({ stage: 3, consecutiveCorrect: 2 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(4);
     expect(result.consecutiveCorrect).toBe(3);
@@ -61,7 +61,7 @@ describe("processAnswer", () => {
 
   it("stage 4 + 4 consecutive correct → stage 5 (threshold 4 met)", () => {
     const spirit = makeSpirit({ stage: 4, consecutiveCorrect: 3 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(5);
     expect(result.consecutiveCorrect).toBe(4);
@@ -70,7 +70,7 @@ describe("processAnswer", () => {
 
   it("stage 5 + 5 consecutive correct → stage 6 mastered (threshold 5 met)", () => {
     const spirit = makeSpirit({ stage: 5, consecutiveCorrect: 4 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(6);
     expect(result.consecutiveCorrect).toBe(5);
@@ -79,7 +79,7 @@ describe("processAnswer", () => {
 
   it("mastered (stage 6) correct → stays stage 6", () => {
     const spirit = makeSpirit({ stage: 6, consecutiveCorrect: 5 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.stage).toBe(6);
     expect(result.consecutiveCorrect).toBe(6);
@@ -87,7 +87,7 @@ describe("processAnswer", () => {
 
   it("wrong answer: stage -1 (min 1), consecutiveCorrect resets to 0", () => {
     const spirit = makeSpirit({ stage: 3, consecutiveCorrect: 2 });
-    const result = processAnswer(spirit, false, NOW);
+    const result = processAnswer(spirit, false, false, NOW);
 
     expect(result.stage).toBe(2);
     expect(result.consecutiveCorrect).toBe(0);
@@ -98,7 +98,7 @@ describe("processAnswer", () => {
 
   it("stage 1 wrong → stays stage 1", () => {
     const spirit = makeSpirit({ stage: 1, consecutiveCorrect: 0 });
-    const result = processAnswer(spirit, false, NOW);
+    const result = processAnswer(spirit, false, false, NOW);
 
     expect(result.stage).toBe(1);
     expect(result.consecutiveCorrect).toBe(0);
@@ -106,18 +106,49 @@ describe("processAnswer", () => {
 
   it("sets lastReviewedAt to now", () => {
     const spirit = makeSpirit({ lastReviewedAt: 500 });
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result.lastReviewedAt).toBe(NOW);
   });
 
   it("returns a new object (immutable)", () => {
     const spirit = makeSpirit();
-    const result = processAnswer(spirit, true, NOW);
+    const result = processAnswer(spirit, true, false, NOW);
 
     expect(result).not.toBe(spirit);
     expect(spirit.stage).toBe(1); // original unchanged
     expect(spirit.consecutiveCorrect).toBe(0);
+  });
+
+  // preserveStreak tests (hint system grading)
+  it("preserveStreak=true + wrong → stage stays, consecutiveCorrect preserved", () => {
+    const spirit = makeSpirit({ stage: 3, consecutiveCorrect: 2 });
+    const result = processAnswer(spirit, false, true, NOW);
+
+    expect(result.stage).toBe(3); // no stage regression
+    expect(result.consecutiveCorrect).toBe(2); // streak preserved
+    expect(result.nextReviewAt).toBe(NOW + SRS_INTERVALS[3]);
+  });
+
+  it("preserveStreak=true + wrong → still records review but not correct", () => {
+    const spirit = makeSpirit({
+      stage: 2,
+      consecutiveCorrect: 1,
+      totalReviews: 5,
+      totalCorrect: 4,
+    });
+    const result = processAnswer(spirit, false, true, NOW);
+
+    expect(result.totalReviews).toBe(6);
+    expect(result.totalCorrect).toBe(4); // not incremented
+  });
+
+  it("preserveStreak=true + correct → behaves like normal correct (hint=0 case)", () => {
+    const spirit = makeSpirit({ stage: 1, consecutiveCorrect: 0 });
+    const result = processAnswer(spirit, true, true, NOW);
+
+    expect(result.stage).toBe(2);
+    expect(result.consecutiveCorrect).toBe(1);
   });
 });
 

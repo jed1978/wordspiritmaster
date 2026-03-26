@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { COLORS } from "@/utils/colors";
@@ -151,7 +151,11 @@ export default function BattleScreen(): React.JSX.Element {
 
         {/* Reading phase: read full passage first */}
         {phase === "reading" ? (
-          <View style={styles.battleContent}>
+          <ScrollView
+            style={styles.battleScroll}
+            contentContainerStyle={styles.battleContent}
+            showsVerticalScrollIndicator={false}
+          >
             <ThemedText variant="secondary" size="sm" style={styles.readPrompt}>
               {STRINGS.battleReadPrompt}
             </ThemedText>
@@ -159,6 +163,7 @@ export default function BattleScreen(): React.JSX.Element {
               passage={passage.passage}
               capturedWordIds={capturedWordIds}
               words={ALL_WORDS}
+              annotations={passage.annotations}
             />
             <PressableButton
               label={STRINGS.battleReadyButton}
@@ -166,16 +171,21 @@ export default function BattleScreen(): React.JSX.Element {
               variant="accent"
               style={styles.readyButton}
             />
-          </View>
+          </ScrollView>
         ) : null}
 
         {/* Battle phase: passage + question */}
         {phase === "battle" ? (
-          <View style={styles.battleContent}>
+          <ScrollView
+            style={styles.battleScroll}
+            contentContainerStyle={styles.battleContent}
+            showsVerticalScrollIndicator={false}
+          >
             <PassageView
               passage={passage.passage}
               capturedWordIds={capturedWordIds}
               words={ALL_WORDS}
+              annotations={passage.annotations}
             />
 
             {currentQuestion ? (
@@ -186,7 +196,7 @@ export default function BattleScreen(): React.JSX.Element {
                 showExplanation={answerDisabled && showExplanation !== null}
               />
             ) : null}
-          </View>
+          </ScrollView>
         ) : null}
 
         {/* Victory */}
@@ -225,7 +235,8 @@ const styles = StyleSheet.create({
   container: { flex: 1, paddingVertical: 16 },
   center: { flex: 1, textAlign: "center", padding: 32 },
   skipButton: { alignSelf: "center", marginTop: 16, paddingHorizontal: 32 },
-  battleContent: { flex: 1, gap: 12 },
+  battleScroll: { flex: 1 },
+  battleContent: { gap: 12, paddingBottom: 24 },
   readPrompt: { textAlign: "center", paddingHorizontal: 16 },
   readyButton: { marginHorizontal: 16 },
   result: {

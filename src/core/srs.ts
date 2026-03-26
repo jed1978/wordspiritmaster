@@ -13,9 +13,14 @@ const STAGE_UP_THRESHOLD: Partial<Record<SpiritStage, number>> = {
 export function processAnswer(
   spirit: CapturedSpirit,
   isCorrect: boolean,
+  preserveStreak: boolean = false,
   now: number = Date.now(),
 ): CapturedSpirit {
-  const newConsecutive = isCorrect ? spirit.consecutiveCorrect + 1 : 0;
+  const newConsecutive = isCorrect
+    ? spirit.consecutiveCorrect + 1
+    : preserveStreak
+      ? spirit.consecutiveCorrect
+      : 0;
 
   let newStage = spirit.stage;
   if (isCorrect) {
@@ -24,7 +29,7 @@ export function processAnswer(
     if (newConsecutive >= threshold) {
       newStage = nextStage;
     }
-  } else {
+  } else if (!preserveStreak) {
     newStage = Math.max(spirit.stage - 1, 1) as SpiritStage;
   }
 

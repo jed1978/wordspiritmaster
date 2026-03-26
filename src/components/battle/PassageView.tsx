@@ -14,31 +14,39 @@ interface PassageViewProps {
   readonly passage: string;
   readonly capturedWordIds: readonly string[];
   readonly words: readonly WordEntry[];
+  readonly annotations?: Record<string, string>;
 }
 
 interface Token {
   raw: string;
-  entry: WordEntry | undefined;
-  isCaptured: boolean;
-  typeColor: string | null;
+  // Set when word is in game vocabulary AND captured by player
+  capturedEntry: WordEntry | undefined;
+  // Set when word is outside game vocabulary and has a Chinese annotation
+  outsideAnnotation: string | undefined;
 }
 
 function tokenize(
   text: string,
   capturedSet: ReadonlySet<string>,
   wordMap: ReadonlyMap<string, WordEntry>,
+  annotations: Record<string, string>,
 ): readonly Token[] {
   const parts = text.split(/\s+/);
   return parts.map((raw) => {
     const clean = raw.replace(/[^a-zA-Z]/g, "").toLowerCase();
     const entry = clean ? wordMap.get(clean) : undefined;
-    const isCaptured = entry ? capturedSet.has(entry.id) : false;
-    return {
-      raw,
-      entry: isCaptured ? entry : undefined,
-      isCaptured,
-      typeColor: entry && isCaptured ? SPIRIT_TYPE_COLORS[entry.type] : null,
-    };
+    if (entry) {
+      // Word is in the 1200-word game vocabulary — highlight if captured, no Chinese
+      const isCaptured = capturedSet.has(entry.id);
+      return {
+        raw,
+        capturedEntry: isCaptured ? entry : undefined,
+        outsideAnnotation: undefined,
+      };
+    }
+    // Word is outside game vocabulary — show annotation if available
+    const annotation = clean ? annotations[clean] : undefined;
+    return { raw, capturedEntry: undefined, outsideAnnotation: annotation };
   });
 }
 
@@ -46,6 +54,7 @@ export function PassageView({
   passage,
   capturedWordIds,
   words,
+  annotations = {},
 }: PassageViewProps): React.JSX.Element {
   const [tooltipEntry, setTooltipEntry] = useState<WordEntry | null>(null);
   const opacity = useSharedValue(0);
@@ -64,8 +73,8 @@ export function PassageView({
   }, [words]);
 
   const tokens = useMemo(
-    () => tokenize(passage, capturedSet, wordMap),
-    [passage, capturedSet, wordMap],
+    () => tokenize(passage, capturedSet, wordMap, annotations),
+    [passage, capturedSet, wordMap, annotations],
   );
 
   React.useEffect(() => {
@@ -89,38 +98,60 @@ export function PassageView({
     <>
       <Animated.View style={[styles.container, animStyle]}>
         <View style={styles.passage}>
-          {tokens.map((token, i) =>
-            token.isCaptured && token.entry ? (
-              <Pressable
-                key={i}
-                onLongPress={() => handleLongPress(token.entry!)}
-                delayLongPress={300}
-              >
-                <View style={styles.highlightedWrap}>
+          {tokens.map((token, i) => {
+            // Captured game-vocab word: highlight + inline Chinese, long-press for example
+            if (token.capturedEntry) {
+              const typeColor = SPIRIT_TYPE_COLORS[token.capturedEntry.type];
+              return (
+                <Pressable
+                  key={i}
+                  onLongPress={() => handleLongPress(token.capturedEntry!)}
+                  delayLongPress={300}
+                  style={styles.capturedWrap}
+                >
                   <ThemedText
                     size="md"
                     style={[
                       styles.highlightedWord,
-                      { backgroundColor: `${token.typeColor}33` },
+                      { backgroundColor: `${typeColor}33` },
                     ]}
                   >
-                    {token.raw}
+                    {token.raw}{" "}
                   </ThemedText>
                   <ThemedText
-                    variant="secondary"
+                    variant="hint"
                     size="sm"
                     style={styles.chineseAnnotation}
                   >
-                    {token.entry.meaning}
+                    {token.capturedEntry.meaning}
+                  </ThemedText>
+                </Pressable>
+              );
+            }
+            // Out-of-vocabulary word with annotation: show Chinese below
+            if (token.outsideAnnotation) {
+              return (
+                <View key={i} style={styles.annotatedWrap}>
+                  <ThemedText size="md" style={styles.annotatedWord}>
+                    {token.raw}
+                  </ThemedText>
+                  <ThemedText
+                    variant="hint"
+                    size="sm"
+                    style={styles.chineseAnnotation}
+                  >
+                    {token.outsideAnnotation}
                   </ThemedText>
                 </View>
-              </Pressable>
-            ) : (
+              );
+            }
+            // Plain word
+            return (
               <ThemedText key={i} size="md" style={styles.normalWord}>
                 {token.raw}{" "}
               </ThemedText>
-            ),
-          )}
+            );
+          })}
         </View>
       </Animated.View>
 
@@ -161,17 +192,30 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     alignItems: "flex-end",
   },
-  highlightedWrap: {
-    alignItems: "center",
-    marginRight: 4,
-    marginBottom: 4,
-  },
   highlightedWord: {
     borderRadius: 4,
     paddingHorizontal: 2,
     color: COLORS.textPrimary,
     fontSize: 16,
     lineHeight: 24,
+  },
+  capturedWrap: {
+    alignItems: "center",
+    marginRight: 2,
+    marginBottom: 4,
+  },
+  annotatedWrap: {
+    alignItems: "center",
+    marginRight: 4,
+    marginBottom: 4,
+  },
+  annotatedWord: {
+    color: COLORS.textPrimary,
+    fontSize: 16,
+    lineHeight: 24,
+    textDecorationLine: "underline",
+    textDecorationStyle: "dotted",
+    textDecorationColor: COLORS.textHint,
   },
   chineseAnnotation: {
     fontSize: 10,

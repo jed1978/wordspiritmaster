@@ -74,12 +74,16 @@ export function QuestionCard({
       <Animated.View
         style={[styles.spiritArea, { shadowColor: glowColor }, spiritAnimStyle]}
       >
-        <SpiritImage
-          type={question.spiritType}
-          posCategory={question.posCategory}
-          stage={question.stage}
-          size={100}
-        />
+        <View
+          style={[styles.spiritPlate, { backgroundColor: glowColor + "26" }]}
+        >
+          <SpiritImage
+            type={question.spiritType}
+            posCategory={question.posCategory}
+            stage={question.stage}
+            size={210}
+          />
+        </View>
       </Animated.View>
 
       <ThemedText size="xl" style={styles.prompt}>
@@ -101,6 +105,7 @@ export function QuestionCard({
               onPress={() => handleSelect(i)}
               variant={variant}
               disabled={answerState !== "waiting"}
+              style={styles.optionButton}
             />
           );
         })}
@@ -119,13 +124,26 @@ export function QuestionCard({
 }
 
 const styles = StyleSheet.create({
-  container: { gap: 20, alignItems: "center", paddingHorizontal: 16 },
+  container: { gap: 16, alignItems: "center", paddingHorizontal: 16 },
   spiritArea: {
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.6,
-    shadowRadius: 16,
-    elevation: 8,
+    shadowRadius: 24,
+    elevation: 12,
+  },
+  spiritPlate: {
+    width: 270,
+    height: 270,
+    borderRadius: 135,
+    justifyContent: "center",
+    alignItems: "center",
   },
   prompt: { fontWeight: "700", textAlign: "center" },
-  options: { width: "100%", gap: 12 },
+  options: {
+    width: "100%",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+  },
+  optionButton: { flex: 1, minWidth: "45%", paddingVertical: 8, minHeight: 48 },
 });

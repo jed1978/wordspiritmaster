@@ -77,7 +77,11 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case "REVIEW_ANSWER": {
       const existing = state.spirits[action.wordId];
       if (!existing) return state;
-      const updated = processAnswer(existing, action.isCorrect);
+      const updated = processAnswer(
+        existing,
+        action.isCorrect,
+        action.preserveStreak,
+      );
       const xpGain = action.isCorrect ? XP_PER_REVIEW_CORRECT : 0;
       const newTotalXpReview = state.totalXp + xpGain;
       return {

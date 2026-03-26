@@ -108,6 +108,8 @@ export const STRINGS = {
   spellHint: "點擊字母拼出單字",
   spellCorrect: "拼對了！🎉",
   spellWrong: "答案是：",
+  spellHintButton: "💡 提示",
+  spellHintUsed: (count: number) => `(已用 ${count} 次)`,
 
   // Profile
   profileTitle: "我的精靈師",

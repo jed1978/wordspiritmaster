@@ -12,7 +12,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   splash: {
     image: "./src/assets/splash.png",
     resizeMode: "contain",
-    backgroundColor: "#1a1a2e",
+    backgroundColor: "#1a1a2e", // COLORS.bgPrimary — must be string literal in config
   },
   ios: {
     supportsTablet: false,
@@ -25,12 +25,23 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     },
     package: "com.clearforge.wordspiritmaster",
   },
+  androidNavigationBar: {
+    backgroundColor: "#1a1a2e", // COLORS.bgPrimary
+    barStyle: "light-content",
+  },
   plugins: [
     "expo-router",
     "expo-font",
     "expo-asset",
     "expo-audio",
     "expo-notifications",
+    [
+      "expo-navigation-bar",
+      {
+        backgroundColor: "#1a1a2e",
+        barStyle: "light",
+      },
+    ],
     [
       "expo-splash-screen",
       {

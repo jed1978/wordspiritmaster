@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import { View, Pressable, StyleSheet } from "react-native";
 import Animated, {
   useSharedValue,
@@ -21,7 +21,7 @@ interface SpellInputProps {
   readonly word: string;
   readonly meaning: string;
   readonly spiritType: SpiritType;
-  readonly onComplete: (isCorrect: boolean) => void;
+  readonly onComplete: (isCorrect: boolean, hintCount: number) => void;
 }
 
 function shuffleLetters(word: string): LetterToken[] {
@@ -44,6 +44,20 @@ export function SpellInput({
     shuffleLetters(word),
   );
   const [resolved, setResolved] = useState(false);
+  const [hintCount, setHintCount] = useState(0);
+  const resolvedRef = useRef(false);
+  const hintCountRef = useRef(0);
+  const onCompleteRef = useRef(onComplete);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(() => {
+    onCompleteRef.current = onComplete;
+  });
+  // Cleanup any pending timer on unmount
+  useEffect(() => {
+    return () => {
+      if (timerRef.current != null) clearTimeout(timerRef.current);
+    };
+  }, []);
 
   const scale = useSharedValue(1);
   const translateX = useSharedValue(0);
@@ -54,44 +68,63 @@ export function SpellInput({
 
   const typeColor = SPIRIT_TYPE_COLORS[spiritType];
 
-  const handlePickLetter = useCallback(
-    (token: LetterToken) => {
-      if (resolved) return;
-      setFilled((prev) => [...prev, token]);
-      setAvailable((prev) => prev.filter((t) => t.id !== token.id));
-    },
-    [resolved],
-  );
+  const handlePickLetter = useCallback((token: LetterToken) => {
+    if (resolvedRef.current) return;
+    setFilled((prev) => [...prev, token]);
+    setAvailable((prev) => prev.filter((t) => t.id !== token.id));
+  }, []);
 
-  const handleRemoveLetter = useCallback(
-    (index: number) => {
-      if (resolved) return;
-      setFilled((prev) => {
-        const removed = prev[index];
-        const next = [...prev];
-        next.splice(index, 1);
-        setAvailable((a) => [...a, removed]);
+  const handleHint = useCallback(() => {
+    if (resolvedRef.current) return;
+    setFilled((currentFilled) => {
+      const nextIndex = currentFilled.length;
+      if (nextIndex >= word.length) return currentFilled;
+      const correctLetter = word[nextIndex];
+      setAvailable((currentAvailable) => {
+        const idx = currentAvailable.findIndex(
+          (t) => t.letter === correctLetter,
+        );
+        if (idx === -1) return currentAvailable;
+        const next = [...currentAvailable];
+        next.splice(idx, 1);
         return next;
       });
-    },
-    [resolved],
-  );
+      hintCountRef.current += 1;
+      setHintCount((c) => c + 1);
+      return [...currentFilled, { letter: correctLetter, id: Date.now() }];
+    });
+  }, [word]);
+
+  const handleRemoveLetter = useCallback((index: number) => {
+    if (resolvedRef.current) return;
+    setFilled((prev) => {
+      const removed = prev[index];
+      const next = [...prev];
+      next.splice(index, 1);
+      setAvailable((a) => [...a, removed]);
+      return next;
+    });
+  }, []);
 
   // Auto-check when all letters filled
   useEffect(() => {
-    if (resolved) return;
+    if (resolvedRef.current) return;
     if (filled.length !== word.length) return;
+
+    resolvedRef.current = true;
+    setResolved(true);
 
     const attempt = filled.map((t) => t.letter).join("");
     const isCorrect = attempt.toLowerCase() === word.toLowerCase();
-    setResolved(true);
 
     if (isCorrect) {
       scale.value = withSpring(1.05, { damping: 8 }, () => {
         scale.value = withSpring(1);
       });
-      const timer = setTimeout(() => onComplete(true), 1000);
-      return () => clearTimeout(timer);
+      timerRef.current = setTimeout(
+        () => onCompleteRef.current(true, hintCountRef.current),
+        1000,
+      );
     } else {
       translateX.value = withSequence(
         withTiming(-8, { duration: 60 }),
@@ -100,13 +133,19 @@ export function SpellInput({
         withTiming(6, { duration: 60 }),
         withTiming(0, { duration: 60 }),
       );
-      const timer = setTimeout(() => onComplete(false), 2000);
-      return () => clearTimeout(timer);
+      timerRef.current = setTimeout(
+        () => onCompleteRef.current(false, hintCountRef.current),
+        2000,
+      );
     }
-  }, [filled, word, resolved, scale, translateX, onComplete]);
+  }, [filled, word, scale, translateX]);
 
   const isCorrect =
-    resolved && filled.map((t) => t.letter).join("").toLowerCase() === word.toLowerCase();
+    resolved &&
+    filled
+      .map((t) => t.letter)
+      .join("")
+      .toLowerCase() === word.toLowerCase();
 
   return (
     <View style={styles.container}>
@@ -174,9 +213,20 @@ export function SpellInput({
         ))}
       </View>
 
-      <ThemedText variant="hint" size="sm" style={styles.hint}>
-        {STRINGS.spellHint}
-      </ThemedText>
+      {!resolved && filled.length < word.length ? (
+        <Pressable onPress={handleHint} style={styles.hintButton}>
+          <ThemedText size="sm" style={styles.hintButtonText}>
+            {STRINGS.spellHintButton}
+            {hintCount > 0 ? `  ${STRINGS.spellHintUsed(hintCount)}` : ""}
+          </ThemedText>
+        </Pressable>
+      ) : null}
+
+      {!resolved ? (
+        <ThemedText variant="hint" size="sm" style={styles.hint}>
+          {STRINGS.spellHint}
+        </ThemedText>
+      ) : null}
     </View>
   );
 }
@@ -220,4 +270,12 @@ const styles = StyleSheet.create({
   },
   letterText: { fontWeight: "600", color: COLORS.textPrimary },
   hint: { textAlign: "center", marginTop: 4 },
+  hintButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: COLORS.borderButton,
+  },
+  hintButtonText: { color: COLORS.textSecondary },
 });

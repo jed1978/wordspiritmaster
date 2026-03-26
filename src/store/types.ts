@@ -74,6 +74,9 @@ export interface ReadingPassage {
     defeatLine: string;
   };
   passage: string;
+  // Chinese hints for words OUTSIDE the 1200-word game vocabulary (超綱字).
+  // Key: lowercase English word, Value: Traditional Chinese meaning.
+  annotations?: Record<string, string>;
   questions: ReadingQuestion[];
 }
 
@@ -111,7 +114,12 @@ export interface PersistedState {
 export type GameAction =
   | { type: "LOAD_STATE"; state: GameState }
   | { type: "CAPTURE_SPIRIT"; wordId: string }
-  | { type: "REVIEW_ANSWER"; wordId: string; isCorrect: boolean }
+  | {
+      type: "REVIEW_ANSWER";
+      wordId: string;
+      isCorrect: boolean;
+      preserveStreak?: boolean;
+    }
   | { type: "ENCOUNTER_WORD"; wordId: string }
   | { type: "COMPLETE_SESSION" }
   | { type: "DISMISS_WELCOME" }
